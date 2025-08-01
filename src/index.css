@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui;
+
+  --color-primary: #162E67;
+  --color-secondary: #e09900;
+  --color-accent: #b64240;
+  --color-muted: #4b5e84;
+  --color-surface: #ffffff;
+  --color-background: #f9f9f9;
+  --color-dark: #0b0c08;
+  --color-info: #7bb1c0;
+  --color-success: #4a6856;
+  --color-warning: #716254;
+  --color-highlight: #477cbc;
+  --color-footer-bg: #040646;
+
+  --spacing: 0.25rem;
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-sans);
+    color-scheme: light dark;
+    background-color: var(--color-background);
+  }
+
+  body {
+    @apply text-[var(--color-dark)] bg-[var(--color-background)];
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply px-5 py-2 rounded-md font-semibold text-white bg-[var(--color-primary)] hover:bg-[var(--color-accent)] transition ease-snappy;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 rounded bg-[var(--color-secondary)] text-[var(--color-white)] hover:bg-[var(--color-warning)] transition ease-snappy;
+  }
+
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .section-dark {
+    @apply bg-[var(--color-primary)] text-white;
+  }
+
+  .section-light {
+    @apply bg-[var(--color-surface)] text-[var(--color-dark)];
+  }
+
+  .section-accent {
+    @apply bg-[var(--color-secondary)] text-[var(--color-dark)];
+  }
+
+  .footer {
+    @apply bg-[var(--color-footer-bg)] text-white py-10;
+  }
+
+  .heading-1 {
+    @apply text-4xl sm:text-5xl font-bold leading-tight text-[var(--color-dark)];
+  }
+
+  .heading-2 {
+    @apply text-3xl sm:text-4xl font-semibold leading-snug text-[var(--color-dark)];
+  }
+
+  .heading-3 {
+    @apply text-2xl sm:text-3xl font-semibold text-[var(--color-dark)];
+  }
+
+  .heading-4 {
+    @apply text-xl font-medium text-[var(--color-dark)];
+  }
+
+  .heading-5 {
+    @apply text-lg font-medium text-[var(--color-dark)];
+  }
+
+  .heading-6 {
+    @apply text-base font-semibold uppercase tracking-wide text-[var(--color-muted)];
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .mask-circle {
+    mask-image: radial-gradient(circle at center, black 50%, transparent 100%);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .bg-muted {
+    background-color: var(--color-muted);
+  }
+
+  .border-muted {
+    border-color: var(--color-muted);
+  }
+
+  .highlight {
+    color: var(--color-highlight);
+  }
+
+  @container (min-width: 32rem) {
+    .responsive-grid {
+      @apply grid grid-cols-2 gap-6;
+    }
+  }
+}
