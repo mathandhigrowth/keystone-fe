@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const industryData = [
     {
@@ -66,12 +67,13 @@ const IndustryCard = ({ id, imageSrc, title, subtitle }) => {
                 <h3 className="text-lg font-semibold leading-tight">{title}</h3>
                 <p className="text-sm text-gray-300">{subtitle}</p>
 
-                <button
-                    className="mt-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 
+                <Link
+                    to={`/projects/project`}
+                    className="mt-4 opacity-0 block w-fit translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 
                  bg-white text-black text-sm font-medium px-4 py-2 rounded shadow"
                 >
                     View Details
-                </button>
+                </Link>
             </div>
         </div>
     );
