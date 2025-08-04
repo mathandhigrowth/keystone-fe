@@ -1,4 +1,5 @@
 import { Calendar, MessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
     {
@@ -117,9 +118,9 @@ export default function BlogGrid() {
                             <p className="text-gray-700 text-base leading-relaxed mb-6 flex-grow">
                                 {post.description}
                             </p>
-                            <button className="bg-[var(--color-dark)] text-white px-6 py-3 font-semibold self-start cursor-pointer border-2 border-[var(--color-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-transparent transition ease-snappy">
+                            <Link to="/blog/blog-post" className="bg-[var(--color-dark)] text-white px-6 py-3 font-semibold self-start cursor-pointer border-2 border-[var(--color-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-transparent transition ease-snappy">
                                 Read More
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 ))}
