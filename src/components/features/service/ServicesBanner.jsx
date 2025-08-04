@@ -12,7 +12,10 @@ const ServicesBanner = () => {
             />
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 flex flex-col justify-center h-full container">
-                <h1 className="text-white text-7xl font-bold mb-4">Services</h1>
+                <h1 className="text-white text-7xl font-bold mb-4">Our Services</h1>
+                <p className="text-white max-w-2xl text-base md:text-lg mb-6">
+                    At Keystone, we specialize in delivering end-to-end industrial solutions—from precision fabrication to automated systems—designed to boost efficiency, safety, and long-term reliability.
+                </p>
                 <div className="flex items-center space-x-2 text-white text-base">
                     <span className="font-medium">
                         <Link to="/">Home</Link>

@@ -10,6 +10,8 @@ import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectsDetailsPage from "./pages/ProjectsDetailsPage";
 import BlogPage from "./pages/BlogPage";
+import ServiceDetailsPage from "./pages/ServiceDetailsPage";
+import BlogDetailsPage from "./pages/BlogDetailsPage";
 
 
 const ScrollToTop = () => {
@@ -37,10 +39,12 @@ const App = () => {
           <Route path="/" index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:slug" element={<ServiceDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects/:slug" element={<ProjectsDetailsPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogDetailsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

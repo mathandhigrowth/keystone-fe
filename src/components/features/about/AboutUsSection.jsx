@@ -35,13 +35,13 @@ export default function AboutUsSection() {
                 {/* Right side: Text content */}
                 <div className="w-full lg:w-1/2 mt-5 lg:mt-0 text-center lg:text-left">
                     <span className="uppercase text-xs font-bold tracking-wider text-[var(--color-dark)] mb-2 block">
-                        About Us
+                        About Keystone
                     </span>
                     <h2 className="text-[var(--color-primary)] text-3xl sm:text-4xl font-bold leading-tight mb-4">
-                        Creating value by<br className="hidden sm:block" /> honing the process
+                        Empowering Industries with Smart <br className="hidden sm:block" />Infrastructure & Automation
                     </h2>
                     <p className="text-[var(--color-dark)] text-base leading-relaxed mb-6 max-w-md mx-auto lg:mx-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        Since 2014, Keystone has been delivering intelligent engineering solutions that optimize operational performance, enhance reliability, and drive sustainable growth. Our expertise spans industrial automation, control systems, and infrastructure modernization.
                     </p>
                     <div className="mb-6 space-y-1 text-[var(--color-primary)] font-medium">
                         <p className="uppercase text-sm">Mon–Fri: 9 AM – 22 PM</p>

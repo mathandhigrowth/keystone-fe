@@ -20,7 +20,7 @@ const NewsletterSection = () => {
                         Subscribe to our newsletter
                     </h2>
                     <p className="mb-6 text-base text-indigo-200 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                    Get the latest news and updates, exclusive updates, and more delivered straight to your inbox.
                     </p>
 
                     <form className="flex flex-col items-center w-full mb-4 md:flex-row md:px-16">
@@ -39,7 +39,7 @@ const NewsletterSection = () => {
                     </form>
 
                     <a
-                        href="/"
+                        href="#blog"
                         aria-label="Scroll down"
                         className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
                     >

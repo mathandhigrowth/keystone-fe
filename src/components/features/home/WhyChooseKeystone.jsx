@@ -16,9 +16,8 @@ export default function WhyChooseKeystone() {
 
             <div className="container text-center">
                 <h2 className="heading-2 text-[var(--color-white)] mb-4">Why Choose Keystone?</h2>
-                <p className="text-gray-300 max-w-2xl mx-auto mb-16">
-                    Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard
+                <p className="text-gray-300 max-w-4xl mx-auto mb-16">
+                    Keystone stands as a trusted partner in industrial automation and control systems, delivering value through innovative technologies, top-tier global brands, and a customer-first approach. With a proven track record and deep domain expertise, we help businesses streamline operations and achieve sustainable growth.
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-left">
@@ -67,21 +66,26 @@ export default function WhyChooseKeystone() {
                     <div className="space-y-4 text-[var(--color-white)]">
                         <ul className="list-none p-0 m-0 space-y-4">
                             <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> Authorized Products, Global Brands
+                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
+
+                                Authorized distributor of leading automation brands
+
                             </li>
                             <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> 10+ Years of Industry Experience
+                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
+                                10+ years serving diverse industrial sectors
                             </li>
                             <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> In-House Technical Support &
-                                Guidance
+                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
+                                Skilled technical support from in-house engineers
                             </li>
                             <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> Large Inventory & Quick Dispatch
+                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> 
+                                Ready stock with fast nationwide delivery
                             </li>
                             <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> Trusted by Leading Manufacturers
-                                Across India
+                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> 
+                                Trusted by top manufacturers across India
                             </li>
                         </ul>
                     </div>

@@ -12,7 +12,10 @@ const AboutUsBanner = () => {
             />
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 flex flex-col justify-center h-full container">
-                <h1 className="text-white text-7xl font-bold mb-4">About Us</h1>
+                <h1 className="text-white text-7xl font-bold mb-4">Who We Are</h1>
+                <p className="text-white max-w-2xl text-base md:text-lg mb-6">
+                    Keystone is a trusted name in engineering excellence—delivering advanced industrial solutions, smart infrastructure, and automation services that drive efficiency, innovation, and long-term value.
+                </p>
                 <div className="flex items-center space-x-2 text-white text-base">
                     <span className="font-medium">
                         <Link to="/">Home</Link>

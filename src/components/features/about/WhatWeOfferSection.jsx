@@ -19,20 +19,20 @@ export default function ManufacturingSection() {
                 {/* Text Block */}
                 <div className="grid md:grid-cols-2 gap-8 mb-16">
                     <div>
-                        <p className="uppercase text-sm tracking-wide text-gray-200 mb-2 font-bold">What We Offer</p>
+                        <p className="uppercase text-sm tracking-wide text-gray-200 mb-2 font-bold">Our Capability</p>
                         <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-                            Manufacturing takes<br />
-                            craft to the next level
+                            Elevating Manufacturing<br />
+                            with Precision and Innovation
                         </h2>
                     </div>
                     <div className="text-gray-300 text-base leading-relaxed space-y-4">
                         <p>
-                            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco.
+                            At Keystone, we integrate advanced technologies and streamlined processes to deliver exceptional
+                            manufacturing outcomes. Our approach ensures precision, efficiency, and consistency across every stage of production.
                         </p>
                         <p>
-                            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam.
+                            Whether you're scaling operations or launching new products, we provide agile, cost-effective, and
+                            globally competitive manufacturing solutions tailored to your needs.
                         </p>
                     </div>
                 </div>
@@ -42,19 +42,19 @@ export default function ManufacturingSection() {
                     {[
                         {
                             icon: Factory,
-                            label: "Experience & dependability"
+                            label: "Trusted Expertise & Reliability"
                         },
                         {
                             icon: RailSymbolIcon,
-                            label: "Licensing deals & scalability"
+                            label: "Scalable Infrastructure"
                         },
                         {
                             icon: Wind,
-                            label: "Holistic & custom approach"
+                            label: "Adaptive & Tailored Engineering"
                         },
                         {
                             icon: CalendarRange,
-                            label: "Development & fabrication"
+                            label: "End-to-End Project Execution"
                         }
                     ].map((item, i) => (
                         <div key={i} className="border-r border-white/10 pt-6">

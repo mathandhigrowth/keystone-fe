@@ -16,9 +16,9 @@ const SupportGrid = () => {
                         What do <span className="text-[var(--color-secondary)]">we provide?</span>
                     </p>
                     <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
-                        Industries We Support  &  Our Services
-                        <br />
-                        Our trusted product range            </h2>
+                        Industries We Serve & Our Core Solutions <br />
+                        Powering Growth with Trusted Automation Systems
+                    </h2>
                 </div>
 
                 <div class="max-w-screen-[1440px] mx-auto mb-20">
@@ -33,8 +33,7 @@ const SupportGrid = () => {
 
                             <p class=" text-xl  text-[#252432] my-5"> Industrial & Manufacturing</p>
 
-                            <p class="font-mono text-sm text-[#8987A1] font-[400]">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p class="font-mono text-sm text-[#8987A1] font-[400]">We deliver complete automation for factory operations — enhancing productivity, reducing downtime, and ensuring scalable manufacturing performance.</p>
 
                         </div>
 
@@ -46,8 +45,9 @@ const SupportGrid = () => {
 
                             <p class="text-xl text-[#252432] my-5">Process & Chemical Industries</p>
 
-                            <p class="font-mono text-sm text-[#8987A1] font-[400]">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p class="font-mono text-sm text-[#8987A1] font-[400]">Keystone supports chemical plants with intelligent control systems for pressure, flow, and safety — ensuring compliance and reliability at scale.
+
+                            </p>
 
                         </div>
 
@@ -59,8 +59,7 @@ const SupportGrid = () => {
 
                             <p class="text-xl text-[#252432] my-5">Automotive & E-Mobility</p>
 
-                            <p class="font-mono text-sm text-[#8987A1] font-[400]">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p class="font-mono text-sm text-[#8987A1] font-[400]">From assembly automation to battery line systems, we help mobility brands implement high-speed, error-free production technologies.</p>
 
                         </div>
 
@@ -73,8 +72,7 @@ const SupportGrid = () => {
 
                             <p class="text-xl text-[#252432] my-5">Food, Beverage & Packaging</p>
 
-                            <p class="font-mono text-sm text-[#8987A1] font-[400]">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p class="font-mono text-sm text-[#8987A1] font-[400]">We deliver hygienic automation systems for F&B and packaging lines — with traceability, batching, and real-time control for consistent output.</p>
 
                             <img class="hidden lg:block mt-5 rounded-[10px]" src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Pictures" />
 
@@ -89,8 +87,7 @@ const SupportGrid = () => {
 
                                 <p class="text-xl text-[#252432] my-5">Infrastructure & Utilities</p>
 
-                                <p class="font-mono text-sm text-[#8987A1] font-[400]">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's</p>
+                                <p class="font-mono text-sm text-[#8987A1] font-[400]">Our SCADA and energy automation systems support water, gas, and utility infrastructure — enabling smart city and infrastructure development.</p>
 
                             </div>
                             <div>
@@ -108,8 +105,7 @@ const SupportGrid = () => {
 
                             <p class="text-xl text-[#252432] my-5">Textile & Printing</p>
 
-                            <p class="font-[mono text-sm text-[#8987A1] font-[400]">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p class="font-[mono text-sm text-[#8987A1] font-[400]">Keystone integrates automation in dyeing, spinning, and printing processes — reducing manual dependency while ensuring quality control.</p>
 
                         </div>
 

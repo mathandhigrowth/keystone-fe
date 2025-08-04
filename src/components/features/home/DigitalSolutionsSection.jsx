@@ -1,4 +1,5 @@
 import { Check, Rss, Trophy } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function DigitalSolutionsSection() {
     return (
@@ -36,7 +37,7 @@ export default function DigitalSolutionsSection() {
                     <div className="space-y-6">
                         <div className="space-y-2">
                             <p className="text-sm font-medium text-[var(--color-dark)] tracking-wide">
-                                About <span className="text-[var(--color-secondary)]">Keystone</span>
+                                Discover <span className="text-[var(--color-secondary)]">Keystone’s Edge</span>
                             </p>
                             <h2 className="heading-2 leading-tight">
                                 Keystone Is Premier Distributor Of Industrial Automation Products.
@@ -71,9 +72,12 @@ export default function DigitalSolutionsSection() {
                             </div>
                         </div>
                         <div className="pt-4">
-                            <button className="px-8 py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full hover:bg-[var(--color-warning)] transition-colors duration-300 uppercase tracking-wide">
-                                VIEW DETAILS
-                            </button>
+                            <Link to="/about">
+
+                                <button className="px-8 py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full hover:bg-[var(--color-warning)] transition-colors duration-300 uppercase tracking-wide">
+                                    Read More
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

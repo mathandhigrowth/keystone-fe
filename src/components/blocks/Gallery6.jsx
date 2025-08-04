@@ -88,7 +88,7 @@ const Gallery6 = ({
                             variant="outline"
                             onClick={() => carouselApi?.scrollPrev()}
                             disabled={!canScrollPrev}
-                            className="disabled:pointer-events-auto"
+                            className="disabled:pointer-events-auto hover:bg-[var(--color-secondary)] hover:text-[var(--color-white)]"
                         >
                             <ArrowLeft className="size-5" />
                         </Button>
@@ -97,7 +97,7 @@ const Gallery6 = ({
                             variant="outline"
                             onClick={() => carouselApi?.scrollNext()}
                             disabled={!canScrollNext}
-                            className="disabled:pointer-events-auto"
+                            className="disabled:pointer-events-auto hover:bg-[var(--color-secondary)] hover:text-[var(--color-white)]"
                         >
                             <ArrowRight className="size-5" />
                         </Button>
