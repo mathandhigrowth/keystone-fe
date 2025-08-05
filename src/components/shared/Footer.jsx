@@ -1,7 +1,13 @@
 import { keyStoneLogo } from "@/assets/images"
+import { MOBILE_NUMBER } from "@/config/config"
+import services from "@/data/ServicesData"
 import { Phone, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
+
+  const servicesData = services;
+
   return (
     <footer className="relative w-full bg-[var(--color-footer-bg)] text-white overflow-hidden">
       {/* Background blueprint pattern */}
@@ -41,21 +47,17 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
-                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Automation 
-                </a>
-              </li>
-              <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
-                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Infrastructure 
-                </a>
-              </li>
-              <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
-                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Industrial 
-                </a>
-              </li>
+              {servicesData.slice(0, 3).map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    to={`/services/${service.slug}`}
+                    className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
+                  >
+                    <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" />
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -64,29 +66,34 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                <Link to='/' className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
-                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Services
-                </a>
+                <Link to="/about" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> About
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                <Link to="/projects" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                <Link to='/services' className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                <Link to="/contact" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Contacts
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -122,10 +129,10 @@ export default function Footer() {
 
           <div className="bg-[var(--color-secondary)] px-8 py-4 rounded-lg flex items-center space-x-4 mb-6 md:mb-0">
             <Phone className="size-12 p-1 rounded text-primary fill-primary bg-white" />
-            <div>
+            <a href={`tel:${MOBILE_NUMBER}`}>
               <span className="text-xl font-semibold block">Phone No</span>
-              <span className="text-xl font-semibold">01700000000</span>
-            </div>
+              <span className="text-xl font-semibold">{MOBILE_NUMBER}</span>
+            </a>
           </div>
 
           <div className="flex items-center space-x-4">

@@ -12,7 +12,7 @@ const ServiceDetailsPage = () => {
     if (!service) return <p>Service not found</p>
     return (
         <div>
-            <ServicesDetailsBanner />
+            <ServicesDetailsBanner service={service} />
             <ServiceLayout currentService={slug}>
                 <ServiceDetailsSection service={service} />
             </ServiceLayout>

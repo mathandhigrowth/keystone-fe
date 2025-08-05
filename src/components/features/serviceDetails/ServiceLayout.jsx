@@ -2,11 +2,12 @@ import React from 'react'
 import { ChevronRight, Phone, Mail, Headset } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import services from '../../../data/ServicesData'
+import { EMAIL, MOBILE_NUMBER } from '@/config/config'
 
 const ServiceLayout = ({ currentService, children }) => {
     return (
         <div className="min-h-screen bg-[var(--color-background)] p-8 flex justify-center items-start">
-            <div className="w-full bg-[var(--color-background)] flex flex-col lg:flex-row gap-8 p-8">
+            <div className="w-full bg-[var(--color-background)] flex flex-col lg:flex-row gap-8 p-0 md:p-8">
                 {/* Left Column */}
                 <div className="flex-shrink-0 w-full lg:w-[300px] flex flex-col gap-8">
                     {/* Nav Links */}
@@ -49,11 +50,11 @@ const ServiceLayout = ({ currentService, children }) => {
                             <h3 className="text-xl font-semibold mb-2">How Can We Help?</h3>
                             <p className="flex items-center justify-center gap-2 text-sm mb-1">
                                 <Phone className="h-4 w-4" />
-                                <span>(+91) 123 456 7890</span>
+                                <a href={`tel:${MOBILE_NUMBER}`}>{MOBILE_NUMBER}</a>
                             </p>
                             <p className="flex items-center justify-center gap-2 text-sm">
                                 <Mail className="h-4 w-4" />
-                                <span>keystone@gmail.com</span>
+                                <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
                             </p>
                         </div>
                     </div>

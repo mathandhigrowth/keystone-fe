@@ -1,40 +1,36 @@
 import { Check } from "lucide-react";
+import projectData from "@/data/projectData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
-const projectInfo = [
-    { label: "Client", value: "Saare Tewolde" },
-    { label: "Project Value", value: "INR 2,649" },
-    { label: "Date", value: "Jan 03, 2024" },
-    { label: "Category", value: "Infrastructure" },
-];
+export default function ProjectsDetailsSection({ project }) {
+    const projectInfo = [
+        { label: "Client", value: project.clientName },
+        { label: "Location", value: project.location },
+        { label: "Year", value: project.year },
+        { label: "Project Type", value: project.projectType },
+    ];
 
-const relatedProjects = [
-    {
-        imageSrc: "https://html.themexriver.com/forgex/assets/img/project/pd-glry-4.png",
-        title: "Petroleum And Gas",
-        date: "December 16, 2024",
-    },
-    {
-        imageSrc: "https://html.themexriver.com/forgex/assets/img/project/pd-glry-3.png",
-        title: "Flyover Construction",
-        date: "December 16, 2024",
-    },
-];
+    const currentIndex = projectData.findIndex((p) => p.slug === project.slug);
+    const prevProject = currentIndex > 0 ? projectData[currentIndex - 1] : null;
+    const nextProject = currentIndex < projectData.length - 1 ? projectData[currentIndex + 1] : null;
 
-export default function ProjectsDetailsSection() {
     return (
         <div className="bg-[var(--color-background)] pb-16">
-            {/* Main Project Image */}
             <div className="md:h-[400px] h-[200px] w-[90%] md:w-[70%] rounded-2xl mx-auto my-10 overflow-hidden">
                 <img
-                    src="https://html.themexriver.com/forgex/assets/img/project/pd-img-1.png"
-                    alt="Industrial project overview"
+                    src={project.bannerImg || project.image}
+                    alt={project.clientName}
                     className="w-full h-full object-cover"
                 />
             </div>
 
-            {/* Project Data Bar */}
             <div className="bg-[var(--color-dark)]/90 rounded-2xl container mx-auto py-8 px-8">
-                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                     {projectInfo.map((item) => (
                         <div key={item.label} className="flex flex-col items-center">
                             <span className="text-[var(--color-accent)] text-lg font-semibold mb-1">
@@ -46,84 +42,108 @@ export default function ProjectsDetailsSection() {
                 </div>
             </div>
 
-            {/* Project Details Text */}
             <div className="container mx-auto px-8 py-16">
                 <h2 className="text-4xl font-bold text-[var(--color-dark)] mb-8">Project Details</h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                    <span className="float-left text-6xl font-bold bg-[var(--color-accent)] text-white p-2 mr-4 -mt-2">
-                        W
-                    </span>
-                    e assist our clients with building their most ideal financial We comprehend you're putting something aside
-                    for all unique life altering situations: A brilliant quietness has take possion of my whole souing like these
-                    sweet mornng spring whch parttake in the with my entire heart I am separated from everyone else, and feel the
-                    appeal ofexistenc in voluptate velit esse cillum fugiat nulla pariatur. excepteur sint occaecat cupidatat non
-                    proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde totam rem
-                    aperiam, eaque ipsa quae stomach muscle illo inventore veritatis et semi beatae vitae dicta sunt explicabo
-                    nomo enim ipsam voluptatem sed quia consequuntur magni dolores.
+                    {project.description}
                 </p>
 
-                {/* Features List and Image */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
                     <div>
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-                            are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                            the middle of text.
+                            <strong className="text-[var(--color-accent)] font-semibold">Challenges:</strong>
                         </p>
                         <ul className="space-y-3">
-                            <li className="flex items-start text-gray-700">
-                                <Check className="w-5 h-5 text-[var(--color-accent)] mr-2 mt-1 flex-shrink-0" />
-                                <span>Marketing options and rates</span>
-                            </li>
-                            <li className="flex items-start text-gray-700">
-                                <Check className="w-5 h-5 text-[var(--color-accent)] mr-2 mt-1 flex-shrink-0" />
-                                <span>Research beyond the business plan</span>
-                            </li>
-                            <li className="flex items-start text-gray-700">
-                                <Check className="w-5 h-5 text-[var(--color-accent)] mr-2 mt-1 flex-shrink-0" />
-                                <span>Customer engagement matters</span>
-                            </li>
-                            <li className="flex items-start text-gray-700">
-                                <Check className="w-5 h-5 text-[var(--color-accent)] mr-2 mt-1 flex-shrink-0" />
-                                <span>The ability to turnaround consulting</span>
-                            </li>
-                            <li className="flex items-start text-gray-700">
-                                <Check className="w-5 h-5 text-[var(--color-accent)] mr-2 mt-1 flex-shrink-0" />
-                                <span>Override the digital divide</span>
-                            </li>
+                            {project.challenges.map((challenge, idx) => (
+                                <li key={idx} className="flex items-start text-gray-700">
+                                    <Check className="w-5 h-5 text-[var(--color-accent)] mr-2 mt-1 flex-shrink-0" />
+                                    <span>{challenge}</span>
+                                </li>
+                            ))}
                         </ul>
                     </div>
-                    <div className="w-full h-full overflow-hidden rounded-lg shadow-md">
-                        <img
-                            src="https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-details-001.jpg"
-                            alt="Industrial workers with robotic arm"
-                            className="w-full h-full object-cover"
-                        />
+
+                    <div className="w-full aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden shadow-md">
+                        {project.gallery?.length > 1 ? (
+                            <Swiper
+                                modules={[Navigation, Pagination, Autoplay]}
+                                navigation
+                                pagination={{ clickable: true }}
+                                autoplay={{
+                                    delay: 3000, 
+                                    disableOnInteraction: false, 
+                                }}
+                                spaceBetween={16}
+                                slidesPerView={1}
+                                className="w-full h-full rounded-lg"
+                            >
+                                {project.gallery.map((imgUrl, index) => (
+                                    <SwiperSlide key={index}>
+                                        <img
+                                            src={imgUrl}
+                                            alt={`Gallery image ${project.clientName} ${index + 1}`}
+                                            className="w-full h-full object-cover rounded-lg"
+                                            loading="lazy"
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        ) : (
+                            <img
+                                src={project.gallery?.[0] || project.image}
+                                alt={project.clientName}
+                                className="w-full h-full object-cover rounded-lg"
+                                loading="lazy"
+                            />
+                        )}
                     </div>
                 </div>
 
-                {/* Related Projects */}
-                <div className="mt-20 flex flex-col sm:flex-row justify-between gap-8">
-                    {relatedProjects.map((project) => (
-                        <div
-                            key={project.title}
-                            className="flex items-center gap-4 bg-[var(--color-surface)] p-4 rounded-lg shadow-sm flex-1"
-                        >
+                {/* Previous / Next Projects */}
+                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {prevProject && (
+                        <div className="flex items-center gap-4 bg-[var(--color-surface)] p-4 rounded-lg shadow-sm">
                             <div className="size-24 rounded overflow-hidden flex-shrink-0">
                                 <img
-                                    src={project.imageSrc || "/placeholder.svg"}
-                                    alt={project.title}
+                                    src={prevProject.image || "/placeholder.svg"}
+                                    alt={prevProject.clientName}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
                             <div>
-                                <h4 className="text-lg font-semibold text-[var(--color-dark)]">{project.title}</h4>
-                                <p className="text-gray-600 text-sm">{project.date}</p>
-                            <button className="bg-primary text-white py-1 rounded px-2 text-sm my-1 self-end">View Project</button>
+                                <h4 className="text-lg font-semibold text-[var(--color-dark)]">{prevProject.clientName}</h4>
+                                <p className="text-gray-600 text-sm">{prevProject.projectType}</p>
+                                <Link
+                                    to={`/projects/${prevProject.slug}`}
+                                    className="bg-primary text-white py-1 px-2 text-sm my-1 inline-block rounded"
+                                >
+                                    ← Previous Project
+                                </Link>
                             </div>
                         </div>
-                    ))}
+                    )}
+
+                    {nextProject && (
+                        <div className="flex items-center gap-4 bg-[var(--color-surface)] p-4 rounded-lg shadow-sm">
+                            <div className="size-24 rounded overflow-hidden flex-shrink-0">
+                                <img
+                                    src={nextProject.image || "/placeholder.svg"}
+                                    alt={nextProject.clientName}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div>
+                                <h4 className="text-lg font-semibold text-[var(--color-dark)]">{nextProject.clientName}</h4>
+                                <p className="text-gray-600 text-sm">{nextProject.projectType}</p>
+                                <Link
+                                    to={`/projects/${nextProject.slug}`}
+                                    className="bg-primary text-white py-1 px-2 text-sm my-1 inline-block rounded"
+                                >
+                                    Next Project →
+                                </Link>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

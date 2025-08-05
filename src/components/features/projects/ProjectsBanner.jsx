@@ -15,9 +15,9 @@ const ProjectsBanner = () => {
                 <h1 className="text-white text-7xl font-bold mb-4">
                     Our Projects
                 </h1>
-                <p className="text-white max-w-2xl text-base md:text-lg mb-6">
+                {/* <p className="text-white max-w-2xl text-base md:text-lg mb-6">
                     Discover how Keystone is redefining industrial excellence through pioneering solutions and impactful collaborations across sectors.
-                </p>
+                </p> */}
                 <div className="flex items-center space-x-2 text-white text-base">
                     <span className="font-medium">
                         <Link to="/">Home</Link>

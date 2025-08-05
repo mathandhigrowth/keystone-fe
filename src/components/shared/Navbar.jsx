@@ -16,11 +16,14 @@ import {
 } from "lucide-react"
 import { keyStoneLogo } from "@/assets/images"
 import services from "@/data/ServicesData"
+import { EMAIL, MOBILE_NUMBER } from "@/config/config"
+import projectData from "@/data/projectData"
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState(null)
   const [mobileDropdown, setMobileDropdown] = useState({ projects: false, services: false })
+  const projects = projectData;
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev)
   const handleNavClick = () => setIsMobileMenuOpen(false)
@@ -41,11 +44,11 @@ export default function Navbar() {
         <div className="flex items-center space-x-6">
           <div className="flex items-center gap-2">
             <Mail className="w-4 h-4" />
-            <span>keystoneindustries@gmail.com</span>
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </div>
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4" />
-            <span>+91 123 456 789</span>
+            <a href={`tel:${MOBILE_NUMBER}`}>{MOBILE_NUMBER}</a>
           </div>
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4" />
@@ -91,11 +94,18 @@ export default function Navbar() {
                   animate="animate"
                   exit="exit"
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full mt-2 left-0 bg-white shadow-lg ring ring-gray-600 rounded-lg w-44 p-2 z-40"
+                  className="absolute top-full mt-2 left-0 bg-white shadow-lg ring ring-gray-600 rounded-lg w-80 p-2 z-40"
                 >
                   <NavLink to="/projects" className="block px-4 py-2 hover:bg-gray-100 rounded">All Projects</NavLink>
-                  <NavLink to="/projects/commercial" className="block px-4 py-2 hover:bg-gray-100 rounded">Commercial</NavLink>
-                  <NavLink to="/projects/industrial" className="block px-4 py-2 hover:bg-gray-100 rounded">Industrial</NavLink>
+                  {projects.map((project) => (
+                    <NavLink
+                      key={project.slug}
+                      to={`/projects/${project.slug}`}
+                      className="block px-4 py-2 hover:bg-gray-100 rounded"
+                    >
+                      {project.title || project.clientName}
+                    </NavLink>
+                  ))}
                 </motion.div>
               )}
             </AnimatePresence>
@@ -118,7 +128,7 @@ export default function Navbar() {
                   animate="animate"
                   exit="exit"
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full mt-2 left-0 bg-white shadow-lg ring ring-gray-600 rounded-lg w-56 p-2 z-40"
+                  className="absolute top-full mt-2 left-0 bg-white shadow-lg ring ring-gray-600 rounded-lg w-80 p-2 z-40"
                 >
                   <NavLink to="/services" className="block px-4 py-2 hover:bg-gray-100 rounded">All Services</NavLink>
                   {services.map(service => (
@@ -188,9 +198,23 @@ export default function Navbar() {
                       transition={{ duration: 0.2 }}
                       className="ml-4 mt-2 flex flex-col gap-2"
                     >
-                      <NavLink to="/projects" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>All Projects</NavLink>
-                      <NavLink to="/projects/commercial" onClick={handleNavClick} className={inactiveClass}>Commercial</NavLink>
-                      <NavLink to="/projects/industrial" onClick={handleNavClick} className={inactiveClass}>Industrial</NavLink>
+                      <NavLink
+                        to="/projects"
+                        onClick={handleNavClick}
+                        className={({ isActive }) => isActive ? activeClass : inactiveClass}
+                      >
+                        All Projects
+                      </NavLink>
+                      {projects.map((project) => (
+                        <NavLink
+                          key={project.slug}
+                          to={`/projects/${project.slug}`}
+                          onClick={handleNavClick}
+                          className={inactiveClass}
+                        >
+                          {project.title || project.clientName}
+                        </NavLink>
+                      ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
