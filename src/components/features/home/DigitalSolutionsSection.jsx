@@ -1,6 +1,6 @@
 import { Check, Rss, Trophy } from "lucide-react"
 import { Link } from "react-router-dom"
-
+import { DigitalSolutionsSectionImage, DigitalSolutionsSectionImage2 } from "@/assets/images"
 export default function DigitalSolutionsSection() {
     return (
         <div className="w-full bg-[var(--color-background)] py-16">
@@ -10,7 +10,7 @@ export default function DigitalSolutionsSection() {
                     <div className="relative w-full h-[400px]">
                         {/* Background Image - Top Left */}
                         <img
-                            src="https://divilayouts.divi-childthemes.com/wp-content/uploads/2021/09/divi-portfolio-module-bundle-I-4.jpg" // Replace with actual path
+                            src={DigitalSolutionsSectionImage} // Replace with actual path
                             alt="Flat lay workspace"
                             className="w-full h-full object-cover rounded-xl shadow-md"
                         />
@@ -20,7 +20,7 @@ export default function DigitalSolutionsSection() {
                             <div className="relative w-full h-full">
                                 {/* Actual Image */}
                                 <img
-                                    src="https://divilayouts.divi-childthemes.com/wp-content/uploads/2021/09/divi-portfolio-module-bundle-I-2.jpg"
+                                    src={DigitalSolutionsSectionImage2}
                                     alt="Tablet with coffee and flowers"
                                     className="w-full h-full object-cover rounded-md"
                                 />

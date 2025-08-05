@@ -3,6 +3,9 @@ import { MOBILE_NUMBER } from "@/config/config"
 import services from "@/data/ServicesData"
 import { Phone, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react"
 import { Link } from "react-router-dom"
+import footerImage1 from "@/assets/images/LatestBlog1.jpeg"
+import footerImage2 from "@/assets/images/LatestBlog2.jpeg"
+import footerImage3 from "@/assets/images/LatestBlog3.jpeg"
 
 export default function Footer() {
 
@@ -103,17 +106,17 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-6">Blog Posts</h3>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://www.pennarindia.com/assets/images/bu/Structural%20Engineering.jpeg"
+                src={footerImage1}
                 alt="Blog post thumbnail"
                 className="rounded-md aspect-square object-cover"
               />
               <img
-                src="https://www.pennarindia.com/assets/images/bu/BIM(Building%20Information%20Modelling).jpeg"
+                src={footerImage2}
                 alt="Blog post thumbnail"
                 className="rounded-md aspect-square object-cover"
               />
               <img
-                src="https://www.pennarindia.com/assets/images/bu/Railway%20Sub%20Assemblies.jpeg"
+                src={footerImage3}
                 alt="Blog post thumbnail"
                 className="rounded-md aspect-square object-cover"
               />

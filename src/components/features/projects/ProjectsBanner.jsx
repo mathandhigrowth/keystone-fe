@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProjectsBannerImage from '@/assets/images/ProjectsBanner.jpg'
 
 const ProjectsBanner = () => {
     return (
@@ -7,7 +8,7 @@ const ProjectsBanner = () => {
             <img
                 alt="Industrial factory interior with pipes and machinery"
                 className="absolute inset-0 object-cover w-full h-full"
-                src="https://industry.dexignzone.com/xhtml/images/banner/bnr4.jpg"
+                src={ProjectsBannerImage}
                 priority
             />
             <div className="absolute inset-0 bg-black/60" />

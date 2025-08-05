@@ -1,6 +1,6 @@
 import { industrialSVG, processSVG, analyticsSVG, foodSVG, pointSVG, automationSVG } from '@/assets/svg'
 import React from 'react'
-
+import { SupportGridImage } from '@/assets/images'
 const SupportGrid = () => {
     return (
         <div className="section-dark relative">
@@ -74,7 +74,7 @@ const SupportGrid = () => {
 
                             <p class="font-mono text-sm text-[#8987A1] font-[400]">We deliver hygienic automation systems for F&B and packaging lines — with traceability, batching, and real-time control for consistent output.</p>
 
-                            <img class="hidden lg:block mt-5 rounded-[10px]" src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Pictures" />
+                            <img class="hidden lg:block mt-5 rounded-[10px]" src={SupportGridImage} alt="Pictures" />
 
                         </div>
 
@@ -91,7 +91,7 @@ const SupportGrid = () => {
 
                             </div>
                             <div>
-                                <img class="hidden lg:block mt-5 rounded-[10px]" src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=400" alt="Pictures" />
+                                <img class="hidden lg:block mt-5 w-[400px] rounded-[10px]" src={SupportGridImage} alt="Pictures" />
                             </div>
 
                         </div>

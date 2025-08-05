@@ -1,14 +1,56 @@
+import ProjectData from "@/assets/images/projectData1.jpg"
+import AachiMasalaImage from "@/assets/images/AachiMasala.png"
+import PinnacleImage from "@/assets/images/Pinnacle Lithium Power.jpg"
+import ATSImage from "@/assets/images/ATS ELGI.jpg"
+import TextroElectronicsImage from "@/assets/images/Textro Electronics.jpg"
+import FASCOImage from "@/assets/images/FASCO.jpg"
+import RegrowImage from "@/assets/images/Regrow Industries.jpg"
+import AppliedControlImage from "@/assets/images/AppliedControls.jpg"
+import LPTImage from "@/assets/images/LPT.jpg"
+import TrinityImage from "@/assets/images/trinity-touch.jpg"
+import galleryImage1 from "@/assets/images/gallery1img1.jpg"
+import galleryImage2 from "@/assets/images/gallery1img2.jpg"
+import galleryImage3 from "@/assets/images/gallery2img1.jpg"
+import galleryImage4 from "@/assets/images/gallery2img2.jpg"
+import galleryImage5 from "@/assets/images/gallery3img1.jpg"
+import galleryImage6 from "@/assets/images/gallery3img2.jpg"
+import banner3 from "@/assets/images/banner3.jpg"
+import Atsbanner from "@/assets/images/Atsbanner.jpg"
+import galleryImage7 from "@/assets/images/gallery4img2.jpg"
+import galleryImage8 from "@/assets/images/gallery5img1.jpg"
+import galleryImage9 from "@/assets/images/gallery5img2.jpg"
+import galleryImage10 from "@/assets/images/gallery6img1.jpg"
+import galleryImage11 from "@/assets/images/gallery6img2.jpg"
+import banner4 from "@/assets/images/banner4.jpg"
+import banner5 from "@/assets/images/Regriwbanner.jpg"
+import galleryImage12 from "@/assets/images/gallery7img1.jpg"
+import galleryImage13 from "@/assets/images/gallery7img2.jpg"
+import galleryImage14 from "@/assets/images/gallery8img1.jpg"
+import galleryImage15 from "@/assets/images/gallery8img2.jpg"
+import banner6 from "@/assets/images/banner5.jpg"
+import banner7 from "@/assets/images/banner6.jpg"
+import galleryImage16 from "@/assets/images/gallery9img1.jpg"
+import galleryImage17 from "@/assets/images/gallery9img2.jpg"
+import galleryImage18 from "@/assets/images/gallery10img1.jpg"
+import galleryImage19 from "@/assets/images/gallery10img2.jpg"
+
+
+
+
+
+
+
 const projectData = [
     {
         id: 1,
         clientName: "Megawin Switchgears",
         slug: "megawin-switchgears",
-        bannerImg: "https://industry.dexignzone.com/xhtml/images/about/about2.jpg",
+        bannerImg: banner4,
         industry: "Electrical Switchgear Manufacturing",
         location: "India",
         year: "2024",
         projectType: "OEM Automation Integration",
-        image: "https://industry.dexignzone.com/xhtml/images/about/about2.jpg",
+        image: ProjectData,
         tags: ["Electrical", "OEM", "Automation"],
         technologiesUsed: ["Terminal Blocks", "PLC Relays", "Control Wiring"],
         brandsInvolved: ["Degson", "Siemens"],
@@ -40,8 +82,9 @@ const projectData = [
             }
         ],
         gallery: [
-            "https://industry.dexignzone.com/xhtml/images/services/pic1.jpg",
-            "https://industry.dexignzone.com/xhtml/images/services/pic5.jpg"
+            galleryImage1,
+            galleryImage2
+            
         ]
     },
 
@@ -49,11 +92,12 @@ const projectData = [
         id: 2,
         clientName: "Aachi Masala",
         slug: "aachi-masala",
+        bannerImg: AachiMasalaImage,
         industry: "Food & Beverage Processing",
         location: "India",
         year: "2023",
         projectType: "Process Automation",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-04.jpg",
+        image: AachiMasalaImage,
         tags: ["Food", "Processing", "Automation"],
         technologiesUsed: ["Control Panels", "Cable Glands", "Industrial Sensors"],
         brandsInvolved: ["LAPP", "Rittal", "Siemens"],
@@ -85,8 +129,8 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/aachi/automation-line.jpg",
-            "/images/projects/aachi/cable-management.jpg"
+            galleryImage3,
+            galleryImage4
         ]
     },
 
@@ -94,12 +138,12 @@ const projectData = [
         id: 3,
         clientName: "Pinnacle Lithium Power",
         slug: "pinnacle-lithium-power",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-05.jpg",
+        bannerImg: banner3,
         industry: "Battery & Energy Storage",
         location: "India",
         year: "2024",
         projectType: "Energy Storage System Integration",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-05.jpg",
+        image: PinnacleImage,
         tags: ["Energy", "Battery", "EV"],
         technologiesUsed: ["High Voltage Connectors", "Braking Resistors", "Surge Protection"],
         brandsInvolved: ["Degson", "Smisen Controls"],
@@ -131,8 +175,8 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/pinnacle/battery-room.jpg",
-            "/images/projects/pinnacle/connectors.jpg"
+            galleryImage5,
+            galleryImage6
         ]
     },
 
@@ -140,12 +184,12 @@ const projectData = [
         id: 4,
         clientName: "ATS ELGI",
         slug: "ats-elgi",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-06.jpg",
+        bannerImg: ATSImage,
         industry: "Automotive Equipment Manufacturing",
         location: "India",
         year: "2023",
         projectType: "Machine Automation & Control",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-06.jpg",
+        image: ATSImage,
         tags: ["Automotive", "Manufacturing", "Sensors"],
         technologiesUsed: ["Control Components", "Sensors", "Relays"],
         brandsInvolved: ["Omron", "Baumer"],
@@ -177,8 +221,9 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/ats/sensor-install.jpg",
-            "/images/projects/ats/control-units.jpg"
+            Atsbanner,
+            galleryImage7,
+            
         ]
     },
 
@@ -186,12 +231,12 @@ const projectData = [
         id: 5,
         clientName: "Textro Electronics",
         slug: "textro-electronics",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-07.jpg",
+        bannerImg: TextroElectronicsImage,
         industry: "Electronics & Automation",
         location: "India",
         year: "2023",
         projectType: "Industrial Automation Project",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-07.jpg",
+        image: TextroElectronicsImage,
         tags: ["Electronics", "Automation", "Sensors"],
         technologiesUsed: ["PLC Systems", "I/O Modules", "Relays"],
         brandsInvolved: ["Omron", "Phoenix Contact"],
@@ -223,8 +268,8 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/textro/plc-setup.jpg",
-            "/images/projects/textro/io-modules.jpg"
+            galleryImage8,
+            galleryImage9
         ]
     },
 
@@ -232,12 +277,12 @@ const projectData = [
         id: 6,
         clientName: "FASCO",
         slug: "fasco",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-08.jpg",
+        bannerImg: FASCOImage,
         industry: "HVAC & Appliances",
         location: "India",
         year: "2022",
         projectType: "Product Integration",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-08.jpg",
+        image: FASCOImage,
         tags: ["HVAC", "Integration", "Cable Management"],
         technologiesUsed: ["Electrical Enclosures", "Wiring Accessories", "Surge Protection"],
         brandsInvolved: ["Rittal", "Trinity Touch"],
@@ -269,8 +314,8 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/fasco/enclosure-setup.jpg",
-            "/images/projects/fasco/wiring-layout.jpg"
+            galleryImage10,
+            galleryImage11
         ]
     },
 
@@ -279,12 +324,12 @@ const projectData = [
         id: 7,
         clientName: "Regrow Industries",
         slug: "regrow-industries",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-09.jpg",
+        bannerImg: banner5,
         industry: "General Manufacturing",
         location: "India",
         year: "2023",
         projectType: "Factory Automation",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-09.jpg",
+        image: RegrowImage,
         tags: ["Manufacturing", "Automation", "PLC"],
         technologiesUsed: ["PLC Systems", "Terminal Blocks", "Wiring Ducts"],
         brandsInvolved: ["Siemens", "Trinity Touch", "LAPP"],
@@ -316,20 +361,20 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/regrow/plc-panel.jpg",
-            "/images/projects/regrow/wiring-done-right.jpg"
+            galleryImage12,
+            galleryImage13
         ]
     },
     {
         id: 8,
         clientName: "Applied Controls",
         slug: "applied-controls",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-10.jpg",
+        bannerImg: banner6,
         industry: "OEM & Industrial Controls",
         location: "India",
         year: "2022",
         projectType: "OEM Equipment Panelization",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-10.jpg",
+        image: AppliedControlImage,
         tags: ["OEM", "Automation", "Panel Building"],
         technologiesUsed: ["Automation Relays", "Sensors", "Wiring Accessories"],
         brandsInvolved: ["Omron", "Degson", "Trinity Touch"],
@@ -361,8 +406,8 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/applied/panel-assembly.jpg",
-            "/images/projects/applied/relay-blocks.jpg"
+            galleryImage14,
+            galleryImage15
         ]
     },
 
@@ -372,12 +417,12 @@ const projectData = [
         id: 9,
         clientName: "LPT",
         slug: "lpt",
-        bannerImg: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-11.jpg",
+        bannerImg: banner7,
         industry: "Power & Electrical Systems",
         location: "India",
         year: "2023",
         projectType: "Electrical Infrastructure",
-        image: "https://metarywp.websitelayout.net/wp-content/uploads/2024/12/portfolio-11.jpg",
+        image: LPTImage,
         tags: ["Power", "Electrical", "Infrastructure"],
         technologiesUsed: ["Power Supplies", "Connectors", "Control Panels"],
         brandsInvolved: ["Degson", "Smisen Controls", "Siemens"],
@@ -409,20 +454,20 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/lpt/power-setup.jpg",
-            "/images/projects/lpt/transformer-panel.jpg"
+            galleryImage16,
+            galleryImage17
         ]
     },
     {
         id: 10,
         clientName: "Trinity Touch (Internal Projects)",
         slug: "trinity-touch",
-        bannerImg: "https://industrie.peacefulqode.co.in/wp-content/uploads/2020/09/10.jpg",
+        bannerImg: TrinityImage,
         industry: "Industrial Components Manufacturing",
         location: "India / UK",
         year: "2022",
         projectType: "Component R&D and Product Integration",
-        image: "https://industrie.peacefulqode.co.in/wp-content/uploads/2020/09/10.jpg",
+        image: TrinityImage,
         tags: ["R&D", "EV", "Renewable"],
         technologiesUsed: ["Cable Glands", "Timers", "Charging Ports"],
         brandsInvolved: ["Trinity Touch", "Phoenix Contact"],
@@ -454,8 +499,8 @@ const projectData = [
             }
         ],
         gallery: [
-            "/images/projects/trinity/ev-rig.jpg",
-            "/images/projects/trinity/cable-gland-test.jpg"
+            galleryImage18,
+            galleryImage19
         ]
     }
 

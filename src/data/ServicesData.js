@@ -1,3 +1,51 @@
+import servicesGrid1 from "@/assets/images/servicesgrid1.jpg"
+import servicesimg1 from "@/assets/images/card1title1.jpg"
+import servicesimg2 from "@/assets/images/card1title2.jpg"
+import servicesimg3 from "@/assets/images/card1title3.jpg"
+import servicesimg4 from "@/assets/images/card1title4.jpg"
+import serviceGrid2 from "@/assets/images/servicesGrid2.jpeg"
+import servicesimg5 from "@/assets/images/card2title1.jpg"
+import servicesimg6 from "@/assets/images/card2title2.jpg"
+import servicesimg7 from "@/assets/images/card2title3.jpg"
+import servicesimg8 from "@/assets/images/card2title4.jpg"
+import servicesGrid3 from "@/assets/images/servicesGrid3.jpeg"
+import servicesimg9 from "@/assets/images/card3title1.jpg"
+import servicesimg10 from "@/assets/images/card3title2.jpg"
+import servicesimg11 from "@/assets/images/card3title3.jpg"
+import servicesimg12 from "@/assets/images/card3title4.jpg"
+import servicesGrid4 from "@/assets/images/servicesGrid4.jpeg"
+import servicesimg13 from "@/assets/images/card4title1.jpg"
+import servicesimg14 from "@/assets/images/card4title2.jpg"
+import servicesimg15 from "@/assets/images/card4title3.jpg"
+import servicesimg16 from "@/assets/images/card4title4.jpg"
+import servicesGrid5 from "@/assets/images/servicesGrid5.jpeg"
+import servicesimg17 from "@/assets/images/card5title1.jpg"
+import servicesimg18 from "@/assets/images/card5title2.jpg"
+import servicesimg19 from "@/assets/images/card5title3.jpg"
+import servicesimg20 from "@/assets/images/card5title4.jpg"
+import servicesGrid6 from "@/assets/images/servicesGrid6.jpeg"
+import servicesimg21 from "@/assets/images/card6title1.jpg"
+import servicesimg22 from "@/assets/images/card6title2.jpg"
+import servicesimg23 from "@/assets/images/card6title3.jpg"
+import servicesimg24 from "@/assets/images/card6title4.jpg"
+import serivicesGrid7 from "@/assets/images/servicesGrid7.jpeg"
+import servicesimg25 from "@/assets/images/card7title1.jpg"
+import servicesimg26 from "@/assets/images/card7title2.jpg"
+import servicesimg27 from "@/assets/images/card7title3.jpg"
+import servicesimg28 from "@/assets/images/card7title4.jpg"
+import servicesGrid8 from "@/assets/images/servicesGrid8.jpeg"
+import servicesimg29 from "@/assets/images/card8title1.jpg"
+import servicesimg30 from "@/assets/images/card8title2.jpg"
+import servicesimg31 from "@/assets/images/card8title3.jpg"
+import servicesimg32 from "@/assets/images/card8title4.jpg"
+
+
+
+
+
+
+
+
 const services = [
     {
         title: 'Industrial Automation',
@@ -7,7 +55,7 @@ const services = [
 
         description: 'We offer end-to-end automation design, integration, and commissioning services tailored for industrial and process environments. Our solutions enhance operational efficiency, improve accuracy, and reduce downtime across industries.',
 
-        image: 'https://industry.dexignzone.com/xhtml/images/our-work/oilgas/pic1.jpg',
+        image: servicesGrid1,
 
         highlights: [
             'Complete PLC & HMI programming for automated systems',
@@ -33,22 +81,22 @@ const services = [
         cards: [
             {
                 title: 'PLC & HMI Programming',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-plc.jpg',
+                image: servicesimg1,
                 text: 'Development of reliable logic control systems with intuitive HMI interfaces using Siemens, Omron, and other platforms.'
             },
             {
                 title: 'SCADA Integration',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-scada.jpg',
+                image: servicesimg2,
                 text: 'Design and deployment of SCADA systems for remote monitoring, alarm management, and process optimization.'
             },
             {
                 title: 'Field Device Connectivity',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-field.jpg',
+                image: servicesimg3,
                 text: 'Seamless integration of sensors, drives, and IO modules using industrial protocols and modular wiring.'
             },
             {
                 title: 'Motion Control Systems',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-motion.jpg',
+                image: servicesimg4,
                 text: 'Customized servo and VFD solutions for precise motion control in automated machinery.'
             }
         ]
@@ -62,7 +110,7 @@ const services = [
 
         description: 'From single-loop controllers to multi-tier MCCs, our panels are engineered to perform. We focus on neat wiring, functional layout, and full lifecycle support — from design to installation and beyond.',
 
-        image: 'https://industry.dexignzone.com/xhtml/images/our-work/oilgas/pic2.jpg',
+        image: serviceGrid2,
 
         highlights: [
             '3D panel layout and enclosure planning',
@@ -89,22 +137,22 @@ const services = [
         cards: [
             {
                 title: 'MCC & PCC Panel Design',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-mcc.jpg',
+                image: servicesimg5,
                 text: 'Motor control and power distribution panels with overload protection, contactors, and metering.'
             },
             {
                 title: 'PLC Control Panels',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-plc-panel.jpg',
+                image: servicesimg6,
                 text: 'Complete PLC-based panels with I/O wiring, HMI mounting, and expansion readiness.'
             },
             {
                 title: 'Wiring & Cable Routing',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-wiring.jpg',
+                image: servicesimg7,
                 text: 'Neatly laid-out wiring with labeled terminals, cable ducts, ferrules, and DIN mounting.'
             },
             {
                 title: 'Panel Testing & QC',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-testing.jpg',
+                image: servicesimg8,
                 text: 'Rigorous in-house testing for continuity, insulation, labeling accuracy, and voltage drops.'
             }
         ]
@@ -117,7 +165,7 @@ const services = [
 
         description: 'Proper cable management not only improves aesthetics but also ensures compliance, safety, and long-term reliability. We support OEMs and system integrators with globally approved cable routing systems.',
 
-        image: 'https://industry.dexignzone.com/xhtml/images/our-work/oilgas/pic3.jpg',
+        image: servicesGrid3,
 
         highlights: [
             'Flame-retardant and IP-rated cable glands',
@@ -144,22 +192,22 @@ const services = [
         cards: [
             {
                 title: 'Cable Glands & Conduits',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-gland.jpg',
+                image: servicesimg9,
                 text: 'Wide range of polyamide and metal cable glands with IP ratings and EMC shielding options.'
             },
             {
                 title: 'Wiring Ducts & Trunking',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-ducts.jpg',
+                image: servicesimg10,
                 text: 'Structured wiring layout using halogen-free ducts with multiple cross-sections and covers.'
             },
             {
                 title: 'Labeling & Ferruling',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-labels.jpg',
+                image: servicesimg11,
                 text: 'Preprinted markers, heat-shrink sleeves, ferrules, and cable ID solutions for clean labeling.'
             },
             {
                 title: 'Gland Plates & Accessories',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-plates.jpg',
+                image: servicesimg12,
                 text: 'Custom-cut gland plates, fittings, and sealing kits to complete your panel or field box build.'
             }
         ]
@@ -173,7 +221,7 @@ const services = [
 
         description: 'Whether you’re monitoring pressure, proximity, light, or motion, our sensor integration services ensure your machines respond accurately and reliably in real time.',
 
-        image: 'https://industry.dexignzone.com/xhtml/images/our-work/oilgas/pic4.jpg',
+        image: servicesGrid4,
 
         highlights: [
             'Proximity, photoelectric, and capacitive sensors',
@@ -200,22 +248,22 @@ const services = [
         cards: [
             {
                 title: 'Proximity & Photoelectric Sensors',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-sensor1.jpg',
+                image: servicesimg13,
                 text: 'Detection of object presence or absence with precise digital feedback in fast-moving processes.'
             },
             {
                 title: 'Level & Pressure Sensors',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-sensor2.jpg',
+                image: servicesimg14,
                 text: 'Reliable measurement of fluid levels, pressure, and flow for process control.'
             },
             {
                 title: 'Signal Conditioning & Wiring',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-sensor3.jpg',
+                image: servicesimg15,
                 text: 'Analog-to-digital converters, isolators, and shielded wiring for interference-free signals.'
             },
             {
                 title: 'Mounting & Sensor Mapping',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-sensor4.jpg',
+                image: servicesimg16,
                 text: 'Custom sensor mounting with full documentation of sensor points and signal routing.'
             }
         ]
@@ -228,7 +276,7 @@ const services = [
 
         description: 'Powering your systems with the right components prevents downtime, ensures safety, and keeps you compliant. We help you manage energy more intelligently.',
 
-        image: 'https://industrie.rstheme.com/energy/wp-content/uploads/2024/02/blog_1.jpg',
+        image: servicesGrid5,
 
         highlights: [
             'SMPS and DIN-rail power supplies from trusted brands',
@@ -255,22 +303,22 @@ const services = [
         cards: [
             {
                 title: 'Power Supplies (SMPS)',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-smps.jpg',
+                image: servicesimg17,
                 text: 'High-efficiency SMPS from Degson and Siemens with short circuit protection and voltage regulation.'
             },
             {
                 title: 'Surge Protection Devices',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-surge.jpg',
+                image: servicesimg18,
                 text: 'Protect your systems from voltage spikes with certified SPD modules for mains and control lines.'
             },
             {
                 title: 'Braking Resistors',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-brake.jpg',
+                image: servicesimg19,
                 text: 'Handle regenerative energy in motor drives with high-power braking resistors from Smisen.'
             },
             {
                 title: 'Energy Monitoring',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-meter.jpg',
+                image: servicesimg20,
                 text: 'Track and optimize your energy consumption using real-time digital energy meters.'
             }
         ]
@@ -285,7 +333,7 @@ const services = [
 
         description: 'Your electrical infrastructure is only as safe as the enclosure that protects it. Our enclosure systems are designed for harsh industrial environments, ensuring safety, accessibility, and longevity.',
 
-        image: 'https://industrie.rstheme.com/energy/wp-content/uploads/2024/02/blog_1.jpg',
+        image: servicesGrid6,
 
         highlights: [
             'Wall-mount, floor-mount, and compact enclosures',
@@ -312,22 +360,22 @@ const services = [
         cards: [
             {
                 title: 'Wall-Mount Enclosures',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-wall.jpg',
+                image: servicesimg21,
                 text: 'Compact and IP-protected enclosures for small-scale applications and distribution panels.'
             },
             {
                 title: 'Modular Floor Cabinets',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-floor.jpg',
+                image: servicesimg22,
                 text: 'Robust enclosures for automation, MCCs, and instrumentation — with modular panel support.'
             },
             {
                 title: 'Gland Plates & Mounting Kits',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-glandkit.jpg',
+                image: servicesimg23,
                 text: 'Custom gland plates, door locks, mounting panels, and airflow accessories.'
             },
             {
                 title: 'Stainless Steel IP Enclosures',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-ss.jpg',
+                image: servicesimg24,
                 text: 'For cleanroom and corrosive environments — with seamless sealing and durable finishes.'
             }
         ]
@@ -340,7 +388,7 @@ const services = [
 
         description: 'We simplify procurement for your control panel needs — providing quality-assured components backed by application knowledge and fast availability.',
 
-        image: 'https://industrie.rstheme.com/energy/wp-content/uploads/2024/02/blog_1.jpg',
+        image: serivicesGrid7,
 
         highlights: [
             'Fast-moving control panel components',
@@ -367,22 +415,22 @@ const services = [
         cards: [
             {
                 title: 'Relays & Timers',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-relay.jpg',
+                image: servicesimg25,
                 text: 'Interface and signal relays with socket mounting, delay timers, and multi-function settings.'
             },
             {
                 title: 'Terminal Blocks',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-terminal.jpg',
+                image: servicesimg26,
                 text: 'Screw and push-in type terminal blocks with accessories for modular wiring.'
             },
             {
                 title: 'Breakers & Surge Protection',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-breaker.jpg',
+                image: servicesimg27,
                 text: 'Miniature and motor protection breakers with Type 2 surge protectors for sensitive loads.'
             },
             {
                 title: 'Wiring Accessories',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-wiring-acc.jpg',
+                image: servicesimg28,
                 text: 'Ferrules, markers, sockets, and end clamps to complete your panel wiring kit.'
             }
         ]
@@ -395,7 +443,7 @@ const services = [
 
         description: 'When off-the-shelf doesn’t fit, our custom engineering service fills the gap — with prototyping, sourcing, and solution engineering that fits your product.',
 
-        image: 'https://industrie.rstheme.com/energy/wp-content/uploads/2024/02/blog_1.jpg',
+        image: servicesGrid8,
 
         highlights: [
             'Custom-built panels and sub-assemblies',
@@ -422,22 +470,22 @@ const services = [
         cards: [
             {
                 title: 'Application Engineering',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-appeng.jpg',
+                image: servicesimg29,
                 text: 'Design assistance and feasibility studies to define the right control and panel architecture.'
             },
             {
                 title: 'Product Customization',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-custom.jpg',
+                image: servicesimg30,
                 text: 'Engineering support to adapt products to unique specifications or integration constraints.'
             },
             {
                 title: 'Component Sourcing',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-sourcing.jpg',
+                image: servicesimg31,
                 text: 'Efficient sourcing of global brands with technical validation and delivery tracking.'
             },
             {
                 title: 'Prototyping & Build-to-Print',
-                image: 'https://metarywp.websitelayout.net/wp-content/uploads/2024/12/service-card-proto.jpg',
+                image: servicesimg32,
                 text: 'Rapid development of pilot units, test jigs, and repeatable panel builds for scale.'
             }
         ]

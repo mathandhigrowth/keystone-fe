@@ -1,4 +1,5 @@
 import { PlayCircle, ArrowRight, Factory, RailSymbolIcon, Wind, CalendarRange } from "lucide-react";
+import ManufacturingSectionImage from "@/assets/images/ManufacturingSection1.jpg"
 
 export default function ManufacturingSection() {
     return (
@@ -7,7 +8,7 @@ export default function ManufacturingSection() {
                 {/* Hero Image with Play Button */}
                 <div className="relative -translate-y-36">
                     <img
-                        src="https://fabrica.ancorathemes.com/wp-content/uploads/2023/02/image-10-copyright.jpg"
+                        src={ManufacturingSectionImage}
                         alt="Industrial robots in factory"
                         className="w-full h-[530px] object-cover rounded-lg shadow-2xl"
                     />

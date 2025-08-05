@@ -1,4 +1,5 @@
 import { User } from "lucide-react"
+import {DigitalSolutionsSectionImage2} from "@/assets/images"
 
 export default function WhyChooseKeystone() {
     return (
@@ -50,7 +51,7 @@ export default function WhyChooseKeystone() {
                             >
                                 {/* Image inside polygon */}
                                 <img
-                                    src="https://divilayouts.divi-childthemes.com/wp-content/uploads/2021/09/divi-portfolio-module-bundle-I-2.jpg" // <-- replace with your image path
+                                    src={DigitalSolutionsSectionImage2} // <-- replace with your image path
                                     alt="Polygon Portrait"
                                     className="w-full h-full object-cover"
                                 />

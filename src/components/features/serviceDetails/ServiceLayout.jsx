@@ -3,7 +3,7 @@ import { ChevronRight, Phone, Mail, Headset } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import services from '../../../data/ServicesData'
 import { EMAIL, MOBILE_NUMBER } from '@/config/config'
-
+import servicesimg33 from '@/assets/images/serviceslayout.jpg'
 const ServiceLayout = ({ currentService, children }) => {
     return (
         <div className="min-h-screen bg-[var(--color-background)] p-8 flex justify-center items-start">
@@ -38,7 +38,7 @@ const ServiceLayout = ({ currentService, children }) => {
                     <div className="bg-[var(--color-surface)] rounded-lg shadow-md overflow-hidden">
                         <div className="relative h-52">
                             <img
-                                src="https://metarywp.websitelayout.net/wp-content/uploads/2025/02/contact-img01.jpg"
+                                src={servicesimg33}
                                 alt="Two construction workers smiling and talking"
                                 className="w-full h-full object-cover"
                             />

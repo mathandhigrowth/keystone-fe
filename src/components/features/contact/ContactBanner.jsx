@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import contactBannerImage from '@/assets/images/contactbanner.jpg'
 const ContactBanner = () => {
     return (
         <div className="h-[384px] relative overflow-hidden">
             <img
                 alt="Industrial factory interior with pipes and machinery"
                 className="absolute inset-0 object-cover w-full h-full"
-                src="https://industrie.peacefulqode.co.in/wp-content/uploads/2020/09/pf-6-1140x549.jpg"
+                src={contactBannerImage}
                 priority
             />
             <div className="absolute inset-0 bg-black/60" />

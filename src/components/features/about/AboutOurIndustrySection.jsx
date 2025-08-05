@@ -1,4 +1,7 @@
 import { Check } from "lucide-react";
+import AboutOurIndustrySectionImage1 from "@/assets/images/AboutOurIndustrySection1.jpg"
+import AboutOurIndustrySectionImage2 from "@/assets/images/AboutOurIndustrySection2.jpg"
+import AboutOurIndustrySectionImage3 from "@/assets/images/AboutOurIndustrySection3.jpg"
 
 export default function AboutOurIndustrySection() {
     return (
@@ -14,7 +17,7 @@ export default function AboutOurIndustrySection() {
                         <img
                             alt="Modern city bridge with skyscrapers in background"
                             className="w-full h-auto object-cover"
-                            src="https://html.tonatheme.com/wp/industry/wp-content/uploads/2023/06/about-industry.jpg"
+                            src={AboutOurIndustrySectionImage1}
                             priority
                         />
                     </div>
@@ -50,7 +53,7 @@ export default function AboutOurIndustrySection() {
                         <img
                             alt="Worker on phone in industrial setting"
                             className="w-full sm:w-[250px] h-[150px] object-cover"
-                            src="https://html.tonatheme.com/wp/industry/wp-content/uploads/2023/06/industry-thumb-1.jpg"
+                            src={AboutOurIndustrySectionImage2}
                             priority
                         />
                         <div>
@@ -65,7 +68,7 @@ export default function AboutOurIndustrySection() {
                         <img
                             alt="Hands working on machinery"
                             className="w-full sm:w-[250px] h-[150px] object-cover"
-                            src="https://html.tonatheme.com/wp/industry/wp-content/uploads/2023/06/industry-thumb-2-1.jpg"
+                            src={AboutOurIndustrySectionImage3}
                             priority
                         />
                         <div>

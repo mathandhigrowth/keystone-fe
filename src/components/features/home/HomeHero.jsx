@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { homeHeroImage } from '@/assets/images'
 const HomeHero = () => {
     return (
         <div>
@@ -9,7 +9,7 @@ const HomeHero = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat "
                     style={{
-                        backgroundImage: "url('https://divilayouts.divi-childthemes.com/wp-content/uploads/2021/09/divi-mechanic-layout-img-1.jpg')"
+                        backgroundImage: `url(${homeHeroImage})`,
                     }}
                 />
 

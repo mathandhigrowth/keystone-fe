@@ -1,5 +1,5 @@
 import { Gallery6 } from "@/components/blocks/Gallery6"
-
+import { OurExpertiseImage1, OurExpertiseImage2, OurExpertiseImage3, OurExpertiseImage4, OurExpertiseImage5 } from "@/assets/images"
 const demoData = {
     heading: "Our Expertise",
     demoUrl: "https://www.shadcnblocks.com",
@@ -8,25 +8,25 @@ const demoData = {
             id: "item-1",
             title: "Terminal Blocks & Industrial Connectors",
             url: "#",
-            image: "https://www.pennarindia.com/assets/images/bu/Hydraulics.jpeg",
+            image: OurExpertiseImage1,
         },
         {
             id: "item-2",
             title: "PLCs, Relays & Automation Systems",
             url: "#",
-            image: "https://www.pennarindia.com/assets/images/bu/Aerospace%20Products.jpeg",
+            image: OurExpertiseImage2,
         },
         {
             id: "item-3",
             title: "Automation Software",
             url: "#",
-            image: "https://www.pennarindia.com/assets/images/bu/Automotive%20and%20Manufacturing%20Engineering.jpeg",
+            image: OurExpertiseImage3,
         },
         {
             id: "item-4",
             title: "Textile & Printing",
             url: "#",
-            image: "https://www.pennarindia.com/assets/images/bu/industrial-automation.webp",
+            image: OurExpertiseImage4,
         },
         {
             id: "item-5",
@@ -34,7 +34,7 @@ const demoData = {
             summary:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             url: "#",
-            image: "https://www.pennarindia.com/assets/images/boilers.jpg",
+            image: OurExpertiseImage5,
         },
     ],
 };

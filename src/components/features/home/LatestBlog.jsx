@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
+import { BlogImage1, BlogImage2, BlogImage3 } from '@/assets/images';
 export default function LatestBlog() {
     return (
         <section id="blog" className="relative w-full bg-[var(--color-background)] py-20 overflow-hidden">
@@ -56,36 +56,36 @@ export default function LatestBlog() {
                     {/* Slide 1 */}
                     <SwiperSlide>
                         <BlogCard
-                            image="https://www.pennarindia.com/assets/images/bu/Structural%20Engineering.jpeg"
-                            date="20/08/2020"
-                            category="Creative Design"
+                            image={BlogImage1}
+                            date="05/08/2025"
+                            category="Structural Engineering"
+                            title="Revolutionizing Pre-Engineered Buildings in Industrial Construction"
+                            description="Discover how Keystone is redefining structural efficiency and scalability with innovative PEB solutions tailored for rapid industrial expansion."
                         />
                     </SwiperSlide>
 
                     {/* Slide 2 */}
                     <SwiperSlide>
                         <BlogCard
-                            image="https://www.pennarindia.com/assets/images/bu/BIM(Building%20Information%20Modelling).jpeg"
-                            date="20/08/2020"
-                            category="Creative Design"
+                            image={BlogImage2}
+                            date="28/07/2025"
+                            category="Digital Transformation"
+                            title="Embracing BIM: The Future of Smart Infrastructure Planning"
+                            description="Explore how Keystone is leveraging Building Information Modeling (BIM) to deliver smarter, more efficient project execution in infrastructure development."
                         />
                     </SwiperSlide>
 
                     {/* Slide 3 */}
                     <SwiperSlide>
                         <BlogCard
-                            image="https://www.pennarindia.com/assets/images/bu/Railway%20Sub%20Assemblies.jpeg"
-                            date="20/08/2020"
-                            category="Creative Design"
+                            image={BlogImage3}
+                            date="12/07/2025"
+                            category="Railway Engineering"
+                            title="Engineering Excellence in Railway Sub-Assemblies"
+                            description="From bridges to sub-assemblies, see how Keystone is pushing boundaries in quality, safety, and precision manufacturing for the railway sector."
                         />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <BlogCard
-                            image="https://www.pennarindia.com/assets/images/bu/Railway%20Sub%20Assemblies.jpeg"
-                            date="20/08/2020"
-                            category="Creative Design"
-                        />
-                    </SwiperSlide>
+
                 </Swiper>
             </div>
         </section>
@@ -93,13 +93,13 @@ export default function LatestBlog() {
 }
 
 // Reusable BlogCard component
-function BlogCard({ image, date, category }) {
+function BlogCard({ image, date, category, title, description }) {
     return (
         <div className="bg-[var(--color-surface)] rounded-lg shadow-md overflow-hidden">
             <div className="w-full h-48 bg-gray-400 flex items-center justify-center">
                 <img
                     src={image}
-                    alt="Blog post image"
+                    alt={title}
                     className="w-full h-full object-cover"
                 />
             </div>
@@ -109,12 +109,13 @@ function BlogCard({ image, date, category }) {
                     <span>{date}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-3">
-                    It is a long established fact that a reader will be distracted
+                    {title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration...
+                    {description}
                 </p>
             </div>
         </div>
     );
 }
+

@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import servicesBannerImage from '@/assets/images/servicebanner.jpg'
 const ServicesBanner = () => {
     return (
         <div className="h-[384px] relative overflow-hidden">
             <img
                 alt="Industrial factory interior with pipes and machinery"
                 className="absolute inset-0 object-cover w-full h-full"
-                src="https://metarywp.websitelayout.net/wp-content/uploads/2025/02/page-title-01.jpg"
+                src={servicesBannerImage}
                 priority
             />
             <div className="absolute inset-0 bg-black/60" />
