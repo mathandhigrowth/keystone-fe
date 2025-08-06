@@ -22,6 +22,7 @@ import galleryImage9 from "@/assets/images/gallery5img2.jpg"
 import galleryImage10 from "@/assets/images/gallery6img1.jpg"
 import galleryImage11 from "@/assets/images/gallery6img2.jpg"
 import banner4 from "@/assets/images/banner4.jpg"
+import megawinImage from "@/assets/images/megawin-switchgear-banner1.jpg"
 import banner5 from "@/assets/images/Regriwbanner.jpg"
 import galleryImage12 from "@/assets/images/gallery7img1.jpg"
 import galleryImage13 from "@/assets/images/gallery7img2.jpg"
@@ -45,7 +46,7 @@ const projectData = [
         id: 1,
         clientName: "Megawin Switchgears",
         slug: "megawin-switchgears",
-        bannerImg: banner4,
+        bannerImg: megawinImage,
         industry: "Electrical Switchgear Manufacturing",
         location: "India",
         year: "2024",
