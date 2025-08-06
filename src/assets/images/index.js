@@ -102,6 +102,23 @@ import contactBannerImage from "./contactbanner.jpg"
 
 
 
+import blogThumb1 from "./blog1-thumb.jpg"
+import blogImg1 from "./blog1-image1.jpg"
+import blogImg2 from "./blog1-image2.webp"
+
+import blogThumb2 from "./blog2-thumb.jpg"
+import blog2Img1 from "./blog2-image1.jpg"
+import blog2Img2 from "./blog2-image2.jpg"
+
+import blogThumb3 from "./blog3-thumb.jpg"
+import blog3Img1 from "./blog3-image1.jpg"
+import blog3Img2 from "./blog3-image2.jpg"
+
+import blogThumb4 from "./blog4-thumb.jpg"
+import blog4Img1 from "./blog4-image1.jpg"
+import blog4Img2 from "./blog4-image2.jpg"
+
+
 
 
 
@@ -127,4 +144,11 @@ export { keyStoneLogo, homeHeroImage, DigitalSolutionsSectionImage,
            servicesimg7, servicesimg8, servicesGrid3, servicesimg9, servicesimg10, servicesimg11, servicesimg12, servicesGrid4, servicesimg13, servicesimg14,
             servicesimg15, servicesimg16, servicesGrid5, servicesimg17, servicesimg18, servicesimg19, servicesimg20,
             servicesGrid6, servicesimg21, servicesimg22, servicesimg23, servicesimg24, serivicesGrid7, servicesimg25, servicesimg26, servicesimg27, 
-            servicesimg28, servicesGrid8, servicesimg29, servicesimg30, servicesimg31, servicesimg32, servicesimg33, contactBannerImage }
+            servicesimg28, servicesGrid8, servicesimg29, servicesimg30, servicesimg31, servicesimg32, servicesimg33, contactBannerImage,
+            
+            blogThumb1, blogImg1, blogImg2,
+            blogThumb2, blog2Img1, blog2Img2,
+            blogThumb3, blog3Img1, blog3Img2,
+            blogThumb4, blog4Img1, blog4Img2
+        
+        }       

@@ -2,11 +2,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { BlogImage1, BlogImage2, BlogImage3 } from '@/assets/images';
+
+import BlogData from "@/data/BlogData";
+import { Link } from 'react-router-dom';
+
 export default function LatestBlog() {
+    const latestBlogs = [...BlogData]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 4);
+
     return (
         <section id="blog" className="relative w-full bg-[var(--color-background)] py-20 overflow-hidden">
-            {/* Background decorative elements */}
+            {/* Decorative Background */}
             <div className="absolute inset-0 opacity-20 pointer-events-none">
                 <svg className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -30,7 +37,6 @@ export default function LatestBlog() {
                         </p>
                     </div>
 
-                    {/* Swiper navigation buttons */}
                     <div className="flex items-center space-x-4">
                         <button className="text-sm font-semibold text-gray-600 uppercase cursor-pointer" id="prev-blog">PREV</button>
                         <div className="w-12 h-px bg-gray-400"></div>
@@ -38,7 +44,7 @@ export default function LatestBlog() {
                     </div>
                 </div>
 
-                {/* Swiper blog cards */}
+                {/* Swiper Slider */}
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={24}
@@ -53,69 +59,48 @@ export default function LatestBlog() {
                     }}
                     className="pb-4"
                 >
-                    {/* Slide 1 */}
-                    <SwiperSlide>
-                        <BlogCard
-                            image={BlogImage1}
-                            date="05/08/2025"
-                            category="Structural Engineering"
-                            title="Revolutionizing Pre-Engineered Buildings in Industrial Construction"
-                            description="Discover how Keystone is redefining structural efficiency and scalability with innovative PEB solutions tailored for rapid industrial expansion."
-                        />
-                    </SwiperSlide>
-
-                    {/* Slide 2 */}
-                    <SwiperSlide>
-                        <BlogCard
-                            image={BlogImage2}
-                            date="28/07/2025"
-                            category="Digital Transformation"
-                            title="Embracing BIM: The Future of Smart Infrastructure Planning"
-                            description="Explore how Keystone is leveraging Building Information Modeling (BIM) to deliver smarter, more efficient project execution in infrastructure development."
-                        />
-                    </SwiperSlide>
-
-                    {/* Slide 3 */}
-                    <SwiperSlide>
-                        <BlogCard
-                            image={BlogImage3}
-                            date="12/07/2025"
-                            category="Railway Engineering"
-                            title="Engineering Excellence in Railway Sub-Assemblies"
-                            description="From bridges to sub-assemblies, see how Keystone is pushing boundaries in quality, safety, and precision manufacturing for the railway sector."
-                        />
-                    </SwiperSlide>
-
+                    {latestBlogs.map((blog, idx) => (
+                        <SwiperSlide key={idx}>
+                            <BlogCard
+                                slug={blog.slug}
+                                image={blog.thumbnailImage !== "#" ? blog.thumbnailImage : "/placeholder.svg"}
+                                date={blog.date}
+                                author={blog.author}
+                                title={blog.title}
+                                description={blog.description}
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </section>
     );
 }
 
-// Reusable BlogCard component
-function BlogCard({ image, date, category, title, description }) {
+function BlogCard({ image, date, author, title, description, slug }) {
     return (
-        <div className="bg-[var(--color-surface)] rounded-lg shadow-md overflow-hidden">
-            <div className="w-full h-48 bg-gray-400 flex items-center justify-center">
-                <img
-                    src={image}
-                    alt={title}
-                    className="w-full h-full object-cover"
-                />
-            </div>
-            <div className="p-6">
-                <div className="flex justify-between items-center text-sm text-gray-500 mb-3">
-                    <span>{category}</span>
-                    <span>{date}</span>
+        <Link to={`/blog/${slug}`}>
+            <div className="bg-[var(--color-surface)] rounded-lg shadow-md overflow-hidden mb-1">
+                <div className="w-full h-48 bg-gray-400 flex items-center justify-center">
+                    <img
+                        src={image}
+                        alt={title}
+                        className="w-full h-full object-cover"
+                    />
                 </div>
-                <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-3">
-                    {title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                    {description}
-                </p>
+                <div className="p-6">
+                    <div className="flex justify-between items-center text-sm text-gray-500 mb-3">
+                        <span>{author}</span>
+                        <span>{date}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-3">
+                        {title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
+                        {description}
+                    </p>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 }
-

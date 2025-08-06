@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   Mail,
@@ -151,9 +151,9 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden lg:block">
-          <button className="bg-[var(--color-accent)] text-white px-6 py-3 rounded-md font-semibold hover:bg-[var(--color-primary)] transition-colors">
+          <Link to="/contact" className="bg-[var(--color-accent)] text-center text-white px-6 py-3 rounded-md font-semibold hover:bg-[var(--color-primary)] transition-colors">
             Get In Touch
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -257,9 +257,9 @@ export default function Navbar() {
               <NavLink to="/blog" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>Blog</NavLink>
               <NavLink to="/contact" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>Contact</NavLink>
 
-              <button className="mt-2 bg-[var(--color-accent)] text-white px-6 py-3 rounded-md font-semibold hover:bg-[var(--color-primary)] transition-colors">
+              <Link to="/contact" className="mt-2 bg-[var(--color-accent)] text-center text-white px-6 py-3 rounded-md font-semibold hover:bg-[var(--color-primary)] transition-colors">
                 Get In Touch
-              </button>
+              </Link>
             </nav>
           </motion.div>
         )}

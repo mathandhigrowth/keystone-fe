@@ -6,10 +6,16 @@ import { Link } from "react-router-dom"
 import footerImage1 from "@/assets/images/LatestBlog1.jpeg"
 import footerImage2 from "@/assets/images/LatestBlog2.jpeg"
 import footerImage3 from "@/assets/images/LatestBlog3.jpeg"
+import BlogData from "@/data/BlogData"
 
 export default function Footer() {
 
   const servicesData = services;
+
+  const latestBlogs = [...BlogData]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4);
+
 
   return (
     <footer className="relative w-full bg-[var(--color-footer-bg)] text-white overflow-hidden">
@@ -105,21 +111,15 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6">Blog Posts</h3>
             <div className="grid grid-cols-2 gap-4">
-              <img
-                src={footerImage1}
-                alt="Blog post thumbnail"
-                className="rounded-md aspect-square object-cover"
-              />
-              <img
-                src={footerImage2}
-                alt="Blog post thumbnail"
-                className="rounded-md aspect-square object-cover"
-              />
-              <img
-                src={footerImage3}
-                alt="Blog post thumbnail"
-                className="rounded-md aspect-square object-cover"
-              />
+              {latestBlogs.map((blog, idx) => (
+                <Link to={`/blog/${blog.slug}`} key={idx}>
+                  <img
+                    src={blog.thumbnailImage}
+                    alt={`Blog post thumbnail ${idx + 1}`}
+                    className="rounded-md aspect-square object-cover"
+                  />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
