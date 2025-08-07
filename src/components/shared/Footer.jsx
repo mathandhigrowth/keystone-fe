@@ -125,7 +125,7 @@ export default function Footer() {
         </div>
 
         {/* Middle section - Logo, Phone, Socials */}
-        <div className="flex flex-col md:flex-row items-center justify-between py-8 border-t border-b border-gray-400 bg-primary/40 px-10 rounded-2xl mb-8">
+        <div className="flex flex-col md:flex-row items-center justify-between py-8 border-t border-b border-gray-400 bg-primary/40 px-10 rounded-2xl mb-8 md:space-x-1">
           <div className="flex items-center mb-6 md:mb-0">
             <img src={keyStoneLogo} alt="KeyStone Logo" className="mr-3 w-[160px] rounded-2xl" />
           </div>
