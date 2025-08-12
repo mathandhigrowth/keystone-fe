@@ -1,6 +1,6 @@
 import ContactBanner from '@/components/features/contact/ContactBanner'
+import ContactDetails from '@/components/features/contact/ContactDetails'
 import ContactSection from '@/components/features/contact/ContactSection'
-import HelpCenterSection from '@/components/features/contact/HelpCenterSection'
 import React from 'react'
 
 const ContactPage = () => {
@@ -8,7 +8,7 @@ const ContactPage = () => {
         <div>
             <ContactBanner />
             <ContactSection />
-            <HelpCenterSection />
+            <ContactDetails />
         </div>
     )
 }

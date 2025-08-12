@@ -14,7 +14,7 @@ const ProjectsDetailsBanner = ({
             />
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 flex flex-col justify-center h-full container">
-                <h1 className="text-white text-7xl font-bold mb-4">
+                <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">
                     {clientName}
                 </h1>
                 <div className="flex items-center space-x-2 text-white text-base">
@@ -24,7 +24,7 @@ const ProjectsDetailsBanner = ({
                     <span className="text-[var(--color-secondary)] font-black">-</span>
                     <Link to="/projects">Projects</Link>
                     <span className="text-[var(--color-secondary)] font-black">-</span>
-                    <span>{clientName}</span>
+                    <span className='line-clamp-1'>{clientName}</span>
                 </div>
             </div>
         </div>

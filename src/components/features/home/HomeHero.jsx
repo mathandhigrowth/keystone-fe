@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { homeHeroImage } from '@/assets/images'
+import { heroImageKeyStone, homeHeroImage } from '@/assets/images'
 const HomeHero = () => {
     return (
         <div>
@@ -9,7 +9,7 @@ const HomeHero = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat "
                     style={{
-                        backgroundImage: `url(${homeHeroImage})`,
+                        backgroundImage: `url(${heroImageKeyStone})`,
                     }}
                 />
 

@@ -1,5 +1,5 @@
 import { keyStoneLogo } from "@/assets/images"
-import { MOBILE_NUMBER } from "@/config/config"
+import { ADDRESS, MOBILE_NUMBER } from "@/config/config"
 import services from "@/data/ServicesData"
 import { Phone, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react"
 import { Link } from "react-router-dom"
@@ -7,6 +7,7 @@ import footerImage1 from "@/assets/images/LatestBlog1.jpeg"
 import footerImage2 from "@/assets/images/LatestBlog2.jpeg"
 import footerImage3 from "@/assets/images/LatestBlog3.jpeg"
 import BlogData from "@/data/BlogData"
+import React from "react"
 
 export default function Footer() {
 
@@ -39,6 +40,14 @@ export default function Footer() {
             <p className="text-gray-300 leading-relaxed mb-6">
               A KeyStone service company provides a range of professional services related to automation and technology.
             </p>
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold mb-2">Our Address</h4>
+              <p className="text-gray-300">
+                Door 4 – 6, First Floor, Katoor Road, Papanickenpalayam,<br />
+                Coimbatore – 641037, Tamil Nadu, India
+              </p>
+            </div>
+
             <h4 className="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h4>
             <div className="flex">
               <input

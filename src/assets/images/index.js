@@ -5,12 +5,12 @@ import DigitalSolutionsSectionImage2 from "./DigitalSolutionsSection2.jpg"
 import SupportGridImage from "./SupportGrid1.jpeg"
 import OurExpertiseImage1 from "./OurExpertise1.jpeg"
 import OurExpertiseImage2 from "./OurExpertise2.jpeg"
-import OurExpertiseImage3 from "./OurExpertise3.jpeg"   
-import OurExpertiseImage4 from "./OurExpertise4.webp"   
-import OurExpertiseImage5 from "./OurExpertise5.jpg" 
-import BlogImage1 from "./LatestBlog1.jpeg" 
-import BlogImage2 from "./LatestBlog2.jpeg" 
-import BlogImage3 from "./LatestBlog3.jpeg" 
+import OurExpertiseImage3 from "./OurExpertise3.jpeg"
+import OurExpertiseImage4 from "./OurExpertise4.webp"
+import OurExpertiseImage5 from "./OurExpertise5.jpg"
+import BlogImage1 from "./LatestBlog1.jpeg"
+import BlogImage2 from "./LatestBlog2.jpeg"
+import BlogImage3 from "./LatestBlog3.jpeg"
 import AboutUsBannerImage from "./AboutUsBanner.jpg"
 import AboutUsSectionImage1 from "./AboutUsSection1.jpg"
 import AboutUsSectionImage2 from "./AboutUsSection2.jpg"
@@ -19,7 +19,7 @@ import AboutOurIndustrySectionImage2 from "./AboutOurIndustrySection2.jpg"
 import AboutOurIndustrySectionImage3 from "./AboutOurIndustrySection3.jpg"
 import ManufacturingSectionImage from "./ManufacturingSection1.jpg"
 import ProjectsBannerImage from "./ProjectsBanner.jpg"
-import ProjectData from "./projectData1.jpg"   
+import ProjectData from "./projectData1.jpg"
 import AachiMasalaImage from "./AachiMasala.png"
 import PinnacleImage from "./Pinnacle Lithium Power.jpg"
 import ATSImage from "./ATS ELGI.jpg"
@@ -29,14 +29,14 @@ import RegrowImage from "./Regrow Industries.jpg"
 import AppliedControlImage from "./AppliedControls.jpg"
 import LPTImage from "./LPT.jpg"
 import TrinityImage from "./trinity-touch.jpg"
-import megawinImage from "./megawin-switchgear-banner1.jpg" 
+import megawinImage from "./megawin-switchgear-banner1.jpg"
 import galleryImage1 from "./gallery1img1.jpg"
 import galleryImage2 from "./gallery1img2.jpg"
 import galleryImage3 from "./gallery2img1.jpg"
 import galleryImage4 from "./gallery2img2.jpg"
 import galleryImage5 from "./gallery3img1.jpg"
 import galleryImage6 from "./gallery3img2.jpg"
-import banner3 from "./banner3.jpg"  
+import banner3 from "./banner3.jpg"
 import Atsbanner from "./Atsbanner.jpg"
 import galleryImage7 from "./gallery4img2.jpg"
 import galleryImage8 from "./gallery5img1.jpg"
@@ -120,6 +120,7 @@ import blog4Img2 from "./blog4-image2.jpg"
 
 
 
+import heroImageKeyStone from "./heroImage-keystone.jpg"
 
 
 
@@ -130,25 +131,32 @@ import blog4Img2 from "./blog4-image2.jpg"
 
 
 
-export { keyStoneLogo, homeHeroImage, DigitalSolutionsSectionImage,
-        DigitalSolutionsSectionImage2, SupportGridImage, OurExpertiseImage1,
-        OurExpertiseImage2, OurExpertiseImage3, OurExpertiseImage4, OurExpertiseImage5, BlogImage1, 
-        BlogImage2, BlogImage3, AboutUsBannerImage, AboutUsSectionImage1,
-        AboutUsSectionImage2, AboutOurIndustrySectionImage1, AboutOurIndustrySectionImage2,
-        AboutOurIndustrySectionImage3, ManufacturingSectionImage, ProjectsBannerImage, ProjectData, AachiMasalaImage, 
-        PinnacleImage, ATSImage, TextroElectronicsImage, FASCOImage,
-        RegrowImage, AppliedControlImage, LPTImage, TrinityImage, megawinImage, galleryImage1, galleryImage2, galleryImage3, galleryImage4,
-         galleryImage5, galleryImage6, banner3, Atsbanner, galleryImage7, galleryImage8, galleryImage9, galleryImage10, galleryImage11, banner4, banner5, banner6,
-          banner7, galleryImage12, galleryImage13, galleryImage14, galleryImage15, galleryImage16, galleryImage17, galleryImage18, galleryImage19 , 
-           servicesBannerImage, servicesGrid1, servicesimg1, servicesimg2, servicesimg3, servicesimg4, serviceGrid2, servicesimg5, servicesimg6, 
-           servicesimg7, servicesimg8, servicesGrid3, servicesimg9, servicesimg10, servicesimg11, servicesimg12, servicesGrid4, servicesimg13, servicesimg14,
-            servicesimg15, servicesimg16, servicesGrid5, servicesimg17, servicesimg18, servicesimg19, servicesimg20,
-            servicesGrid6, servicesimg21, servicesimg22, servicesimg23, servicesimg24, serivicesGrid7, servicesimg25, servicesimg26, servicesimg27, 
-            servicesimg28, servicesGrid8, servicesimg29, servicesimg30, servicesimg31, servicesimg32, servicesimg33, contactBannerImage,
-            
-            blogThumb1, blogImg1, blogImg2,
-            blogThumb2, blog2Img1, blog2Img2,
-            blogThumb3, blog3Img1, blog3Img2,
-            blogThumb4, blog4Img1, blog4Img2
-        
-        }       
+
+
+
+export {
+    keyStoneLogo, homeHeroImage, DigitalSolutionsSectionImage,
+    DigitalSolutionsSectionImage2, SupportGridImage, OurExpertiseImage1,
+    OurExpertiseImage2, OurExpertiseImage3, OurExpertiseImage4, OurExpertiseImage5, BlogImage1,
+    BlogImage2, BlogImage3, AboutUsBannerImage, AboutUsSectionImage1,
+    AboutUsSectionImage2, AboutOurIndustrySectionImage1, AboutOurIndustrySectionImage2,
+    AboutOurIndustrySectionImage3, ManufacturingSectionImage, ProjectsBannerImage, ProjectData, AachiMasalaImage,
+    PinnacleImage, ATSImage, TextroElectronicsImage, FASCOImage,
+    RegrowImage, AppliedControlImage, LPTImage, TrinityImage, megawinImage, galleryImage1, galleryImage2, galleryImage3, galleryImage4,
+    galleryImage5, galleryImage6, banner3, Atsbanner, galleryImage7, galleryImage8, galleryImage9, galleryImage10, galleryImage11, banner4, banner5, banner6,
+    banner7, galleryImage12, galleryImage13, galleryImage14, galleryImage15, galleryImage16, galleryImage17, galleryImage18, galleryImage19,
+    servicesBannerImage, servicesGrid1, servicesimg1, servicesimg2, servicesimg3, servicesimg4, serviceGrid2, servicesimg5, servicesimg6,
+    servicesimg7, servicesimg8, servicesGrid3, servicesimg9, servicesimg10, servicesimg11, servicesimg12, servicesGrid4, servicesimg13, servicesimg14,
+    servicesimg15, servicesimg16, servicesGrid5, servicesimg17, servicesimg18, servicesimg19, servicesimg20,
+    servicesGrid6, servicesimg21, servicesimg22, servicesimg23, servicesimg24, serivicesGrid7, servicesimg25, servicesimg26, servicesimg27,
+    servicesimg28, servicesGrid8, servicesimg29, servicesimg30, servicesimg31, servicesimg32, servicesimg33, contactBannerImage,
+
+    blogThumb1, blogImg1, blogImg2,
+    blogThumb2, blog2Img1, blog2Img2,
+    blogThumb3, blog3Img1, blog3Img2,
+    blogThumb4, blog4Img1, blog4Img2,
+
+
+    heroImageKeyStone
+
+}       
