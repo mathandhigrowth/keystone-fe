@@ -31,7 +31,7 @@ export default function LatestBlog() {
                 {/* Header and Navigation */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-16">
                     <div className="text-center md:text-left mb-8 md:mb-0">
-                        <h2 className="heading-2 text-[var(--color-dark)] mb-4">Latest Blog</h2>
+                        <h2 className="heading-2 text-[var(--color-dark)] uppercase mb-4">Latest Blog</h2>
                         <p className="text-gray-600 max-w-xl">
                             Explore insights, innovations, and industry updates from Keystone. Stay informed about the trends shaping the future of infrastructure and industrial engineering.
                         </p>

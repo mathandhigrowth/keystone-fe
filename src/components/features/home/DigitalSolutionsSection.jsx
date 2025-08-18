@@ -16,7 +16,7 @@ export default function DigitalSolutionsSection() {
                         />
 
                         {/* Overlay Image - Bottom Right */}
-                        <div className="absolute -bottom-5 -right-5 w-[230px] h-[190px] bg-white p-3 rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                        <div className="absolute md:-bottom-0 -bottom-0 -right-0 md:-right-0 w-[230px] h-[190px] bg-white p-3 rounded-lg shadow-lg overflow-hidden border border-gray-200">
                             <div className="relative w-full h-full">
                                 {/* Actual Image */}
                                 <img
@@ -36,10 +36,10 @@ export default function DigitalSolutionsSection() {
                     {/* Right side - Content */}
                     <div className="space-y-6">
                         <div className="space-y-2">
-                            <p className="text-sm font-medium text-[var(--color-dark)] tracking-wide">
+                            <p className="text-sm  uppercase font-medium text-[var(--color-dark)] tracking-wide">
                                 Discover <span className="text-[var(--color-secondary)]">Keystone’s Edge</span>
                             </p>
-                            <h2 className="heading-2 leading-tight">
+                            <h2 className="heading-3 uppercase leading-tight">
                                 Keystone Is Premier Distributor Of Industrial Automation Products.
                             </h2>
                         </div>

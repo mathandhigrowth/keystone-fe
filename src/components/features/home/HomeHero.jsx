@@ -15,7 +15,7 @@ const HomeHero = () => {
 
                 {/* Blue Overlay Section */}
                 <div className="absolute inset-0 flex items-center justify-start">
-                    <div className="w-full max-w-4xl bg-[var(--color-primary)]/95 text-white py-12 rounded-r-2xl px-12 ml-0">
+                    <div className="w-full max-w-5xl bg-[var(--color-primary)]/95 text-white py-12 rounded-r-2xl px-12 ml-0">
                         <div className="space-y-6">
                             {/* Small heading */}
                             <p className="text-lg font-medium tracking-wide opacity-90">
@@ -23,7 +23,7 @@ const HomeHero = () => {
                             </p>
 
                             {/* Main heading */}
-                            <h1 className="text-5xl sm:text-5xl font-bold leading-tight max-w-4xl">
+                            <h1 className="heading-1 text-white! text-wrap sm:text-nowrap font-bold leading-tight w-full">
                                 Authorized Supplier of Industrial
                                 <br /> Automation Products
                             </h1>

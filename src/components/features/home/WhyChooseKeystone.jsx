@@ -16,7 +16,7 @@ export default function WhyChooseKeystone() {
             <div className="absolute bottom-1/3 left-10 text-secondary text-xl opacity-70 transform rotate-45">+</div>
 
             <div className="container text-center">
-                <h2 className="heading-2 text-[var(--color-white)] mb-4">Why Choose Keystone?</h2>
+                <h2 className="heading-2 text-[var(--color-white)] uppercase mb-4">Why Choose Keystone?</h2>
                 <p className="text-gray-300 max-w-4xl mx-auto mb-16">
                     Keystone stands as a trusted partner in industrial automation and control systems, delivering value through innovative technologies, top-tier global brands, and a customer-first approach. With a proven track record and deep domain expertise, we help businesses streamline operations and achieve sustainable growth.
                 </p>

@@ -32,6 +32,7 @@ const BlogDetailsBanner = ({ blog }) => {
                     </span>
                 </div>
             </div>
+            
         </div>
     )
 }

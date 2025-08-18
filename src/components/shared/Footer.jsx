@@ -40,9 +40,9 @@ export default function Footer() {
             <p className="text-gray-300 leading-relaxed mb-6">
               A KeyStone service company provides a range of professional services related to automation and technology.
             </p>
-            <div className="mb-6">
+            <div className="mb-6" id="address" name="address">
               <h4 className="text-lg font-semibold mb-2">Our Address</h4>
-              <p className="text-gray-300">
+              <p className="text-gray-300" >
                 Door 4 – 6, First Floor, Katoor Road, Papanickenpalayam,<br />
                 Coimbatore – 641037, Tamil Nadu, India
               </p>

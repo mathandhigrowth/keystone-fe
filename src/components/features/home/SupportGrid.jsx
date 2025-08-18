@@ -12,10 +12,10 @@ const SupportGrid = () => {
             <div className="container py-20 pt-44">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="text-sm font-medium text-white mb-4 tracking-wide">
+                    <p className="text-sm uppercase font-medium text-white mb-4 tracking-wide">
                         What do <span className="text-[var(--color-secondary)]">we provide?</span>
                     </p>
-                    <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
+                    <h2 className="heading-2 uppercase font-bold text-white leading-tight">
                         Industries We Serve & Our Core Solutions <br />
                         Powering Growth with Trusted Automation Systems
                     </h2>

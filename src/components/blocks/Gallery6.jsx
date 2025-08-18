@@ -71,7 +71,7 @@ const Gallery6 = ({
             <div className="container">
                 <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-12">
                     <div>
-                        <h2 className="mb-3 text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
+                        <h2 className="mb-3 text-3xl uppercase font-semibold md:mb-4 md:text-4xl lg:mb-6">
                             {heading}
                         </h2>
                         {/* <button className="px-6 flex-center gap-2 py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full  transition-colors duration-300 uppercase tracking-wide">

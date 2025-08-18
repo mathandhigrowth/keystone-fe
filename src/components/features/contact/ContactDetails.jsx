@@ -1,4 +1,4 @@
-import { EMAIL, EMAIL2 } from "@/config/config";
+import { EMAIL, EMAIL2, PHONE_NUMBER } from "@/config/config";
 import { Briefcase, Headphones, MapPin, Phone, UserRoundIcon } from "lucide-react";
 
 export default function ContactDetails() {
@@ -79,44 +79,15 @@ export default function ContactDetails() {
                                     Come see us at our HQ.
                                 </p>
                             </div>
-                            <a
-                                href="#"
-                                className="mt-4 inline-block text-base font-semibold text-pink-500"
-                            >
-                                Get directions
-                            </a>
+                            <span
+                                className="mt-4 inline-block text-base font-semibold text-primary"
+                            >Papanickenpalayam, Coimbatore – 641037               </span>
                         </div>
                     </div>
 
-
-
-                    {/* Visit Us */}
-                    <div className="flex flex-col gap-y-12 rounded-2xl bg-gray-50 p-6 shadow-sm">
-                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-pink-500">
-                            <MapPin className="h-6 w-6 text-white" />
-                        </div>
-                        <div className="flex flex-auto flex-col items-start">
-                            <div className="flex-auto">
-                                <h3 className="text-xl font-medium tracking-tight text-gray-900">
-                                    Visit us
-                                </h3>
-                                <p className="mt-2 text-base leading-7 text-gray-600">
-                                    Come see us at our HQ.
-                                </p>
-                            </div>
-                            <a
-                                href="#"
-                                className="mt-4 inline-block text-base font-semibold text-pink-500"
-                            >
-                                Get directions
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* Call Us */}
-                    <div className="flex flex-col gap-y-12 rounded-2xl bg-gray-50 p-6 shadow-sm">
-                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-pink-500 shadow-sm">
-                            <Phone className="h-6 w-6 text-white" />
+                    <div className="bg-[var(--color-surface)] p-8 rounded-lg shadow-2xl flex flex-col ring ring-primary items-start text-left">
+                        <div className="p-4 rounded-full bg-orange-100 mb-4">
+                            <Phone className="w-8 h-8 text-[var(--color-accent)]" />
                         </div>
                         <div className="flex flex-auto flex-col items-start">
                             <div className="flex-auto">
@@ -128,10 +99,10 @@ export default function ContactDetails() {
                                 </p>
                             </div>
                             <a
-                                href="tel:+15551234567"
-                                className="mt-4 inline-block text-base font-semibold text-pink-500"
+                                href={`tel:${PHONE_NUMBER}`}
+                                className="mt-4 inline-block text-base font-semibold text-primary"
                             >
-                                +1 (555) 123-4567
+                                {PHONE_NUMBER}
                             </a>
                         </div>
                     </div>

@@ -124,13 +124,15 @@ import heroImageKeyStone from "./heroImage-keystone.jpg"
 
 
 
+import productPcbTerminal from "./product-pcb-terminal-banner.jpg"
+import connectorsTerminal from "./connectors-banner.jpg"
 
+import productPcbTerminal2 from "./product-pcp-terminal.png"
 
-
-
-
-
-
+import DEGSONconnector from "./DEGSON-connector.jpg"
+import productBarrierTerminal from "./product-barrier-terminal.webp"
+import productPluggableConnector from "./pluggable-connector.webp"
+import productDinTerminal from "./din-terminal.jpg"
 
 
 
@@ -157,6 +159,19 @@ export {
     blogThumb4, blog4Img1, blog4Img2,
 
 
-    heroImageKeyStone
+    heroImageKeyStone,
+
+    productPcbTerminal, productPcbTerminal2,
+
+    DEGSONconnector,
+
+    productBarrierTerminal,
+
+    productPluggableConnector,
+
+    productDinTerminal,
+
+
+    connectorsTerminal
 
 }       

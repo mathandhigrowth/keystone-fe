@@ -1,0 +1,3127 @@
+import { BrandDEGSON, BrandSIEMENS } from "@/assets/brands";
+import { DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal } from "@/assets/images";
+
+const BrandsWithProductsData = [
+  {
+    id: 1,
+    brandName: "DEGSON",
+    brandImg: BrandDEGSON,
+    bannerImg: productPcbTerminal,
+    description: "DEGSON is a global manufacturer specializing in high-quality electronic components, including terminal blocks, connectors, and industrial wiring solutions. They provide customized solutions for industrial connectivity and new energy communication.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Terminal Blocks",
+        slug: "terminal-blocks",
+        bannerImg: productPcbTerminal,
+        description: "Components used for securing and insulating wires in electrical connections.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "PCB Terminal Blocks",
+            bannerImg: productPcbTerminal,
+            features: [
+              "Suitable for 0.08-35mm² conductor",
+              "Screw or spring connection technology",
+              "Wave soldering compatible",
+              "Reflow welding applicable",
+              "High reliability connections",
+              "Compact design"
+            ],
+            applications: [
+              "Device connection",
+              "Direct insertion",
+              "Internal connection of devices",
+              "External connection of devices",
+              "PCB mounting applications",
+              "Electronic equipment"
+            ]
+          },
+          {
+            id: 2,
+            name: "Barrier Terminal Blocks",
+            bannerImg: productBarrierTerminal,
+            features: [
+              "Wiring capacity up to 750 Kcmil",
+              "Rated current up to 500A (UL)",
+              "Various installation methods",
+              "Welding board compatible",
+              "Feed-through design",
+              "Din-rail mounting",
+              "Panel mounting",
+              "Single-layer support",
+              "Double-layer support",
+              "Pluggable connection methods",
+              "Touch protection"
+            ],
+            applications: [
+              "Securing wires in high-current applications",
+              "Insulating wires in high-current applications",
+              "Power distribution",
+              "Industrial control panels",
+              "Heavy-duty electrical connections",
+              "High-power equipment"
+            ]
+          },
+          {
+            id: 3,
+            name: "Pluggable Connectors",
+            bannerImg: productPluggableConnector,
+            features: [
+              "Suitable for 0.08-10mm² conductor",
+              "Current up to 76A",
+              "Pluggable structure",
+              "Flexible installation",
+              "Convenient maintenance",
+              "Quick disconnect capability",
+              "Reliable connections"
+            ],
+            applications: [
+              "Industrial automation",
+              "Mechanical manufacturing",
+              "Power and electrical systems",
+              "Rail transit",
+              "New energy applications",
+              "Control systems",
+              "Motor connections"
+            ]
+          },
+          {
+            id: 4,
+            name: "DIN-Rail Terminal Blocks",
+            bannerImg: productDinTerminal,
+            features: [
+              "Push-in connection",
+              "Pullback mechanism",
+              "Screw type products",
+              "Advanced technology for faster installation",
+              "High IP class protection",
+              "Shielded parts optional",
+              "Tool-free wiring",
+              "Space-saving design"
+            ],
+            applications: [
+              "Industrial automation",
+              "Mechanical manufacturing",
+              "Power and electrical systems",
+              "Rail transit",
+              "New energy applications",
+              "Control cabinets",
+              "Distribution panels"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Circular Connector",
+        slug: "circlular-connector",
+        brandImg: connectorsTerminal,
+        bannerImg: connectorsTerminal,
+        description: "Connectors with a circular mating face, often used in industrial applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "M5~M12 series",
+            bannerImg: DEGSONconnector,
+            features: [
+              "360° shielded design",
+              "High protection degree",
+              "Professional transmission",
+              "Reliable signal transmission",
+              "Data transmission capability",
+              "Power supply capability",
+              "Compact size",
+              "Robust construction"
+            ],
+            applications: [
+              "Most industrial fields",
+              "Sensor connections",
+              "Actuator connections",
+              "Field devices",
+              "Industrial networks",
+              "Automation systems"
+            ]
+          },
+          {
+            id: 2,
+            name: "M8/M12 series",
+            slug: "m8m12-series",
+            bannerImg: "/images/products/m8m12_series_banner.jpg",
+            features: [
+              "Suitable for many protocols",
+              "ProfiNet compatible",
+              "EtherNet compatible",
+              "CC-LINK compatible",
+              "360° full shield",
+              "IP67 high protection level",
+              "Support gigabit transmission",
+              "High-speed data transfer"
+            ],
+            applications: [
+              "Data transmission in industrial networks",
+              "Ethernet communications",
+              "Fieldbus systems",
+              "Industrial IoT",
+              "Factory automation",
+              "Process control"
+            ]
+          },
+          {
+            id: 3,
+            name: "M23 series",
+            slug: "m23-series",
+            bannerImg: "/images/products/m23_series_banner.jpg",
+            features: [
+              "Used for both signal and power supply",
+              "Three specifications (8, 12, 24 pin)",
+              "Customizable waterproof shell",
+              "High current capacity",
+              "Robust design",
+              "Multiple pin configurations"
+            ],
+            applications: [
+              "Motor connections",
+              "Encoder connections",
+              "Robot applications",
+              "Automation fields",
+              "Heavy-duty applications",
+              "Industrial machinery"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "HDC (Heavy Duty Connector)",
+        slug: "hdc-heavy-duty-connector",
+        description: "Connectors designed for harsh industrial environments, providing robust and reliable connections.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Heavy-duty connectors",
+            bannerImg: "/images/products/heavyduty_connectors_banner.jpg",
+            features: [
+              "Screw type connection",
+              "Crimp type connection",
+              "Spring type connection",
+              "Axial connection type",
+              "Meet electrical connection needs",
+              "Meet signal connection needs",
+              "Rich combination methods",
+              "Modular design",
+              "High durability"
+            ],
+            applications: [
+              "Electrical connection between different equipment",
+              "Signal connection between functional units",
+              "Industrial machinery",
+              "Heavy equipment",
+              "Harsh environments",
+              "Outdoor applications"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Electronic Products",
+        slug: "electronic-products",
+        description: "A range of electronic components and solutions for industrial control systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Industrial Ethernet communication solutions",
+            slug: "industrial-ethernet-communication-solutions",
+            bannerImg: "/images/products/industrial_ethernet_communication_solutions_banner.jpg",
+            features: [
+              "Complete information network communication",
+              "Data acquisition solutions",
+              "High-speed communication",
+              "Reliable data transfer",
+              "Network integration",
+              "Protocol support"
+            ],
+            applications: [
+              "Industrial automation control systems",
+              "Factory networks",
+              "Process control",
+              "Data monitoring",
+              "Remote control",
+              "System integration"
+            ]
+          },
+          {
+            id: 2,
+            name: "Fieldbus modules",
+            slug: "fieldbus-modules",
+            bannerImg: "/images/products/fieldbus_modules_banner.jpg",
+            features: [
+              "Supports PROFINET protocol",
+              "Supports PROFIBUS-DP protocol",
+              "Supports EtherCAT protocol",
+              "Supports Modbus/TCP protocol",
+              "Multi-protocol compatibility",
+              "Easy integration",
+              "Reliable communication"
+            ],
+            applications: [
+              "Fieldbus node needs",
+              "Industrial networks",
+              "Process automation",
+              "Factory automation",
+              "Distributed control systems",
+              "Remote I/O applications"
+            ]
+          },
+          {
+            id: 3,
+            name: "Signal processing, conversion and protection products",
+            slug: "signal-processing-conversion-and-protection-products",
+            bannerImg: "/images/products/signal_processing_conversion_and_protection_products_banner.jpg",
+            features: [
+              "Variety of interface products",
+              "Signal conditioning",
+              "Signal conversion",
+              "Signal protection",
+              "Isolation capabilities",
+              "High accuracy"
+            ],
+            applications: [
+              "Signal processing",
+              "Signal conversion",
+              "Signal protection",
+              "Industrial instrumentation",
+              "Process control",
+              "Data acquisition"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Electric Vehicle Charger",
+        slug: "electric-vehicle-charger",
+        description: "Charging solutions for electric vehicles.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "AC EV chargers",
+            slug: "ac-ev-chargers",
+            bannerImg: "/images/products/ac_ev_chargers_banner.jpg",
+            features: [
+              "Convenient charging",
+              "Safe home charging",
+              "User-friendly interface",
+              "Reliable operation",
+              "Energy efficient",
+              "Smart charging capabilities"
+            ],
+            applications: [
+              "Individual user home charging",
+              "Residential charging",
+              "Private parking",
+              "Home garages",
+              "Small commercial spaces",
+              "Workplace charging"
+            ]
+          },
+          {
+            id: 2,
+            name: "DC EV chargers",
+            slug: "dc-ev-chargers",
+            bannerImg: "/images/products/dc_ev_chargers_banner.jpg",
+            features: [
+              "Fast charging capability",
+              "Safe charging operation",
+              "High power output",
+              "Rapid charging technology",
+              "Advanced safety features",
+              "Efficient power conversion"
+            ],
+            applications: [
+              "Charging stations",
+              "Public charging infrastructure",
+              "Commercial charging",
+              "Highway charging stations",
+              "Fleet charging",
+              "Fast charging networks"
+            ]
+          },
+          {
+            id: 3,
+            name: "Charging Sockets",
+            slug: "charging-sockets",
+            bannerImg: "/images/products/charging_sockets_banner.jpg",
+            features: [
+              "Type2 standard support",
+              "Type1 standard support",
+              "GB/T standard support",
+              "Compatible with different car models",
+              "Safe electricity transmission",
+              "Efficient electricity transmission",
+              "Weather resistant",
+              "Durable construction"
+            ],
+            applications: [
+              "Charging electric vehicle batteries",
+              "Different countries and regions",
+              "Universal charging compatibility",
+              "International markets",
+              "Multi-standard support",
+              "Global EV infrastructure"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "EBIKE Connector",
+        slug: "ebike-connector",
+        description: "Connectors specifically designed for electric bicycles.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "EBIKE connector series",
+            slug: "ebike-connector-series",
+            bannerImg: "/images/products/ebike_connector_series_banner.jpg",
+            features: [
+              "Circular power connector",
+              "Rectangular power connector",
+              "Signal transmission connector",
+              "Motor connector",
+              "Charging port",
+              "High carrying current",
+              "High reliability",
+              "Long service life",
+              "High waterproof grade",
+              "Compact design"
+            ],
+            applications: [
+              "Power connecting among different equipment",
+              "Signal connecting among different equipment",
+              "Whole vehicle integration",
+              "E-bike systems",
+              "Electric scooters",
+              "Personal mobility devices"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Energy Storage Connector",
+        slug: "energy-storage-connector",
+        description: "Connectors for energy storage systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "5A~600A series of connectors",
+            slug: "5a600a-series-of-connectors",
+            bannerImg: "/images/products/5a600a_series_of_connectors_banner.jpg",
+            features: [
+              "UL standards compliance",
+              "TUV standards compliance",
+              "Safer connections",
+              "Faster connections",
+              "Low current capability",
+              "High voltage capability",
+              "Floating design",
+              "Modular combination",
+              "Integrated guiding structure",
+              "High current capacity"
+            ],
+            applications: [
+              "Optical storage systems",
+              "Mobile energy storage",
+              "Battery energy storage systems",
+              "Grid storage",
+              "Renewable energy storage",
+              "Backup power systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "PV Connector (Photovoltaic Connector)",
+        slug: "pv-connector-photovoltaic-connector",
+        description: "Connectors used in photovoltaic systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Photovoltaic connectors",
+            slug: "photovoltaic-connectors",
+            bannerImg: "/images/products/photovoltaic_connectors_banner.jpg",
+            features: [
+              "Connect components of inverters",
+              "Connect other components",
+              "Weather resistant",
+              "UV resistant",
+              "High voltage capability",
+              "Low contact resistance",
+              "Long service life"
+            ],
+            applications: [
+              "Photovoltaic panels",
+              "DC wiring system",
+              "Inverter connections",
+              "AC grid-connected system",
+              "Solar installations",
+              "Renewable energy systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        name: "Unmanaged Switch",
+        slug: "unmanaged-switch",
+        description: "Network switches for simple configuration.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Unmanaged switch",
+            slug: "unmanaged-switch",
+            bannerImg: "/images/products/unmanaged_switch_banner.jpg",
+            features: [
+              "Supports 3/5/8-channel ports",
+              "100/1000Mbs capability",
+              "Simple configuration",
+              "Dial switch for QoS transmission priority",
+              "BSP functions",
+              "Aluminum shell",
+              "IP30 protection grade",
+              "Supports BaseX SFP ports",
+              "Wide power input",
+              "Rail installation"
+            ],
+            applications: [
+              "Simple networking",
+              "Industrial networks",
+              "Small office networks",
+              "Basic connectivity",
+              "Plug-and-play applications",
+              "Cost-effective networking"
+            ]
+          }
+        ]
+      },
+      {
+        id: 10,
+        name: "Relay Series",
+        slug: "relay-series",
+        description: "Electronic components used in automation and control systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Relay & relay module",
+            slug: "relay-relay-module",
+            bannerImg: "/images/products/relay_relay_module_banner.jpg",
+            features: [
+              "Small size",
+              "Neat wiring",
+              "Power relay capability",
+              "Subminiature relay",
+              "Solid-state relay module",
+              "High switching capacity",
+              "Long electrical life",
+              "Low power consumption"
+            ],
+            applications: [
+              "Automation systems",
+              "Elevator control",
+              "PLC control box",
+              "Different PLC systems",
+              "Control systems",
+              "Industrial machinery",
+              "Process control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 11,
+        name: "High Voltage Connector",
+        slug: "high-voltage-connector",
+        description: "Connectors designed for high voltage applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "High voltage connector products",
+            slug: "high-voltage-connector-products",
+            bannerImg: "/images/products/high_voltage_connector_products_banner.jpg",
+            features: [
+              "280 series",
+              "630 series",
+              "1800 series",
+              "Hole series",
+              "Single core wall terminal",
+              "High voltage rating",
+              "Safety features",
+              "Reliable insulation"
+            ],
+            applications: [
+              "High voltage connections",
+              "Power transmission",
+              "High voltage equipment",
+              "Electrical substations",
+              "Power generation",
+              "Industrial high voltage systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 12,
+        name: "High-Voltage Wiring",
+        slug: "highvoltage-wiring",
+        description: "Wiring harness solutions for new energy vehicles.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "High-voltage wiring harness solutions",
+            slug: "highvoltage-wiring-harness-solutions",
+            bannerImg: "/images/products/highvoltage_wiring_harness_solutions_banner.jpg",
+            features: [
+              "For power battery system",
+              "For electric drive system",
+              "For charging system",
+              "For thermal system",
+              "High voltage capability",
+              "Safety compliance",
+              "Automotive grade"
+            ],
+            applications: [
+              "Plug-in hybrids",
+              "Pure electric vehicles",
+              "Superchargers",
+              "Light hybrids",
+              "Hydrogen-fueled electric vehicles",
+              "Electric vehicle infrastructure"
+            ]
+          }
+        ]
+      },
+      {
+        id: 13,
+        name: "Industrial Power",
+        slug: "industrial-power",
+        description: "Green power supply solutions.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Green power supply",
+            slug: "green-power-supply",
+            bannerImg: "/images/products/green_power_supply_banner.jpg",
+            features: [
+              "Strong anti-interference ability",
+              "Energy saving",
+              "Compact structure",
+              "Standard guide rail installation",
+              "High efficiency",
+              "Reliable operation",
+              "Environmental friendly"
+            ],
+            applications: [
+              "Industrial power supply",
+              "Factory automation",
+              "Process control",
+              "Industrial equipment",
+              "Control systems",
+              "Manufacturing facilities"
+            ]
+          }
+        ]
+      },
+      {
+        id: 14,
+        name: "Push Button",
+        slug: "push-button",
+        description: "Industrial push buttons.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "DT series push button",
+            slug: "dt-series-push-button",
+            bannerImg: "/images/products/dt_series_push_button_banner.jpg",
+            features: [
+              "Advanced fastener-free self-locking connection",
+              "Reliable contact",
+              "Efficient and fast disassembly",
+              "Strong anti-vibration performance",
+              "Strong shock performance",
+              "Meets IEC60947-5-1 standards",
+              "Meets GB/T14048.5 standards",
+              "Durable construction"
+            ],
+            applications: [
+              "Machinery manufacturing",
+              "Railway systems",
+              "Elevator control",
+              "Electric power",
+              "Wind power",
+              "Industrial control panels",
+              "Emergency stops"
+            ]
+          }
+        ]
+      },
+      {
+        id: 15,
+        name: "Marking System",
+        slug: "marking-system",
+        description: "Solutions for industrial site identification.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Degson marking system",
+            slug: "degson-marking-system",
+            bannerImg: "/images/products/degson_marking_system_banner.jpg",
+            features: [
+              "Complete solution",
+              "Thermal transfer printers",
+              "Laser printers",
+              "High quality printing",
+              "Durable markings",
+              "Easy to use",
+              "Professional results"
+            ],
+            applications: [
+              "Terminal blocks marker",
+              "Cable marker",
+              "Device marker",
+              "Printing Service",
+              "Industrial identification",
+              "Component labeling"
+            ]
+          }
+        ]
+      },
+      {
+        id: 16,
+        name: "SPD (Surge Protection Devices)",
+        slug: "spd-surge-protection-devices",
+        description: "Devices to protect systems from transient overvoltage.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "DSPT Series SPD",
+            slug: "dspt-series-spd",
+            bannerImg: "/images/products/dspt_series_spd_banner.jpg",
+            features: [
+              "Effectively protects system from transient overvoltage",
+              "Combines internal and external lightning protection",
+              "Complete range",
+              "Reliable protection",
+              "Fast response time",
+              "High energy absorption",
+              "Long service life"
+            ],
+            applications: [
+              "Protecting power supply",
+              "Protecting data signals",
+              "Building internal lightning protection scheme",
+              "Industrial equipment protection",
+              "Telecommunication systems",
+              "Control systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 17,
+        name: "DFUL Series Filter",
+        slug: "dful-series-filter",
+        description: "Electromagnetic compatibility filters.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "DFUL Series Filter",
+            slug: "dful-series-filter",
+            bannerImg: "/images/products/dful_series_filter_banner.jpg",
+            features: [
+              "Limits high-frequency interference voltage",
+              "Limits high-frequency interference current",
+              "Ensures smooth operation in disturbed environments",
+              "EMC compliance",
+              "High attenuation",
+              "Compact design",
+              "Easy installation"
+            ],
+            applications: [
+              "Reducing electromagnetic interference",
+              "EMC compliance",
+              "Industrial equipment",
+              "Electronic systems",
+              "Power supplies",
+              "Motor drives"
+            ]
+          }
+        ]
+      },
+      {
+        id: 18,
+        name: "IP20 I/O System",
+        slug: "ip20-io-system",
+        description: "Input/Output systems for industrial automation.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "IP20 I/O system",
+            slug: "ip20-io-system",
+            bannerImg: "/images/products/ip20_io_system_banner.jpg",
+            features: [
+              "Combines digital input/output module",
+              "Combines analog input/output module",
+              "Power supply module",
+              "Special function module",
+              "Supports PROFINET protocol",
+              "Supports PROFIBUS-DP protocol",
+              "Supports EtherCAT protocol",
+              "Supports Modbus/TCP protocol",
+              "Small size",
+              "Compact structure",
+              "Convenient assembly"
+            ],
+            applications: [
+              "Industrial automation",
+              "Fieldbus node needs",
+              "Distributed I/O",
+              "Process control",
+              "Factory automation",
+              "Remote monitoring"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    brandName: "SIEMENS",
+    brandImg: BrandSIEMENS,
+    description: "SIEMENS is a worldwide technology leader recognized for its expertise in digital industries, intelligent infrastructure, mobility, and healthcare. Emphasizing innovation and sustainability, Siemens creates advanced solutions that enhance efficiency and advancement across multiple sectors.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Drive Technology",
+        description: "Solutions for controlling motion and speed in industrial applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Drive Technology products",
+            slug: "drive-technology-products",
+            bannerImg: "/images/products/drive_technology_products_banner.jpg",
+            features: [
+              "Enhance efficiency across multiple sectors",
+              "Advanced motion control",
+              "High precision",
+              "Energy efficient",
+              "Reliable operation",
+              "Scalable solutions",
+              "Digital integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing operations",
+              "Process industries",
+              "Material handling",
+              "Machine tools",
+              "Robotics"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Industrial Automation",
+        description: "Products and systems for automating industrial processes.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "PLCs (Programmable Logic Controllers)",
+            slug: "plcs-programmable-logic-controllers",
+            bannerImg: "/images/products/plcs_programmable_logic_controllers_banner.jpg",
+            features: [
+              "Improve manufacturing operations",
+              "High performance processing",
+              "Flexible programming",
+              "Robust design",
+              "Extensive I/O capabilities",
+              "Communication interfaces",
+              "Diagnostic functions"
+            ],
+            applications: [
+              "Industrial control and automation",
+              "Process control",
+              "Manufacturing systems",
+              "Building automation",
+              "Infrastructure control",
+              "Safety systems"
+            ]
+          },
+          {
+            id: 2,
+            name: "Control Systems",
+            slug: "control-systems",
+            bannerImg: "/images/products/control_systems_banner.jpg",
+            features: [
+              "Enhance efficiency across multiple sectors",
+              "Advanced control algorithms",
+              "Real-time processing",
+              "Integrated safety",
+              "Scalable architecture",
+              "User-friendly interfaces",
+              "Remote monitoring"
+            ],
+            applications: [
+              "Industrial control and automation",
+              "Process optimization",
+              "Energy management",
+              "Quality control",
+              "Production monitoring",
+              "System integration"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    brandName: "LAPP KABEL",
+    description: "LAPP KABEL is a leading global manufacturer of high-quality cables, connectors, and cable accessories. The company is known for its expertise in providing innovative solutions for industrial automation, energy, and telecommunications sectors.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Cables",
+        description: "A wide range of power, data, and control cables.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Power Cables",
+            slug: "power-cables",
+            bannerImg: "/images/products/power_cables_banner.jpg",
+            features: [
+              "Designed to meet demanding operational conditions",
+              "Designed to meet demanding environmental conditions",
+              "High durability",
+              "High reliability",
+              "Safety compliance",
+              "Flexible construction",
+              "Temperature resistant"
+            ],
+            applications: [
+              "Manufacturing",
+              "Automotive industry",
+              "Energy sector",
+              "Renewable energy",
+              "Industrial plants",
+              "Power distribution"
+            ]
+          },
+          {
+            id: 2,
+            name: "Data Cables",
+            slug: "data-cables",
+            bannerImg: "/images/products/data_cables_banner.jpg",
+            features: [
+              "Designed to meet demanding operational conditions",
+              "Designed to meet demanding environmental conditions",
+              "High durability",
+              "High reliability",
+              "Safety compliance",
+              "High-speed data transmission",
+              "EMC protection"
+            ],
+            applications: [
+              "Manufacturing",
+              "Automotive industry",
+              "Energy sector",
+              "Renewable energy",
+              "Telecommunications",
+              "Industrial networks"
+            ]
+          },
+          {
+            id: 3,
+            name: "Control Cables",
+            slug: "control-cables",
+            bannerImg: "/images/products/control_cables_banner.jpg",
+            features: [
+              "Designed to meet demanding operational conditions",
+              "Designed to meet demanding environmental conditions",
+              "High durability",
+              "High reliability",
+              "Safety compliance",
+              "Flexible design",
+              "Multi-core construction"
+            ],
+            applications: [
+              "Manufacturing",
+              "Automotive industry",
+              "Energy sector",
+              "Renewable energy",
+              "Control systems",
+              "Automation equipment"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Cable Assemblies",
+        description: "Pre-assembled cables with connectors.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Cable Assemblies",
+            slug: "cable-assemblies",
+            bannerImg: "/images/products/cable_assemblies_banner.jpg",
+            features: [
+              "Enhance efficiency",
+              "Ensure long-lasting performance",
+              "Pre-tested quality",
+              "Custom configurations",
+              "Reliable connections",
+              "Time-saving installation",
+              "Professional assembly"
+            ],
+            applications: [
+              "Various industries requiring reliable connections",
+              "Industrial automation",
+              "Machine building",
+              "Process control",
+              "Data transmission",
+              "Power distribution"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Network and Distribution Components",
+        description: "Components for network infrastructure and power distribution.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Network and Distribution Components",
+            slug: "network-and-distribution-components",
+            bannerImg: "/images/products/network_and_distribution_components_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Reliable performance",
+              "Easy installation",
+              "Scalable systems",
+              "Future-proof design",
+              "Standards compliance"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Network infrastructure",
+              "Data centers",
+              "Communication systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Sensors",
+        description: "Devices that detect and respond to physical input from the environment.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Sensors",
+            slug: "sensors",
+            bannerImg: "/images/products/sensors_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Accurate detection",
+              "Reliable operation",
+              "Long service life",
+              "Various sensing technologies",
+              "Industrial grade"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Process monitoring",
+              "Quality control",
+              "Safety systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Connectors",
+        description: "Devices for joining electrical conductors.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Connectors",
+            slug: "connectors",
+            bannerImg: "/images/products/connectors_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Reliable connections",
+              "Easy installation",
+              "Durable construction",
+              "Various configurations",
+              "Environmental protection"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Equipment connections",
+              "System integration",
+              "Field installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Cable Glands",
+        description: "Devices used to attach and secure the end of a cable to equipment.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Cable Glands",
+            slug: "cable-glands",
+            bannerImg: "/images/products/cable_glands_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Secure cable attachment",
+              "Environmental sealing",
+              "Strain relief",
+              "Various materials",
+              "Easy installation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Equipment enclosures",
+              "Hazardous areas",
+              "Outdoor installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Cable Protection and Guiding System",
+        description: "Systems for protecting and organizing cables.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Cable Protection and Guiding System",
+            slug: "cable-protection-and-guiding-system",
+            bannerImg: "/images/products/cable_protection_and_guiding_system_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Cable protection",
+              "Organized routing",
+              "Flexible movement",
+              "Durable materials",
+              "Modular design"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Moving machinery",
+              "Robotic systems",
+              "Material handling"
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "Marking Systems",
+        description: "Systems for labeling and identifying cables and components.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Marking Systems",
+            slug: "marking-systems",
+            bannerImg: "/images/products/marking_systems_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Clear identification",
+              "Durable markings",
+              "Easy application",
+              "Various marking methods",
+              "Professional appearance"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Cable identification",
+              "Component labeling",
+              "System documentation"
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        name: "Tools and Accessories",
+        description: "Tools and accessories for cable installation and maintenance.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Tools and Accessories",
+            slug: "tools-and-accessories",
+            bannerImg: "/images/products/tools_and_accessories_banner.jpg",
+            features: [
+              "High quality",
+              "Innovative solutions",
+              "Professional tools",
+              "Easy to use",
+              "Durable construction",
+              "Specialized functions",
+              "Time-saving design"
+            ],
+            applications: [
+              "Industrial automation",
+              "Energy sector",
+              "Telecommunications",
+              "Cable installation",
+              "Maintenance work",
+              "Field service"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    brandName: "PHOENIX CONTACT",
+    description: "PHOENIX CONTACT stands out as a premier global supplier of solutions in industrial automation, connectivity, and electronic interfaces. The organization focuses on creating cutting-edge products and technologies that improve automation systems, electrical connections, and communication networks.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "E-Mobility",
+        description: "Solutions for electric vehicle infrastructure.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "E-Mobility products",
+            slug: "emobility-products",
+            bannerImg: "/images/products/emobility_products_banner.jpg",
+            features: [
+              "Cutting-edge products and technologies",
+              "High power handling",
+              "Safety compliance",
+              "Reliable operation",
+              "Future-ready solutions",
+              "Scalable systems",
+              "Smart connectivity"
+            ],
+            applications: [
+              "Enhancing efficiency across multiple sectors",
+              "Electric vehicle charging",
+              "Battery management",
+              "Power distribution",
+              "Grid integration",
+              "Smart charging infrastructure"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Infrastructure",
+        description: "Solutions for various infrastructure needs.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Infrastructure products",
+            slug: "infrastructure-products",
+            bannerImg: "/images/products/infrastructure_products_banner.jpg",
+            features: [
+              "Cutting-edge products and technologies",
+              "Robust design",
+              "Long service life",
+              "Reliable performance",
+              "Scalable solutions",
+              "Easy maintenance",
+              "Standards compliance"
+            ],
+            applications: [
+              "Enhancing efficiency across multiple sectors",
+              "Power distribution",
+              "Transportation systems",
+              "Building automation",
+              "Smart cities",
+              "Industrial infrastructure"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Power",
+        description: "Products for power generation and distribution.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Power products",
+            slug: "power-products",
+            bannerImg: "/images/products/power_products_banner.jpg",
+            features: [
+              "Cutting-edge products and technologies",
+              "High efficiency",
+              "Reliable power supply",
+              "Advanced protection",
+              "Monitoring capabilities",
+              "Flexible configuration",
+              "Energy management"
+            ],
+            applications: [
+              "Enhancing efficiency across multiple sectors",
+              "Power generation",
+              "Power distribution",
+              "Renewable energy",
+              "Industrial power systems",
+              "Grid infrastructure"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Process Industry",
+        description: "Solutions for process control in various industries.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Process Industry products",
+            slug: "process-industry-products",
+            bannerImg: "/images/products/process_industry_products_banner.jpg",
+            features: [
+              "Cutting-edge products and technologies",
+              "Process optimization",
+              "Real-time monitoring",
+              "Advanced control",
+              "Safety integration",
+              "Reliable operation",
+              "Scalable systems"
+            ],
+            applications: [
+              "Enhancing efficiency across multiple sectors",
+              "Chemical processing",
+              "Oil and gas",
+              "Water treatment",
+              "Food and beverage",
+              "Pharmaceutical",
+              "Mining"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Production, Device and Systems Manufacturing",
+        description: "Products for manufacturing processes and systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Production, Device and Systems Manufacturing products",
+            slug: "production-device-and-systems-manufacturing-products",
+            bannerImg: "/images/products/production_device_and_systems_manufacturing_products_banner.jpg",
+            features: [
+              "Cutting-edge products and technologies",
+              "Manufacturing optimization",
+              "Quality control",
+              "Flexible production",
+              "Automated systems",
+              "Data integration",
+              "Predictive maintenance"
+            ],
+            applications: [
+              "Enhancing efficiency across multiple sectors",
+              "Manufacturing systems",
+              "Assembly lines",
+              "Quality assurance",
+              "Production monitoring",
+              "Factory automation",
+              "Industry 4.0"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Industrial Connectors",
+        description: "Connectors for industrial applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Industrial Connectors",
+            slug: "industrial-connectors",
+            bannerImg: "/images/products/industrial_connectors_banner.jpg",
+            features: [
+              "Extensive product range",
+              "High reliability",
+              "Robust construction",
+              "Easy installation",
+              "Various configurations",
+              "Environmental protection",
+              "Long service life"
+            ],
+            applications: [
+              "Industrial automation",
+              "Connectivity solutions",
+              "Electronic interfaces",
+              "Equipment connections",
+              "System integration",
+              "Field installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Control Systems",
+        description: "Systems for controlling industrial processes.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Control Systems",
+            slug: "control-systems",
+            bannerImg: "/images/products/control_systems_banner.jpg",
+            features: [
+              "Extensive product range",
+              "Advanced control algorithms",
+              "Real-time processing",
+              "User-friendly interfaces",
+              "Scalable architecture",
+              "Remote monitoring",
+              "Safety integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Connectivity solutions",
+              "Electronic interfaces",
+              "Process control",
+              "System monitoring",
+              "Production optimization"
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "Remote I/O Modules",
+        description: "Modules for remote input/output operations.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Remote I/O Modules",
+            slug: "remote-io-modules",
+            bannerImg: "/images/products/remote_io_modules_banner.jpg",
+            features: [
+              "Extensive product range",
+              "Distributed I/O",
+              "Flexible configuration",
+              "Easy installation",
+              "Diagnostic capabilities",
+              "Communication interfaces",
+              "Modular design"
+            ],
+            applications: [
+              "Industrial automation",
+              "Connectivity solutions",
+              "Electronic interfaces",
+              "Remote monitoring",
+              "Distributed control",
+              "Field devices"
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        name: "Surge Protection Devices",
+        description: "Devices to protect against power surges.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Surge Protection Devices",
+            slug: "surge-protection-devices",
+            bannerImg: "/images/products/surge_protection_devices_banner.jpg",
+            features: [
+              "Extensive product range",
+              "Overvoltage protection",
+              "Fast response time",
+              "High energy absorption",
+              "Reliable protection",
+              "Easy installation",
+              "Status indication"
+            ],
+            applications: [
+              "Industrial automation",
+              "Connectivity solutions",
+              "Electronic interfaces",
+              "Equipment protection",
+              "System reliability",
+              "Lightning protection"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 5,
+    brandName: "OMRON AUTOMATION",
+    description: "OMRON CORPORATION is a global leader in automation and electronics, headquartered in Kyoto, Japan. The company's core philosophy—'Sensing & Control + Think'—drives its mission to create solutions that address real-world challenges in manufacturing, healthcare, energy, and social infrastructure.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Sensors",
+        description: "Devices that detect and respond to physical input from the environment.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Sensors",
+            slug: "sensors",
+            bannerImg: "/images/products/sensors_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Advanced sensing technology",
+              "High accuracy",
+              "Reliable detection",
+              "Various sensing methods",
+              "Industrial grade",
+              "Long service life"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Quality control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Switches",
+        description: "Electrical components used to make or break an electrical circuit.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Switches",
+            slug: "switches",
+            bannerImg: "/images/products/switches_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Reliable switching",
+              "Long electrical life",
+              "Various actuator types",
+              "Compact design",
+              "High precision",
+              "Durable construction"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Control systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Safety Components",
+        description: "Components designed to ensure safety in industrial environments.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Safety Components",
+            slug: "safety-components",
+            bannerImg: "/images/products/safety_components_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Safety compliance",
+              "Fail-safe operation",
+              "Reliable protection",
+              "Easy integration",
+              "Diagnostic functions",
+              "Standards compliance"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Machine safety"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Relays",
+        description: "Electrically operated switches.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Relays",
+            slug: "relays",
+            bannerImg: "/images/products/relays_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "High switching capacity",
+              "Long electrical life",
+              "Compact design",
+              "Various coil voltages",
+              "Reliable operation",
+              "Low power consumption"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Control circuits"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Control Components",
+        description: "Components for controlling various aspects of industrial processes.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Control Components",
+            slug: "control-components",
+            bannerImg: "/images/products/control_components_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Advanced control functions",
+              "User-friendly interfaces",
+              "Flexible configuration",
+              "High performance",
+              "Reliable operation",
+              "Easy programming"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Process control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Automation Systems",
+        description: "Integrated systems for automating industrial processes.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Automation Systems",
+            slug: "automation-systems",
+            bannerImg: "/images/products/automation_systems_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Integrated solutions",
+              "Scalable architecture",
+              "Advanced algorithms",
+              "Real-time processing",
+              "Communication interfaces",
+              "Easy integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Factory automation"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Motion & Drives",
+        description: "Solutions for controlling motion and speed in industrial applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Motion & Drives",
+            slug: "motion-drives",
+            bannerImg: "/images/products/motion_drives_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Precise motion control",
+              "High performance drives",
+              "Energy efficient",
+              "Advanced algorithms",
+              "Easy programming",
+              "Reliable operation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Motion control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "Robotics",
+        description: "Robotic solutions for various industrial applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Robotics",
+            slug: "robotics",
+            bannerImg: "/images/products/robotics_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Advanced robotics technology",
+              "Flexible automation",
+              "Easy programming",
+              "Safety integration",
+              "High precision",
+              "Collaborative operation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Assembly automation"
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        name: "Energy Conservation",
+        description: "Solutions for optimizing energy consumption.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Energy Conservation",
+            slug: "energy-conservation",
+            bannerImg: "/images/products/energy_conservation_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Energy monitoring",
+              "Optimization algorithms",
+              "Real-time analysis",
+              "Cost reduction",
+              "Environmental benefits",
+              "Easy implementation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Energy management"
+            ]
+          }
+        ]
+      },
+      {
+        id: 10,
+        name: "Power Supplies",
+        description: "Devices that supply electric power to an electrical load.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Power Supplies",
+            slug: "power-supplies",
+            bannerImg: "/images/products/power_supplies_banner.jpg",
+            features: [
+              "Part of Omron's diverse product portfolio",
+              "Reliable power delivery",
+              "High efficiency",
+              "Compact design",
+              "Various output voltages",
+              "Protection features",
+              "Long service life"
+            ],
+            applications: [
+              "Industrial automation",
+              "Manufacturing",
+              "Healthcare",
+              "Energy systems",
+              "Social infrastructure",
+              "Control systems"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 6,
+    brandName: "RITTAL - THE SYSTEM",
+    description: "RITTAL is a leading global provider of solutions for industrial enclosures, power distribution, climate control, and IT infrastructure. They offer a comprehensive range of products and systems for various industries.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Enclosures",
+        description: "Industrial enclosures for protecting electrical and electronic components.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Enclosures",
+            slug: "enclosures",
+            bannerImg: "/images/products/enclosures_banner.jpg",
+            features: [
+              "Part of Rittal's comprehensive product portfolio",
+              "Robust construction",
+              "Various sizes and configurations",
+              "Environmental protection",
+              "Easy installation",
+              "Modular design",
+              "Standards compliance"
+            ],
+            applications: [
+              "Industrial enclosures",
+              "Power distribution",
+              "Climate control",
+              "IT infrastructure",
+              "Equipment protection",
+              "Control systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Power distribution",
+        description: "Solutions for efficient power distribution within industrial environments.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Power distribution",
+            slug: "power-distribution",
+            bannerImg: "/images/products/power_distribution_banner.jpg",
+            features: [
+              "Part of Rittal's comprehensive product portfolio",
+              "Efficient power distribution",
+              "Modular systems",
+              "Safety features",
+              "Easy installation",
+              "Monitoring capabilities",
+              "Scalable solutions"
+            ],
+            applications: [
+              "Industrial enclosures",
+              "Power distribution",
+              "Climate control",
+              "IT infrastructure",
+              "Electrical systems",
+              "Data centers"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Climate control",
+        description: "Solutions for maintaining optimal temperature and humidity within enclosures.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Climate control",
+            slug: "climate-control",
+            bannerImg: "/images/products/climate_control_banner.jpg",
+            features: [
+              "Part of Rittal's comprehensive product portfolio",
+              "Temperature control",
+              "Humidity control",
+              "Energy efficient",
+              "Reliable operation",
+              "Various cooling methods",
+              "Smart control systems"
+            ],
+            applications: [
+              "Industrial enclosures",
+              "Power distribution",
+              "Climate control",
+              "IT infrastructure",
+              "Equipment cooling",
+              "Environmental control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Rittal Automation Systems",
+        description: "Automated solutions for efficient manufacturing and assembly.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Rittal Automation Systems",
+            slug: "rittal-automation-systems",
+            bannerImg: "/images/products/rittal_automation_systems_banner.jpg",
+            features: [
+              "Part of Rittal's comprehensive product portfolio",
+              "Automated manufacturing",
+              "Efficient assembly",
+              "Quality control",
+              "Flexible systems",
+              "Advanced technology",
+              "Productivity enhancement"
+            ],
+            applications: [
+              "Industrial enclosures",
+              "Power distribution",
+              "Climate control",
+              "IT infrastructure",
+              "Manufacturing automation",
+              "Assembly systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "IT infrastructure",
+        description: "Solutions for building and managing IT infrastructure.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "IT infrastructure",
+            slug: "it-infrastructure",
+            bannerImg: "/images/products/it_infrastructure_banner.jpg",
+            features: [
+              "Part of Rittal's comprehensive product portfolio",
+              "IT equipment housing",
+              "Cable management",
+              "Power distribution",
+              "Cooling solutions",
+              "Security features",
+              "Scalable systems"
+            ],
+            applications: [
+              "Industrial enclosures",
+              "Power distribution",
+              "Climate control",
+              "IT infrastructure",
+              "Data centers",
+              "Server rooms"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Accessories",
+        description: "Various accessories for Rittal products.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Accessories",
+            slug: "accessories",
+            bannerImg: "/images/products/accessories_banner.jpg",
+            features: [
+              "Part of Rittal's comprehensive product portfolio",
+              "Complementary products",
+              "Easy installation",
+              "Various functions",
+              "Quality construction",
+              "System integration",
+              "Enhanced functionality"
+            ],
+            applications: [
+              "Industrial enclosures",
+              "Power distribution",
+              "Climate control",
+              "IT infrastructure",
+              "System enhancement",
+              "Installation support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 7,
+    brandName: "SMC",
+    description: "SMC Corporation is a world leader in pneumatic technology, providing a wide range of products for industrial automation. They are known for their high-quality, innovative, and energy-efficient solutions.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Air Management System",
+        description: "Systems for managing compressed air in industrial applications.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Air Management System",
+            slug: "air-management-system",
+            bannerImg: "/images/products/air_management_system_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Compressed air management",
+              "Energy efficient",
+              "System optimization",
+              "Monitoring capabilities",
+              "Leak detection",
+              "Cost reduction"
+            ],
+            applications: [
+              "Industrial automation",
+              "Pneumatic systems",
+              "Energy management",
+              "Cost optimization",
+              "System monitoring",
+              "Maintenance planning"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Directional Control Valves",
+        description: "Valves that control the direction of air flow in pneumatic systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Directional Control Valves",
+            slug: "directional-control-valves",
+            bannerImg: "/images/products/directional_control_valves_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Precise flow control",
+              "Various port configurations",
+              "High switching speed",
+              "Reliable operation",
+              "Long service life",
+              "Easy installation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Pneumatic control",
+              "Actuator control",
+              "Process automation",
+              "Machine control",
+              "System integration"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Air Cylinder",
+        description: "Pneumatic cylinders for linear motion.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Air Cylinder",
+            slug: "air-cylinder",
+            bannerImg: "/images/products/air_cylinder_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Linear motion",
+              "Various bore sizes",
+              "Different stroke lengths",
+              "High force output",
+              "Smooth operation",
+              "Durable construction"
+            ],
+            applications: [
+              "Industrial automation",
+              "Linear actuation",
+              "Material handling",
+              "Assembly operations",
+              "Clamping applications",
+              "Positioning systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Rotary Actuators and Grippers",
+        description: "Devices for rotary motion and gripping in automation.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Rotary Actuators and Grippers",
+            slug: "rotary-actuators-and-grippers",
+            bannerImg: "/images/products/rotary_actuators_and_grippers_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Rotary motion",
+              "Gripping functionality",
+              "Precise positioning",
+              "High torque output",
+              "Compact design",
+              "Reliable operation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Rotary positioning",
+              "Material handling",
+              "Assembly operations",
+              "Pick and place",
+              "Robotic systems"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Electric Actuators",
+        description: "Electric devices for linear and rotary motion.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Electric Actuators",
+            slug: "electric-actuators",
+            bannerImg: "/images/products/electric_actuators_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Electric operation",
+              "Precise positioning",
+              "High repeatability",
+              "Energy efficient",
+              "Quiet operation",
+              "Easy programming"
+            ],
+            applications: [
+              "Industrial automation",
+              "Precision positioning",
+              "Clean environments",
+              "Energy-conscious applications",
+              "Quiet operation requirements",
+              "High precision tasks"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Vacuum Equipment",
+        description: "Equipment for creating and utilizing vacuum in industrial processes.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Vacuum Equipment",
+            slug: "vacuum-equipment",
+            bannerImg: "/images/products/vacuum_equipment_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Vacuum generation",
+              "Various vacuum levels",
+              "Energy efficient",
+              "Compact design",
+              "Reliable operation",
+              "Easy maintenance"
+            ],
+            applications: [
+              "Industrial automation",
+              "Material handling",
+              "Pick and place operations",
+              "Packaging applications",
+              "Assembly processes",
+              "Vacuum forming"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Air Preparation Equipment",
+        description: "Equipment for filtering, regulating, and lubricating compressed air.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Air Preparation Equipment",
+            slug: "air-preparation-equipment",
+            bannerImg: "/images/products/air_preparation_equipment_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Air filtration",
+              "Pressure regulation",
+              "Air lubrication",
+              "Moisture removal",
+              "System protection",
+              "Improved performance"
+            ],
+            applications: [
+              "Industrial automation",
+              "Pneumatic system preparation",
+              "Air quality improvement",
+              "Equipment protection",
+              "System reliability",
+              "Maintenance reduction"
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "Modular F.R.L / Pressure Control Equipment",
+        description: "Modular units for air filtration, regulation, and lubrication, and pressure control.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Modular F.R.L / Pressure Control Equipment",
+            slug: "modular-frl-pressure-control-equipment",
+            bannerImg: "/images/products/modular_frl_pressure_control_equipment_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Modular design",
+              "Filter, regulator, lubricator functions",
+              "Pressure control",
+              "Easy assembly",
+              "Space saving",
+              "Flexible configuration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Pneumatic system preparation",
+              "Modular installations",
+              "Space-constrained applications",
+              "Custom configurations",
+              "System optimization"
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        name: "Fittings and Tubing",
+        description: "Components for connecting pneumatic components and conveying air.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Fittings and Tubing",
+            slug: "fittings-and-tubing",
+            bannerImg: "/images/products/fittings_and_tubing_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Secure connections",
+              "Various sizes",
+              "Easy installation",
+              "Leak-proof design",
+              "Durable materials",
+              "Quick connect/disconnect"
+            ],
+            applications: [
+              "Industrial automation",
+              "Pneumatic connections",
+              "Air distribution",
+              "System assembly",
+              "Maintenance operations",
+              "Field installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 10,
+        name: "Flow Control Equipment",
+        description: "Equipment for controlling the flow rate of air in pneumatic systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Flow Control Equipment",
+            slug: "flow-control-equipment",
+            bannerImg: "/images/products/flow_control_equipment_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Flow rate control",
+              "Precise adjustment",
+              "Various flow ranges",
+              "Stable operation",
+              "Easy adjustment",
+              "Reliable performance"
+            ],
+            applications: [
+              "Industrial automation",
+              "Speed control",
+              "Process optimization",
+              "System tuning",
+              "Performance adjustment",
+              "Energy optimization"
+            ]
+          }
+        ]
+      },
+      {
+        id: 11,
+        name: "Sensors and Switches",
+        description: "Devices for detecting and controlling pneumatic systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Sensors and Switches",
+            slug: "sensors-and-switches",
+            bannerImg: "/images/products/sensors_and_switches_banner.jpg",
+            features: [
+              "Part of SMC's wide range of pneumatic products",
+              "Position detection",
+              "Pressure sensing",
+              "Flow monitoring",
+              "Reliable switching",
+              "Various sensing methods",
+              "Easy integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Position feedback",
+              "System monitoring",
+              "Process control",
+              "Safety systems",
+              "Diagnostic functions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 8,
+    brandName: "TRINITY TOUCH",
+    description: "TRINITY TOUCH is a leading manufacturer and supplier of electrical and electronic components, specializing in industrial connectivity solutions. They offer a comprehensive range of products for various industrial applications.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Electrical industrial components",
+        description: "Components for electrical systems in industrial settings.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Electrical industrial components",
+            slug: "electrical-industrial-components",
+            bannerImg: "/images/products/electrical_industrial_components_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Industrial grade quality",
+              "Reliable performance",
+              "Various configurations",
+              "Easy installation",
+              "Standards compliance",
+              "Durable construction"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Control panels",
+              "Power distribution",
+              "Equipment connections",
+              "System integration",
+              "Field installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Cable glands",
+        description: "Devices used to attach and secure the end of a cable to equipment.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Cable glands",
+            slug: "cable-glands",
+            bannerImg: "/images/products/cable_glands_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Secure cable attachment",
+              "Environmental sealing",
+              "Strain relief",
+              "Various materials",
+              "Different thread types",
+              "Easy installation"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Equipment enclosures",
+              "Cable management",
+              "Environmental protection",
+              "Hazardous areas",
+              "Outdoor installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Enclosures",
+        description: "Protective housings for electrical and electronic equipment.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Enclosures",
+            slug: "enclosures",
+            bannerImg: "/images/products/enclosures_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Equipment protection",
+              "Various sizes",
+              "Environmental sealing",
+              "Easy access",
+              "Mounting options",
+              "Standards compliance"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Equipment housing",
+              "Control systems",
+              "Electrical distribution",
+              "Outdoor installations",
+              "Harsh environments"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Industrial plugs and sockets",
+        description: "Plugs and sockets designed for industrial environments.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Industrial plugs and sockets",
+            slug: "industrial-plugs-and-sockets",
+            bannerImg: "/images/products/industrial_plugs_and_sockets_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Industrial grade construction",
+              "High current capacity",
+              "Environmental protection",
+              "Secure connections",
+              "Various configurations",
+              "Safety features"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Power connections",
+              "Equipment supply",
+              "Temporary installations",
+              "Mobile equipment",
+              "Construction sites"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Din rails & accessories",
+        description: "Mounting rails and accessories for electrical components.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Din rails & accessories",
+            slug: "din-rails-accessories",
+            bannerImg: "/images/products/din_rails_accessories_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Standard DIN rail mounting",
+              "Various lengths",
+              "Easy installation",
+              "Secure mounting",
+              "Accessories available",
+              "Space efficient"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Control panels",
+              "Component mounting",
+              "Electrical distribution",
+              "System organization",
+              "Panel building"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Wiring ducts & accessories",
+        description: "Ducts and accessories for organizing and protecting wiring.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Wiring ducts & accessories",
+            slug: "wiring-ducts-accessories",
+            bannerImg: "/images/products/wiring_ducts_accessories_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Wire organization",
+              "Protection from damage",
+              "Various sizes",
+              "Easy installation",
+              "Accessories available",
+              "Professional appearance"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Cable management",
+              "Wire protection",
+              "Panel organization",
+              "System installation",
+              "Maintenance access"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Halogen free wiring ducts",
+        description: "Wiring ducts made from halogen-free materials for enhanced safety.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Halogen free wiring ducts",
+            slug: "halogen-free-wiring-ducts",
+            bannerImg: "/images/products/halogen_free_wiring_ducts_banner.jpg",
+            features: [
+              "Part of Trinity Touch's comprehensive product range",
+              "Halogen-free materials",
+              "Enhanced safety",
+              "Low smoke emission",
+              "Environmental friendly",
+              "Fire retardant",
+              "Various sizes"
+            ],
+            applications: [
+              "Industrial electrical systems",
+              "Safety-critical applications",
+              "Public buildings",
+              "Transportation systems",
+              "Clean environments",
+              "Enclosed spaces"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 9,
+    brandName: "SMISEN CONTROLS",
+    description: "SMISEN CONTROLS specializes in the manufacturing of high-quality transformers, reactors, and power quality solutions. They are known for their reliable and efficient products for various industrial applications.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Transformers",
+        description: "Devices that transfer electrical energy between two or more circuits.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Transformers",
+            slug: "transformers",
+            bannerImg: "/images/products/transformers_banner.jpg",
+            features: [
+              "Part of Smisen Controls' product range",
+              "Energy transfer",
+              "Voltage transformation",
+              "High efficiency",
+              "Reliable operation",
+              "Various power ratings",
+              "Standards compliance"
+            ],
+            applications: [
+              "Industrial power systems",
+              "Power distribution",
+              "Voltage conversion",
+              "Isolation applications",
+              "Equipment supply",
+              "System integration"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Current Transformers",
+        description: "Transformers used for measuring alternating electric current.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Current Transformers",
+            slug: "current-transformers",
+            bannerImg: "/images/products/current_transformers_banner.jpg",
+            features: [
+              "Part of Smisen Controls' product range",
+              "Current measurement",
+              "High accuracy",
+              "Safety isolation",
+              "Various ratios",
+              "Reliable operation",
+              "Standards compliance"
+            ],
+            applications: [
+              "Industrial power systems",
+              "Current measurement",
+              "Protection systems",
+              "Metering applications",
+              "Power monitoring",
+              "System control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Line Chokes",
+        description: "Inductors used to suppress electrical noise and harmonics.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Line Chokes",
+            slug: "line-chokes",
+            bannerImg: "/images/products/line_chokes_banner.jpg",
+            features: [
+              "Part of Smisen Controls' product range",
+              "Noise suppression",
+              "Harmonic filtering",
+              "EMC compliance",
+              "High inductance",
+              "Reliable operation",
+              "Compact design"
+            ],
+            applications: [
+              "Industrial power systems",
+              "EMC compliance",
+              "Harmonic mitigation",
+              "Power quality improvement",
+              "Drive applications",
+              "System protection"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Braking Resistors",
+        description: "Resistors used to dissipate excess energy in motor control systems.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Braking Resistors",
+            slug: "braking-resistors",
+            bannerImg: "/images/products/braking_resistors_banner.jpg",
+            features: [
+              "Part of Smisen Controls' product range",
+              "Energy dissipation",
+              "High power handling",
+              "Thermal management",
+              "Reliable operation",
+              "Various resistance values",
+              "Robust construction"
+            ],
+            applications: [
+              "Industrial power systems",
+              "Motor control",
+              "Drive systems",
+              "Energy recovery",
+              "Braking applications",
+              "System protection"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Reactors",
+        description: "Inductors used to limit current or provide voltage drop.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Reactors",
+            slug: "reactors",
+            bannerImg: "/images/products/reactors_banner.jpg",
+            features: [
+              "Part of Smisen Controls' product range",
+              "Current limiting",
+              "Voltage drop",
+              "Power factor correction",
+              "High inductance",
+              "Reliable operation",
+              "Various configurations"
+            ],
+            applications: [
+              "Industrial power systems",
+              "Current limiting",
+              "Power factor correction",
+              "System protection",
+              "Power quality",
+              "Grid applications"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Filter",
+        description: "Devices used to remove unwanted components from electrical signals.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Filter",
+            slug: "filter",
+            bannerImg: "/images/products/filter_banner.jpg",
+            features: [
+              "Part of Smisen Controls' product range",
+              "Signal filtering",
+              "Noise reduction",
+              "Harmonic suppression",
+              "High attenuation",
+              "Reliable operation",
+              "Various filter types"
+            ],
+            applications: [
+              "Industrial power systems",
+              "Signal conditioning",
+              "EMC compliance",
+              "Power quality",
+              "System protection",
+              "Noise reduction"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 10,
+    brandName: "BAUMER",
+    description: "Baumer is a leading international manufacturer of sensors, encoders, measuring instruments, and components for automated image processing. They provide innovative solutions for a wide range of industries.",
+    workedProducts: [
+      {
+        id: 1,
+        name: "Object detection",
+        description: "Sensors for detecting the presence or absence of objects.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Object detection",
+            slug: "object-detection",
+            bannerImg: "/images/products/object_detection_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Presence detection",
+              "Absence detection",
+              "Various sensing technologies",
+              "High reliability",
+              "Fast response time",
+              "Easy installation"
+            ],
+            applications: [
+              "Industrial automation",
+              "Quality control",
+              "Material handling",
+              "Assembly lines",
+              "Packaging systems",
+              "Safety applications"
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Distance measurement",
+        description: "Sensors for measuring distances.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Distance measurement",
+            slug: "distance-measurement",
+            bannerImg: "/images/products/distance_measurement_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Precise distance measurement",
+              "Various measurement ranges",
+              "High accuracy",
+              "Fast measurement",
+              "Reliable operation",
+              "Easy integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Quality control",
+              "Position monitoring",
+              "Level measurement",
+              "Thickness measurement",
+              "Process control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        name: "Smart Vision Sensors",
+        description: "Integrated vision systems for inspection and identification.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Smart Vision Sensors",
+            slug: "smart-vision-sensors",
+            bannerImg: "/images/products/smart_vision_sensors_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Integrated vision system",
+              "Inspection capabilities",
+              "Identification functions",
+              "Easy setup",
+              "High-speed processing",
+              "Reliable detection"
+            ],
+            applications: [
+              "Industrial automation",
+              "Quality control",
+              "Product inspection",
+              "Code reading",
+              "Assembly verification",
+              "Sorting applications"
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "Industrial cameras / image processing",
+        description: "Cameras and systems for industrial image acquisition and processing.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Industrial cameras / image processing",
+            slug: "industrial-cameras-image-processing",
+            bannerImg: "/images/products/industrial_cameras_image_processing_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "High-resolution imaging",
+              "Image processing capabilities",
+              "Various interfaces",
+              "Robust construction",
+              "Easy integration",
+              "Professional software"
+            ],
+            applications: [
+              "Industrial automation",
+              "Quality control",
+              "Machine vision",
+              "Inspection systems",
+              "Measurement applications",
+              "Process monitoring"
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        name: "Identification",
+        description: "Systems for identifying objects using various technologies.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Identification",
+            slug: "identification",
+            bannerImg: "/images/products/identification_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Object identification",
+              "Various identification technologies",
+              "High reliability",
+              "Fast processing",
+              "Easy integration",
+              "Flexible configuration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Quality control",
+              "Traceability systems",
+              "Sorting applications",
+              "Inventory management",
+              "Process control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        name: "Rotary encoders / angle sensors",
+        description: "Sensors for measuring rotary motion and angles.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Rotary encoders / angle sensors",
+            slug: "rotary-encoders-angle-sensors",
+            bannerImg: "/images/products/rotary_encoders_angle_sensors_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Rotary motion measurement",
+              "Angle measurement",
+              "High resolution",
+              "High accuracy",
+              "Various output types",
+              "Robust construction"
+            ],
+            applications: [
+              "Industrial automation",
+              "Motion control",
+              "Position feedback",
+              "Speed measurement",
+              "Angular positioning",
+              "Machine control"
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        name: "Inclination / acceleration sensors",
+        description: "Sensors for measuring inclination and acceleration.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Inclination / acceleration sensors",
+            slug: "inclination-acceleration-sensors",
+            bannerImg: "/images/products/inclination_acceleration_sensors_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Inclination measurement",
+              "Acceleration measurement",
+              "High accuracy",
+              "Dynamic response",
+              "Various output formats",
+              "Robust design"
+            ],
+            applications: [
+              "Industrial automation",
+              "Motion control",
+              "Tilt monitoring",
+              "Vibration analysis",
+              "Safety systems",
+              "Mobile equipment"
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        name: "Process sensors",
+        description: "Sensors for monitoring and controlling process parameters.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Process sensors",
+            slug: "process-sensors",
+            bannerImg: "/images/products/process_sensors_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Process parameter monitoring",
+              "Various measurement types",
+              "High accuracy",
+              "Reliable operation",
+              "Easy integration",
+              "Process optimization"
+            ],
+            applications: [
+              "Industrial automation",
+              "Process control",
+              "Quality monitoring",
+              "Production optimization",
+              "System control",
+              "Data acquisition"
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        name: "Force sensors and strain sensors",
+        description: "Sensors for measuring force and strain.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Force sensors and strain sensors",
+            slug: "force-sensors-and-strain-sensors",
+            bannerImg: "/images/products/force_sensors_and_strain_sensors_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Force measurement",
+              "Strain measurement",
+              "High precision",
+              "Wide measurement range",
+              "Reliable operation",
+              "Easy calibration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Material testing",
+              "Quality control",
+              "Load monitoring",
+              "Process control",
+              "Safety applications"
+            ]
+          }
+        ]
+      },
+      {
+        id: 10,
+        name: "Counters / displays",
+        description: "Devices for counting and displaying data.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Counters / displays",
+            slug: "counters-displays",
+            bannerImg: "/images/products/counters_displays_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Counting functions",
+              "Data display",
+              "Various display types",
+              "Easy operation",
+              "Reliable counting",
+              "Flexible configuration"
+            ],
+            applications: [
+              "Industrial automation",
+              "Data monitoring",
+              "Production counting",
+              "Process monitoring",
+              "Quality control",
+              "System feedback"
+            ]
+          }
+        ]
+      },
+      {
+        id: 11,
+        name: "Accessories",
+        description: "Various accessories for Baumer products.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Accessories",
+            slug: "accessories",
+            bannerImg: "/images/products/accessories_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Complementary products",
+              "System enhancement",
+              "Easy installation",
+              "Quality construction",
+              "Various functions",
+              "System integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "System enhancement",
+              "Installation support",
+              "Maintenance operations",
+              "System optimization",
+              "Performance improvement"
+            ]
+          }
+        ]
+      },
+      {
+        id: 12,
+        name: "Cable/connectivity",
+        description: "Cables and connectivity solutions for Baumer products.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Cable/connectivity",
+            slug: "cableconnectivity",
+            bannerImg: "/images/products/cableconnectivity_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Reliable connections",
+              "Various cable types",
+              "Easy installation",
+              "Durable construction",
+              "Signal integrity",
+              "System integration"
+            ],
+            applications: [
+              "Industrial automation",
+              "System connections",
+              "Signal transmission",
+              "Data communication",
+              "Power supply",
+              "Field installations"
+            ]
+          }
+        ]
+      },
+      {
+        id: 13,
+        name: "Format adjustment",
+        description: "Solutions for adjusting and optimizing data formats.",
+        detailedProducts: [
+          {
+            id: 1,
+            name: "Format adjustment",
+            slug: "format-adjustment",
+            bannerImg: "/images/products/format_adjustment_banner.jpg",
+            features: [
+              "Part of Baumer's comprehensive product portfolio",
+              "Data format optimization",
+              "Signal conditioning",
+              "Interface conversion",
+              "Easy configuration",
+              "Flexible adjustment",
+              "System compatibility"
+            ],
+            applications: [
+              "Industrial automation",
+              "Data processing",
+              "System integration",
+              "Signal conditioning",
+              "Interface adaptation",
+              "Communication optimization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export default BrandsWithProductsData;
