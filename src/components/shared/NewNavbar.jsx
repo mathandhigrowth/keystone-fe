@@ -1,41 +1,31 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Link, NavLink } from "react-router-dom"
-import { motion, AnimatePresence } from "framer-motion"
-import {
-  Mail,
-  Phone,
-  Clock,
-  Facebook,
-  Linkedin,
-  X as TwitterX,
-  Instagram,
-  ChevronDown,
-  Menu,
-} from "lucide-react"
-import { keyStoneLogo } from "@/assets/images"
-import services from "@/data/ServicesData"
-import { EMAIL, MOBILE_NUMBER } from "@/config/config"
-import BrandsWithProductsData from "@/data/BrandsWithProductsData"
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Mail, Phone, Clock, Facebook, Linkedin, X as TwitterX, Instagram, ChevronDown, Menu } from "lucide-react";
+import { keyStoneLogo } from "@/assets/images";
+import services from "@/data/ServicesData";
+import { EMAIL, MOBILE_NUMBER } from "@/config/config";
+import BrandsWithProductsData from "@/data/BrandsWithProductsData";
 
 export default function NewNavbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [openDropdown, setOpenDropdown] = useState(null)
-  const [hoveredBrand, setHoveredBrand] = useState(null)
-  const [mobileDropdown, setMobileDropdown] = useState({ brands: false, services: false })
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [hoveredBrand, setHoveredBrand] = useState(null);
+  const [mobileDropdown, setMobileDropdown] = useState({ brands: false, services: false });
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev)
-  const handleNavClick = () => setIsMobileMenuOpen(false)
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  const handleNavClick = () => setIsMobileMenuOpen(false);
 
   const dropdownVariants = {
     initial: { opacity: 0, scale: 0.95, y: -5 },
     animate: { opacity: 1, scale: 1, y: 0 },
     exit: { opacity: 0, scale: 0.95, y: -5 },
-  }
+  };
 
-  const activeClass = "text-[var(--color-accent)] font-semibold"
-  const inactiveClass = "hover:text-[var(--color-accent)] transition-colors"
+  const activeClass = "text-[var(--color-accent)] font-semibold";
+  const inactiveClass = "hover:text-[var(--color-accent)] transition-colors";
 
   return (
     <header className="w-full bg-[var(--color-background)] font-sans shadow-2xl relative z-50">
@@ -52,7 +42,7 @@ export default function NewNavbar() {
           </div>
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4" />
-            <span>Mon - Fri 8:30 - 17:30, Sat - Sun off</span>
+            <span>Mon - Sat 09:30AM - 06:30PM</span>
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -74,16 +64,20 @@ export default function NewNavbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8 text-[var(--color-dark)] font-medium relative">
-          <NavLink to="/" className={({ isActive }) => isActive ? activeClass : inactiveClass}>Home</NavLink>
-          <NavLink to="/about" className={({ isActive }) => isActive ? activeClass : inactiveClass}>About</NavLink>
+          <NavLink to="/" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+            Home
+          </NavLink>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+            About
+          </NavLink>
 
           {/* Brands Dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setOpenDropdown("brands")}
             onMouseLeave={() => {
-              setOpenDropdown(null)
-              setHoveredBrand(null)
+              setOpenDropdown(null);
+              setHoveredBrand(null);
             }}
           >
             <button className="flex items-center gap-1 hover:text-[var(--color-accent)] transition-colors">
@@ -101,19 +95,12 @@ export default function NewNavbar() {
                 >
                   {/* Brands list */}
                   <div className="w-56 border-r">
-                    <NavLink
-                      to="/projects"
-                      className="flex items-center gap-2 px-4 py-2 font-semibold text-[var(--color-dark)] hover:bg-gray-100 rounded"
-                    >
+                    <NavLink to="/projects" className="flex items-center gap-2 px-4 py-2 font-semibold text-[var(--color-dark)] hover:bg-gray-100 rounded">
                       All Worked Brands
                     </NavLink>
 
                     {BrandsWithProductsData.slice(0, 1).map((brand) => (
-                      <div
-                        key={brand.id}
-                        onMouseEnter={() => setHoveredBrand(brand)}
-                        className="flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-gray-100"
-                      >
+                      <div key={brand.id} onMouseEnter={() => setHoveredBrand(brand)} className="flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-gray-100">
                         <img src={brand.brandImg} alt={brand.brandName} className="w-6 h-6 object-contain" />
                         <span>{brand.brandName}</span>
                       </div>
@@ -126,11 +113,7 @@ export default function NewNavbar() {
                       <h4 className="font-semibold mb-2">{hoveredBrand.brandName} Products</h4>
                       <div className="flex flex-col gap-1">
                         {hoveredBrand.workedProducts.slice(0, 2).map((wp) => (
-                          <NavLink
-                            key={wp.slug}
-                            to={`/products/${wp.slug}`}
-                            className="px-2 py-1 hover:bg-gray-100 rounded text-sm"
-                          >
+                          <NavLink key={wp.slug} to={`/products/${wp.slug}`} className="px-2 py-1 hover:bg-gray-100 rounded text-sm">
                             {wp.name}
                           </NavLink>
                         ))}
@@ -143,11 +126,7 @@ export default function NewNavbar() {
           </div>
 
           {/* Services Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setOpenDropdown("services")}
-            onMouseLeave={() => setOpenDropdown(null)}
-          >
+          <div className="relative" onMouseEnter={() => setOpenDropdown("services")} onMouseLeave={() => setOpenDropdown(null)}>
             <button className="flex items-center gap-1 hover:text-[var(--color-accent)] transition-colors">
               Services <ChevronDown className="w-4 h-4" />
             </button>
@@ -161,13 +140,11 @@ export default function NewNavbar() {
                   transition={{ duration: 0.2 }}
                   className="absolute top-full mt-2 left-0 bg-white shadow-lg ring ring-gray-600 rounded-lg w-80 p-2 z-40"
                 >
-                  <NavLink to="/services" className="block px-4 py-2 hover:bg-gray-100 text-[var(--color-dark)] font-semibold rounded">All Services</NavLink>
-                  {services.map(service => (
-                    <NavLink
-                      key={service.slug}
-                      to={`/services/${service.slug}`}
-                      className="block px-4 py-2 hover:bg-gray-100 rounded"
-                    >
+                  <NavLink to="/services" className="block px-4 py-2 hover:bg-gray-100 text-[var(--color-dark)] font-semibold rounded">
+                    All Services
+                  </NavLink>
+                  {services.map((service) => (
+                    <NavLink key={service.slug} to={`/services/${service.slug}`} className="block px-4 py-2 hover:bg-gray-100 rounded">
                       {service.title}
                     </NavLink>
                   ))}
@@ -176,8 +153,12 @@ export default function NewNavbar() {
             </AnimatePresence>
           </div>
 
-          <NavLink to="/blog" className={({ isActive }) => isActive ? activeClass : inactiveClass}>Blog</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => isActive ? activeClass : inactiveClass}>Contact</NavLink>
+          <NavLink to="/blog" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+            Blog
+          </NavLink>
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+            Contact
+          </NavLink>
         </nav>
 
         {/* CTA Button */}
@@ -188,11 +169,7 @@ export default function NewNavbar() {
         </div>
 
         {/* Mobile Menu Icon */}
-        <button
-          className="lg:hidden text-[var(--color-dark)]"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle mobile menu"
-        >
+        <button className="lg:hidden text-[var(--color-dark)]" onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
           <Menu className="w-6 h-6" />
         </button>
       </div>
@@ -208,15 +185,16 @@ export default function NewNavbar() {
             className="lg:hidden overflow-hidden bg-[var(--color-surface)] px-4 py-4"
           >
             <nav className="flex flex-col gap-4 text-[var(--color-dark)] font-medium">
-              <NavLink to="/" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>Home</NavLink>
-              <NavLink to="/about" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>About</NavLink>
+              <NavLink to="/" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+                Home
+              </NavLink>
+              <NavLink to="/about" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+                About
+              </NavLink>
 
               {/* Mobile Brands Dropdown */}
               <div>
-                <button
-                  onClick={() => setMobileDropdown(prev => ({ ...prev, brands: !prev.brands }))}
-                  className="flex items-center justify-between w-full"
-                >
+                <button onClick={() => setMobileDropdown((prev) => ({ ...prev, brands: !prev.brands }))} className="flex items-center justify-between w-full">
                   <span className="hover:text-[var(--color-accent)]">Brands</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdown.brands ? "rotate-180" : ""}`} />
                 </button>
@@ -233,12 +211,7 @@ export default function NewNavbar() {
                         <div key={brand.id} className="flex flex-col gap-1">
                           <span className="font-semibold">{brand.brandName}</span>
                           {brand.workedProducts.map((wp) => (
-                            <NavLink
-                              key={wp.slug}
-                              to={`/projects/${wp.slug}`}
-                              onClick={handleNavClick}
-                              className={inactiveClass}
-                            >
+                            <NavLink key={wp.slug} to={`/projects/${wp.slug}`} onClick={handleNavClick} className={inactiveClass}>
                               {wp.name}
                             </NavLink>
                           ))}
@@ -251,10 +224,7 @@ export default function NewNavbar() {
 
               {/* Mobile Services Dropdown */}
               <div>
-                <button
-                  onClick={() => setMobileDropdown(prev => ({ ...prev, services: !prev.services }))}
-                  className="flex items-center justify-between w-full"
-                >
+                <button onClick={() => setMobileDropdown((prev) => ({ ...prev, services: !prev.services }))} className="flex items-center justify-between w-full">
                   <span className="hover:text-[var(--color-accent)]">Services</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdown.services ? "rotate-180" : ""}`} />
                 </button>
@@ -267,14 +237,11 @@ export default function NewNavbar() {
                       transition={{ duration: 0.2 }}
                       className="ml-4 mt-2 flex flex-col gap-2"
                     >
-                      <NavLink to="/services" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>All Services</NavLink>
-                      {services.map(service => (
-                        <NavLink
-                          key={service.slug}
-                          to={`/services/${service.slug}`}
-                          onClick={handleNavClick}
-                          className={inactiveClass}
-                        >
+                      <NavLink to="/services" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+                        All Services
+                      </NavLink>
+                      {services.map((service) => (
+                        <NavLink key={service.slug} to={`/services/${service.slug}`} onClick={handleNavClick} className={inactiveClass}>
                           {service.title}
                         </NavLink>
                       ))}
@@ -283,8 +250,12 @@ export default function NewNavbar() {
                 </AnimatePresence>
               </div>
 
-              <NavLink to="/blog" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>Blog</NavLink>
-              <NavLink to="/contact" onClick={handleNavClick} className={({ isActive }) => isActive ? activeClass : inactiveClass}>Contact</NavLink>
+              <NavLink to="/blog" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+                Blog
+              </NavLink>
+              <NavLink to="/contact" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+                Contact
+              </NavLink>
 
               <Link to="/contact" className="mt-2 bg-[var(--color-accent)] text-center text-white px-6 py-3 rounded-md font-semibold hover:bg-[var(--color-primary)] transition-colors">
                 Get In Touch
@@ -294,5 +265,5 @@ export default function NewNavbar() {
         )}
       </AnimatePresence>
     </header>
-  )
+  );
 }

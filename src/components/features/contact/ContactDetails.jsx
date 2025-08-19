@@ -95,7 +95,7 @@ export default function ContactDetails() {
                                     Call us
                                 </h3>
                                 <p className="mt-2 text-base leading-7 text-gray-600">
-                                    Weekdays, 8am – 5pm.
+                                    Mon - Sat, 09:30am – 06:30pm
                                 </p>
                             </div>
                             <a
