@@ -1,13 +1,15 @@
-import { BrandDEGSON, BrandSIEMENS } from "@/assets/brands";
-import { DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal } from "@/assets/images";
+import { BrandBaumer, BrandDEGSON, BrandLAPP, BrandOMRON, BrandPhoenix, BrandRittal, BrandSIEMENS, BrandSMC, BrandSMISEN, BrandTrinity } from "@/assets/brands";
+import { DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal, productISP, productEbike, productConnector, productSwitch, productHvConnector, productRelay } from "@/assets/images";
 
 const BrandsWithProductsData = [
   {
     id: 1,
     brandName: "DEGSON",
+    slug: "degson",
     brandImg: BrandDEGSON,
     bannerImg: productPcbTerminal,
-    description: "DEGSON is a global manufacturer specializing in high-quality electronic components, including terminal blocks, connectors, and industrial wiring solutions. They provide customized solutions for industrial connectivity and new energy communication.",
+    description:
+      "DEGSON is a global manufacturer specializing in high-quality electronic components, including terminal blocks, connectors, and industrial wiring solutions. They provide customized solutions for industrial connectivity and new energy communication.",
     workedProducts: [
       {
         id: 1,
@@ -26,16 +28,9 @@ const BrandsWithProductsData = [
               "Wave soldering compatible",
               "Reflow welding applicable",
               "High reliability connections",
-              "Compact design"
+              "Compact design",
             ],
-            applications: [
-              "Device connection",
-              "Direct insertion",
-              "Internal connection of devices",
-              "External connection of devices",
-              "PCB mounting applications",
-              "Electronic equipment"
-            ]
+            applications: ["Device connection", "Direct insertion", "Internal connection of devices", "External connection of devices", "PCB mounting applications", "Electronic equipment"],
           },
           {
             id: 2,
@@ -52,7 +47,7 @@ const BrandsWithProductsData = [
               "Single-layer support",
               "Double-layer support",
               "Pluggable connection methods",
-              "Touch protection"
+              "Touch protection",
             ],
             applications: [
               "Securing wires in high-current applications",
@@ -60,8 +55,8 @@ const BrandsWithProductsData = [
               "Power distribution",
               "Industrial control panels",
               "Heavy-duty electrical connections",
-              "High-power equipment"
-            ]
+              "High-power equipment",
+            ],
           },
           {
             id: 3,
@@ -74,17 +69,9 @@ const BrandsWithProductsData = [
               "Flexible installation",
               "Convenient maintenance",
               "Quick disconnect capability",
-              "Reliable connections"
+              "Reliable connections",
             ],
-            applications: [
-              "Industrial automation",
-              "Mechanical manufacturing",
-              "Power and electrical systems",
-              "Rail transit",
-              "New energy applications",
-              "Control systems",
-              "Motor connections"
-            ]
+            applications: ["Industrial automation", "Mechanical manufacturing", "Power and electrical systems", "Rail transit", "New energy applications", "Control systems", "Motor connections"],
           },
           {
             id: 4,
@@ -98,19 +85,11 @@ const BrandsWithProductsData = [
               "High IP class protection",
               "Shielded parts optional",
               "Tool-free wiring",
-              "Space-saving design"
+              "Space-saving design",
             ],
-            applications: [
-              "Industrial automation",
-              "Mechanical manufacturing",
-              "Power and electrical systems",
-              "Rail transit",
-              "New energy applications",
-              "Control cabinets",
-              "Distribution panels"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Mechanical manufacturing", "Power and electrical systems", "Rail transit", "New energy applications", "Control cabinets", "Distribution panels"],
+          },
+        ],
       },
       {
         id: 2,
@@ -132,16 +111,9 @@ const BrandsWithProductsData = [
               "Data transmission capability",
               "Power supply capability",
               "Compact size",
-              "Robust construction"
+              "Robust construction",
             ],
-            applications: [
-              "Most industrial fields",
-              "Sensor connections",
-              "Actuator connections",
-              "Field devices",
-              "Industrial networks",
-              "Automation systems"
-            ]
+            applications: ["Most industrial fields", "Sensor connections", "Actuator connections", "Field devices", "Industrial networks", "Automation systems"],
           },
           {
             id: 2,
@@ -156,16 +128,9 @@ const BrandsWithProductsData = [
               "360° full shield",
               "IP67 high protection level",
               "Support gigabit transmission",
-              "High-speed data transfer"
+              "High-speed data transfer",
             ],
-            applications: [
-              "Data transmission in industrial networks",
-              "Ethernet communications",
-              "Fieldbus systems",
-              "Industrial IoT",
-              "Factory automation",
-              "Process control"
-            ]
+            applications: ["Data transmission in industrial networks", "Ethernet communications", "Fieldbus systems", "Industrial IoT", "Factory automation", "Process control"],
           },
           {
             id: 3,
@@ -178,18 +143,11 @@ const BrandsWithProductsData = [
               "Customizable waterproof shell",
               "High current capacity",
               "Robust design",
-              "Multiple pin configurations"
+              "Multiple pin configurations",
             ],
-            applications: [
-              "Motor connections",
-              "Encoder connections",
-              "Robot applications",
-              "Automation fields",
-              "Heavy-duty applications",
-              "Industrial machinery"
-            ]
-          }
-        ]
+            applications: ["Motor connections", "Encoder connections", "Robot applications", "Automation fields", "Heavy-duty applications", "Industrial machinery"],
+          },
+        ],
       },
       {
         id: 3,
@@ -200,7 +158,7 @@ const BrandsWithProductsData = [
           {
             id: 1,
             name: "Heavy-duty connectors",
-            bannerImg: "/images/products/heavyduty_connectors_banner.jpg",
+            bannerImg: productHvConnector,
             features: [
               "Screw type connection",
               "Crimp type connection",
@@ -210,7 +168,7 @@ const BrandsWithProductsData = [
               "Meet signal connection needs",
               "Rich combination methods",
               "Modular design",
-              "High durability"
+              "High durability",
             ],
             applications: [
               "Electrical connection between different equipment",
@@ -218,10 +176,10 @@ const BrandsWithProductsData = [
               "Industrial machinery",
               "Heavy equipment",
               "Harsh environments",
-              "Outdoor applications"
-            ]
-          }
-        ]
+              "Outdoor applications",
+            ],
+          },
+        ],
       },
       {
         id: 4,
@@ -234,22 +192,8 @@ const BrandsWithProductsData = [
             name: "Industrial Ethernet communication solutions",
             slug: "industrial-ethernet-communication-solutions",
             bannerImg: "/images/products/industrial_ethernet_communication_solutions_banner.jpg",
-            features: [
-              "Complete information network communication",
-              "Data acquisition solutions",
-              "High-speed communication",
-              "Reliable data transfer",
-              "Network integration",
-              "Protocol support"
-            ],
-            applications: [
-              "Industrial automation control systems",
-              "Factory networks",
-              "Process control",
-              "Data monitoring",
-              "Remote control",
-              "System integration"
-            ]
+            features: ["Complete information network communication", "Data acquisition solutions", "High-speed communication", "Reliable data transfer", "Network integration", "Protocol support"],
+            applications: ["Industrial automation control systems", "Factory networks", "Process control", "Data monitoring", "Remote control", "System integration"],
           },
           {
             id: 2,
@@ -263,40 +207,19 @@ const BrandsWithProductsData = [
               "Supports Modbus/TCP protocol",
               "Multi-protocol compatibility",
               "Easy integration",
-              "Reliable communication"
+              "Reliable communication",
             ],
-            applications: [
-              "Fieldbus node needs",
-              "Industrial networks",
-              "Process automation",
-              "Factory automation",
-              "Distributed control systems",
-              "Remote I/O applications"
-            ]
+            applications: ["Fieldbus node needs", "Industrial networks", "Process automation", "Factory automation", "Distributed control systems", "Remote I/O applications"],
           },
           {
             id: 3,
             name: "Signal processing, conversion and protection products",
             slug: "signal-processing-conversion-and-protection-products",
             bannerImg: "/images/products/signal_processing_conversion_and_protection_products_banner.jpg",
-            features: [
-              "Variety of interface products",
-              "Signal conditioning",
-              "Signal conversion",
-              "Signal protection",
-              "Isolation capabilities",
-              "High accuracy"
-            ],
-            applications: [
-              "Signal processing",
-              "Signal conversion",
-              "Signal protection",
-              "Industrial instrumentation",
-              "Process control",
-              "Data acquisition"
-            ]
-          }
-        ]
+            features: ["Variety of interface products", "Signal conditioning", "Signal conversion", "Signal protection", "Isolation capabilities", "High accuracy"],
+            applications: ["Signal processing", "Signal conversion", "Signal protection", "Industrial instrumentation", "Process control", "Data acquisition"],
+          },
+        ],
       },
       {
         id: 5,
@@ -309,44 +232,16 @@ const BrandsWithProductsData = [
             name: "AC EV chargers",
             slug: "ac-ev-chargers",
             bannerImg: "/images/products/ac_ev_chargers_banner.jpg",
-            features: [
-              "Convenient charging",
-              "Safe home charging",
-              "User-friendly interface",
-              "Reliable operation",
-              "Energy efficient",
-              "Smart charging capabilities"
-            ],
-            applications: [
-              "Individual user home charging",
-              "Residential charging",
-              "Private parking",
-              "Home garages",
-              "Small commercial spaces",
-              "Workplace charging"
-            ]
+            features: ["Convenient charging", "Safe home charging", "User-friendly interface", "Reliable operation", "Energy efficient", "Smart charging capabilities"],
+            applications: ["Individual user home charging", "Residential charging", "Private parking", "Home garages", "Small commercial spaces", "Workplace charging"],
           },
           {
             id: 2,
             name: "DC EV chargers",
             slug: "dc-ev-chargers",
             bannerImg: "/images/products/dc_ev_chargers_banner.jpg",
-            features: [
-              "Fast charging capability",
-              "Safe charging operation",
-              "High power output",
-              "Rapid charging technology",
-              "Advanced safety features",
-              "Efficient power conversion"
-            ],
-            applications: [
-              "Charging stations",
-              "Public charging infrastructure",
-              "Commercial charging",
-              "Highway charging stations",
-              "Fleet charging",
-              "Fast charging networks"
-            ]
+            features: ["Fast charging capability", "Safe charging operation", "High power output", "Rapid charging technology", "Advanced safety features", "Efficient power conversion"],
+            applications: ["Charging stations", "Public charging infrastructure", "Commercial charging", "Highway charging stations", "Fleet charging", "Fast charging networks"],
           },
           {
             id: 3,
@@ -361,7 +256,7 @@ const BrandsWithProductsData = [
               "Safe electricity transmission",
               "Efficient electricity transmission",
               "Weather resistant",
-              "Durable construction"
+              "Durable construction",
             ],
             applications: [
               "Charging electric vehicle batteries",
@@ -369,10 +264,10 @@ const BrandsWithProductsData = [
               "Universal charging compatibility",
               "International markets",
               "Multi-standard support",
-              "Global EV infrastructure"
-            ]
-          }
-        ]
+              "Global EV infrastructure",
+            ],
+          },
+        ],
       },
       {
         id: 6,
@@ -384,7 +279,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "EBIKE connector series",
             slug: "ebike-connector-series",
-            bannerImg: "/images/products/ebike_connector_series_banner.jpg",
+            bannerImg: productEbike,
             features: [
               "Circular power connector",
               "Rectangular power connector",
@@ -395,7 +290,7 @@ const BrandsWithProductsData = [
               "High reliability",
               "Long service life",
               "High waterproof grade",
-              "Compact design"
+              "Compact design",
             ],
             applications: [
               "Power connecting among different equipment",
@@ -403,10 +298,10 @@ const BrandsWithProductsData = [
               "Whole vehicle integration",
               "E-bike systems",
               "Electric scooters",
-              "Personal mobility devices"
-            ]
-          }
-        ]
+              "Personal mobility devices",
+            ],
+          },
+        ],
       },
       {
         id: 7,
@@ -418,7 +313,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "5A~600A series of connectors",
             slug: "5a600a-series-of-connectors",
-            bannerImg: "/images/products/5a600a_series_of_connectors_banner.jpg",
+            bannerImg: productConnector,
             features: [
               "UL standards compliance",
               "TUV standards compliance",
@@ -429,18 +324,11 @@ const BrandsWithProductsData = [
               "Floating design",
               "Modular combination",
               "Integrated guiding structure",
-              "High current capacity"
+              "High current capacity",
             ],
-            applications: [
-              "Optical storage systems",
-              "Mobile energy storage",
-              "Battery energy storage systems",
-              "Grid storage",
-              "Renewable energy storage",
-              "Backup power systems"
-            ]
-          }
-        ]
+            applications: ["Optical storage systems", "Mobile energy storage", "Battery energy storage systems", "Grid storage", "Renewable energy storage", "Backup power systems"],
+          },
+        ],
       },
       {
         id: 8,
@@ -453,25 +341,10 @@ const BrandsWithProductsData = [
             name: "Photovoltaic connectors",
             slug: "photovoltaic-connectors",
             bannerImg: "/images/products/photovoltaic_connectors_banner.jpg",
-            features: [
-              "Connect components of inverters",
-              "Connect other components",
-              "Weather resistant",
-              "UV resistant",
-              "High voltage capability",
-              "Low contact resistance",
-              "Long service life"
-            ],
-            applications: [
-              "Photovoltaic panels",
-              "DC wiring system",
-              "Inverter connections",
-              "AC grid-connected system",
-              "Solar installations",
-              "Renewable energy systems"
-            ]
-          }
-        ]
+            features: ["Connect components of inverters", "Connect other components", "Weather resistant", "UV resistant", "High voltage capability", "Low contact resistance", "Long service life"],
+            applications: ["Photovoltaic panels", "DC wiring system", "Inverter connections", "AC grid-connected system", "Solar installations", "Renewable energy systems"],
+          },
+        ],
       },
       {
         id: 9,
@@ -483,7 +356,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Unmanaged switch",
             slug: "unmanaged-switch",
-            bannerImg: "/images/products/unmanaged_switch_banner.jpg",
+            bannerImg: productSwitch,
             features: [
               "Supports 3/5/8-channel ports",
               "100/1000Mbs capability",
@@ -494,18 +367,11 @@ const BrandsWithProductsData = [
               "IP30 protection grade",
               "Supports BaseX SFP ports",
               "Wide power input",
-              "Rail installation"
+              "Rail installation",
             ],
-            applications: [
-              "Simple networking",
-              "Industrial networks",
-              "Small office networks",
-              "Basic connectivity",
-              "Plug-and-play applications",
-              "Cost-effective networking"
-            ]
-          }
-        ]
+            applications: ["Simple networking", "Industrial networks", "Small office networks", "Basic connectivity", "Plug-and-play applications", "Cost-effective networking"],
+          },
+        ],
       },
       {
         id: 10,
@@ -517,7 +383,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Relay & relay module",
             slug: "relay-relay-module",
-            bannerImg: "/images/products/relay_relay_module_banner.jpg",
+            bannerImg: productRelay,
             features: [
               "Small size",
               "Neat wiring",
@@ -526,19 +392,11 @@ const BrandsWithProductsData = [
               "Solid-state relay module",
               "High switching capacity",
               "Long electrical life",
-              "Low power consumption"
+              "Low power consumption",
             ],
-            applications: [
-              "Automation systems",
-              "Elevator control",
-              "PLC control box",
-              "Different PLC systems",
-              "Control systems",
-              "Industrial machinery",
-              "Process control"
-            ]
-          }
-        ]
+            applications: ["Automation systems", "Elevator control", "PLC control box", "Different PLC systems", "Control systems", "Industrial machinery", "Process control"],
+          },
+        ],
       },
       {
         id: 11,
@@ -551,26 +409,10 @@ const BrandsWithProductsData = [
             name: "High voltage connector products",
             slug: "high-voltage-connector-products",
             bannerImg: "/images/products/high_voltage_connector_products_banner.jpg",
-            features: [
-              "280 series",
-              "630 series",
-              "1800 series",
-              "Hole series",
-              "Single core wall terminal",
-              "High voltage rating",
-              "Safety features",
-              "Reliable insulation"
-            ],
-            applications: [
-              "High voltage connections",
-              "Power transmission",
-              "High voltage equipment",
-              "Electrical substations",
-              "Power generation",
-              "Industrial high voltage systems"
-            ]
-          }
-        ]
+            features: ["280 series", "630 series", "1800 series", "Hole series", "Single core wall terminal", "High voltage rating", "Safety features", "Reliable insulation"],
+            applications: ["High voltage connections", "Power transmission", "High voltage equipment", "Electrical substations", "Power generation", "Industrial high voltage systems"],
+          },
+        ],
       },
       {
         id: 12,
@@ -583,25 +425,10 @@ const BrandsWithProductsData = [
             name: "High-voltage wiring harness solutions",
             slug: "highvoltage-wiring-harness-solutions",
             bannerImg: "/images/products/highvoltage_wiring_harness_solutions_banner.jpg",
-            features: [
-              "For power battery system",
-              "For electric drive system",
-              "For charging system",
-              "For thermal system",
-              "High voltage capability",
-              "Safety compliance",
-              "Automotive grade"
-            ],
-            applications: [
-              "Plug-in hybrids",
-              "Pure electric vehicles",
-              "Superchargers",
-              "Light hybrids",
-              "Hydrogen-fueled electric vehicles",
-              "Electric vehicle infrastructure"
-            ]
-          }
-        ]
+            features: ["For power battery system", "For electric drive system", "For charging system", "For thermal system", "High voltage capability", "Safety compliance", "Automotive grade"],
+            applications: ["Plug-in hybrids", "Pure electric vehicles", "Superchargers", "Light hybrids", "Hydrogen-fueled electric vehicles", "Electric vehicle infrastructure"],
+          },
+        ],
       },
       {
         id: 13,
@@ -614,25 +441,10 @@ const BrandsWithProductsData = [
             name: "Green power supply",
             slug: "green-power-supply",
             bannerImg: "/images/products/green_power_supply_banner.jpg",
-            features: [
-              "Strong anti-interference ability",
-              "Energy saving",
-              "Compact structure",
-              "Standard guide rail installation",
-              "High efficiency",
-              "Reliable operation",
-              "Environmental friendly"
-            ],
-            applications: [
-              "Industrial power supply",
-              "Factory automation",
-              "Process control",
-              "Industrial equipment",
-              "Control systems",
-              "Manufacturing facilities"
-            ]
-          }
-        ]
+            features: ["Strong anti-interference ability", "Energy saving", "Compact structure", "Standard guide rail installation", "High efficiency", "Reliable operation", "Environmental friendly"],
+            applications: ["Industrial power supply", "Factory automation", "Process control", "Industrial equipment", "Control systems", "Manufacturing facilities"],
+          },
+        ],
       },
       {
         id: 14,
@@ -653,19 +465,11 @@ const BrandsWithProductsData = [
               "Strong shock performance",
               "Meets IEC60947-5-1 standards",
               "Meets GB/T14048.5 standards",
-              "Durable construction"
+              "Durable construction",
             ],
-            applications: [
-              "Machinery manufacturing",
-              "Railway systems",
-              "Elevator control",
-              "Electric power",
-              "Wind power",
-              "Industrial control panels",
-              "Emergency stops"
-            ]
-          }
-        ]
+            applications: ["Machinery manufacturing", "Railway systems", "Elevator control", "Electric power", "Wind power", "Industrial control panels", "Emergency stops"],
+          },
+        ],
       },
       {
         id: 15,
@@ -678,25 +482,10 @@ const BrandsWithProductsData = [
             name: "Degson marking system",
             slug: "degson-marking-system",
             bannerImg: "/images/products/degson_marking_system_banner.jpg",
-            features: [
-              "Complete solution",
-              "Thermal transfer printers",
-              "Laser printers",
-              "High quality printing",
-              "Durable markings",
-              "Easy to use",
-              "Professional results"
-            ],
-            applications: [
-              "Terminal blocks marker",
-              "Cable marker",
-              "Device marker",
-              "Printing Service",
-              "Industrial identification",
-              "Component labeling"
-            ]
-          }
-        ]
+            features: ["Complete solution", "Thermal transfer printers", "Laser printers", "High quality printing", "Durable markings", "Easy to use", "Professional results"],
+            applications: ["Terminal blocks marker", "Cable marker", "Device marker", "Printing Service", "Industrial identification", "Component labeling"],
+          },
+        ],
       },
       {
         id: 16,
@@ -716,7 +505,7 @@ const BrandsWithProductsData = [
               "Reliable protection",
               "Fast response time",
               "High energy absorption",
-              "Long service life"
+              "Long service life",
             ],
             applications: [
               "Protecting power supply",
@@ -724,10 +513,10 @@ const BrandsWithProductsData = [
               "Building internal lightning protection scheme",
               "Industrial equipment protection",
               "Telecommunication systems",
-              "Control systems"
-            ]
-          }
-        ]
+              "Control systems",
+            ],
+          },
+        ],
       },
       {
         id: 17,
@@ -747,30 +536,24 @@ const BrandsWithProductsData = [
               "EMC compliance",
               "High attenuation",
               "Compact design",
-              "Easy installation"
+              "Easy installation",
             ],
-            applications: [
-              "Reducing electromagnetic interference",
-              "EMC compliance",
-              "Industrial equipment",
-              "Electronic systems",
-              "Power supplies",
-              "Motor drives"
-            ]
-          }
-        ]
+            applications: ["Reducing electromagnetic interference", "EMC compliance", "Industrial equipment", "Electronic systems", "Power supplies", "Motor drives"],
+          },
+        ],
       },
       {
         id: 18,
         name: "IP20 I/O System",
         slug: "ip20-io-system",
+        bannerImg: productISP,
         description: "Input/Output systems for industrial automation.",
         detailedProducts: [
           {
             id: 1,
             name: "IP20 I/O system",
             slug: "ip20-io-system",
-            bannerImg: "/images/products/ip20_io_system_banner.jpg",
+            bannerImg: productISP,
             features: [
               "Combines digital input/output module",
               "Combines analog input/output module",
@@ -782,26 +565,21 @@ const BrandsWithProductsData = [
               "Supports Modbus/TCP protocol",
               "Small size",
               "Compact structure",
-              "Convenient assembly"
+              "Convenient assembly",
             ],
-            applications: [
-              "Industrial automation",
-              "Fieldbus node needs",
-              "Distributed I/O",
-              "Process control",
-              "Factory automation",
-              "Remote monitoring"
-            ]
-          }
-        ]
-      }
-    ]
+            applications: ["Industrial automation", "Fieldbus node needs", "Distributed I/O", "Process control", "Factory automation", "Remote monitoring"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2,
     brandName: "SIEMENS",
+    slug: "siemens",
     brandImg: BrandSIEMENS,
-    description: "SIEMENS is a worldwide technology leader recognized for its expertise in digital industries, intelligent infrastructure, mobility, and healthcare. Emphasizing innovation and sustainability, Siemens creates advanced solutions that enhance efficiency and advancement across multiple sectors.",
+    description:
+      "SIEMENS is a worldwide technology leader recognized for its expertise in digital industries, intelligent infrastructure, mobility, and healthcare. Emphasizing innovation and sustainability, Siemens creates advanced solutions that enhance efficiency and advancement across multiple sectors.",
     workedProducts: [
       {
         id: 1,
@@ -820,18 +598,11 @@ const BrandsWithProductsData = [
               "Energy efficient",
               "Reliable operation",
               "Scalable solutions",
-              "Digital integration"
+              "Digital integration",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing operations",
-              "Process industries",
-              "Material handling",
-              "Machine tools",
-              "Robotics"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing operations", "Process industries", "Material handling", "Machine tools", "Robotics"],
+          },
+        ],
       },
       {
         id: 2,
@@ -850,16 +621,9 @@ const BrandsWithProductsData = [
               "Robust design",
               "Extensive I/O capabilities",
               "Communication interfaces",
-              "Diagnostic functions"
+              "Diagnostic functions",
             ],
-            applications: [
-              "Industrial control and automation",
-              "Process control",
-              "Manufacturing systems",
-              "Building automation",
-              "Infrastructure control",
-              "Safety systems"
-            ]
+            applications: ["Industrial control and automation", "Process control", "Manufacturing systems", "Building automation", "Infrastructure control", "Safety systems"],
           },
           {
             id: 2,
@@ -873,25 +637,21 @@ const BrandsWithProductsData = [
               "Integrated safety",
               "Scalable architecture",
               "User-friendly interfaces",
-              "Remote monitoring"
+              "Remote monitoring",
             ],
-            applications: [
-              "Industrial control and automation",
-              "Process optimization",
-              "Energy management",
-              "Quality control",
-              "Production monitoring",
-              "System integration"
-            ]
-          }
-        ]
-      }
-    ]
+            applications: ["Industrial control and automation", "Process optimization", "Energy management", "Quality control", "Production monitoring", "System integration"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 3,
     brandName: "LAPP KABEL",
-    description: "LAPP KABEL is a leading global manufacturer of high-quality cables, connectors, and cable accessories. The company is known for its expertise in providing innovative solutions for industrial automation, energy, and telecommunications sectors.",
+    slug: "lapp-kabel",
+    brandImg: BrandLAPP,
+    description:
+      "LAPP KABEL is a leading global manufacturer of high-quality cables, connectors, and cable accessories. The company is known for its expertise in providing innovative solutions for industrial automation, energy, and telecommunications sectors.",
     workedProducts: [
       {
         id: 1,
@@ -910,16 +670,9 @@ const BrandsWithProductsData = [
               "High reliability",
               "Safety compliance",
               "Flexible construction",
-              "Temperature resistant"
+              "Temperature resistant",
             ],
-            applications: [
-              "Manufacturing",
-              "Automotive industry",
-              "Energy sector",
-              "Renewable energy",
-              "Industrial plants",
-              "Power distribution"
-            ]
+            applications: ["Manufacturing", "Automotive industry", "Energy sector", "Renewable energy", "Industrial plants", "Power distribution"],
           },
           {
             id: 2,
@@ -933,16 +686,9 @@ const BrandsWithProductsData = [
               "High reliability",
               "Safety compliance",
               "High-speed data transmission",
-              "EMC protection"
+              "EMC protection",
             ],
-            applications: [
-              "Manufacturing",
-              "Automotive industry",
-              "Energy sector",
-              "Renewable energy",
-              "Telecommunications",
-              "Industrial networks"
-            ]
+            applications: ["Manufacturing", "Automotive industry", "Energy sector", "Renewable energy", "Telecommunications", "Industrial networks"],
           },
           {
             id: 3,
@@ -956,18 +702,11 @@ const BrandsWithProductsData = [
               "High reliability",
               "Safety compliance",
               "Flexible design",
-              "Multi-core construction"
+              "Multi-core construction",
             ],
-            applications: [
-              "Manufacturing",
-              "Automotive industry",
-              "Energy sector",
-              "Renewable energy",
-              "Control systems",
-              "Automation equipment"
-            ]
-          }
-        ]
+            applications: ["Manufacturing", "Automotive industry", "Energy sector", "Renewable energy", "Control systems", "Automation equipment"],
+          },
+        ],
       },
       {
         id: 2,
@@ -986,18 +725,11 @@ const BrandsWithProductsData = [
               "Custom configurations",
               "Reliable connections",
               "Time-saving installation",
-              "Professional assembly"
+              "Professional assembly",
             ],
-            applications: [
-              "Various industries requiring reliable connections",
-              "Industrial automation",
-              "Machine building",
-              "Process control",
-              "Data transmission",
-              "Power distribution"
-            ]
-          }
-        ]
+            applications: ["Various industries requiring reliable connections", "Industrial automation", "Machine building", "Process control", "Data transmission", "Power distribution"],
+          },
+        ],
       },
       {
         id: 3,
@@ -1009,25 +741,10 @@ const BrandsWithProductsData = [
             name: "Network and Distribution Components",
             slug: "network-and-distribution-components",
             bannerImg: "/images/products/network_and_distribution_components_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Reliable performance",
-              "Easy installation",
-              "Scalable systems",
-              "Future-proof design",
-              "Standards compliance"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Network infrastructure",
-              "Data centers",
-              "Communication systems"
-            ]
-          }
-        ]
+            features: ["High quality", "Innovative solutions", "Reliable performance", "Easy installation", "Scalable systems", "Future-proof design", "Standards compliance"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Network infrastructure", "Data centers", "Communication systems"],
+          },
+        ],
       },
       {
         id: 4,
@@ -1039,25 +756,10 @@ const BrandsWithProductsData = [
             name: "Sensors",
             slug: "sensors",
             bannerImg: "/images/products/sensors_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Accurate detection",
-              "Reliable operation",
-              "Long service life",
-              "Various sensing technologies",
-              "Industrial grade"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Process monitoring",
-              "Quality control",
-              "Safety systems"
-            ]
-          }
-        ]
+            features: ["High quality", "Innovative solutions", "Accurate detection", "Reliable operation", "Long service life", "Various sensing technologies", "Industrial grade"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Process monitoring", "Quality control", "Safety systems"],
+          },
+        ],
       },
       {
         id: 5,
@@ -1069,25 +771,10 @@ const BrandsWithProductsData = [
             name: "Connectors",
             slug: "connectors",
             bannerImg: "/images/products/connectors_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Reliable connections",
-              "Easy installation",
-              "Durable construction",
-              "Various configurations",
-              "Environmental protection"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Equipment connections",
-              "System integration",
-              "Field installations"
-            ]
-          }
-        ]
+            features: ["High quality", "Innovative solutions", "Reliable connections", "Easy installation", "Durable construction", "Various configurations", "Environmental protection"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Equipment connections", "System integration", "Field installations"],
+          },
+        ],
       },
       {
         id: 6,
@@ -1099,25 +786,10 @@ const BrandsWithProductsData = [
             name: "Cable Glands",
             slug: "cable-glands",
             bannerImg: "/images/products/cable_glands_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Secure cable attachment",
-              "Environmental sealing",
-              "Strain relief",
-              "Various materials",
-              "Easy installation"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Equipment enclosures",
-              "Hazardous areas",
-              "Outdoor installations"
-            ]
-          }
-        ]
+            features: ["High quality", "Innovative solutions", "Secure cable attachment", "Environmental sealing", "Strain relief", "Various materials", "Easy installation"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Equipment enclosures", "Hazardous areas", "Outdoor installations"],
+          },
+        ],
       },
       {
         id: 7,
@@ -1129,25 +801,10 @@ const BrandsWithProductsData = [
             name: "Cable Protection and Guiding System",
             slug: "cable-protection-and-guiding-system",
             bannerImg: "/images/products/cable_protection_and_guiding_system_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Cable protection",
-              "Organized routing",
-              "Flexible movement",
-              "Durable materials",
-              "Modular design"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Moving machinery",
-              "Robotic systems",
-              "Material handling"
-            ]
-          }
-        ]
+            features: ["High quality", "Innovative solutions", "Cable protection", "Organized routing", "Flexible movement", "Durable materials", "Modular design"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Moving machinery", "Robotic systems", "Material handling"],
+          },
+        ],
       },
       {
         id: 8,
@@ -1159,25 +816,10 @@ const BrandsWithProductsData = [
             name: "Marking Systems",
             slug: "marking-systems",
             bannerImg: "/images/products/marking_systems_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Clear identification",
-              "Durable markings",
-              "Easy application",
-              "Various marking methods",
-              "Professional appearance"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Cable identification",
-              "Component labeling",
-              "System documentation"
-            ]
-          }
-        ]
+            features: ["High quality", "Innovative solutions", "Clear identification", "Durable markings", "Easy application", "Various marking methods", "Professional appearance"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Cable identification", "Component labeling", "System documentation"],
+          },
+        ],
       },
       {
         id: 9,
@@ -1189,32 +831,20 @@ const BrandsWithProductsData = [
             name: "Tools and Accessories",
             slug: "tools-and-accessories",
             bannerImg: "/images/products/tools_and_accessories_banner.jpg",
-            features: [
-              "High quality",
-              "Innovative solutions",
-              "Professional tools",
-              "Easy to use",
-              "Durable construction",
-              "Specialized functions",
-              "Time-saving design"
-            ],
-            applications: [
-              "Industrial automation",
-              "Energy sector",
-              "Telecommunications",
-              "Cable installation",
-              "Maintenance work",
-              "Field service"
-            ]
-          }
-        ]
-      }
-    ]
+            features: ["High quality", "Innovative solutions", "Professional tools", "Easy to use", "Durable construction", "Specialized functions", "Time-saving design"],
+            applications: ["Industrial automation", "Energy sector", "Telecommunications", "Cable installation", "Maintenance work", "Field service"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 4,
     brandName: "PHOENIX CONTACT",
-    description: "PHOENIX CONTACT stands out as a premier global supplier of solutions in industrial automation, connectivity, and electronic interfaces. The organization focuses on creating cutting-edge products and technologies that improve automation systems, electrical connections, and communication networks.",
+    slug: "phoenix-contact",
+    brandImg: BrandPhoenix,
+    description:
+      "PHOENIX CONTACT stands out as a premier global supplier of solutions in industrial automation, connectivity, and electronic interfaces. The organization focuses on creating cutting-edge products and technologies that improve automation systems, electrical connections, and communication networks.",
     workedProducts: [
       {
         id: 1,
@@ -1226,25 +856,17 @@ const BrandsWithProductsData = [
             name: "E-Mobility products",
             slug: "emobility-products",
             bannerImg: "/images/products/emobility_products_banner.jpg",
-            features: [
-              "Cutting-edge products and technologies",
-              "High power handling",
-              "Safety compliance",
-              "Reliable operation",
-              "Future-ready solutions",
-              "Scalable systems",
-              "Smart connectivity"
-            ],
+            features: ["Cutting-edge products and technologies", "High power handling", "Safety compliance", "Reliable operation", "Future-ready solutions", "Scalable systems", "Smart connectivity"],
             applications: [
               "Enhancing efficiency across multiple sectors",
               "Electric vehicle charging",
               "Battery management",
               "Power distribution",
               "Grid integration",
-              "Smart charging infrastructure"
-            ]
-          }
-        ]
+              "Smart charging infrastructure",
+            ],
+          },
+        ],
       },
       {
         id: 2,
@@ -1256,25 +878,10 @@ const BrandsWithProductsData = [
             name: "Infrastructure products",
             slug: "infrastructure-products",
             bannerImg: "/images/products/infrastructure_products_banner.jpg",
-            features: [
-              "Cutting-edge products and technologies",
-              "Robust design",
-              "Long service life",
-              "Reliable performance",
-              "Scalable solutions",
-              "Easy maintenance",
-              "Standards compliance"
-            ],
-            applications: [
-              "Enhancing efficiency across multiple sectors",
-              "Power distribution",
-              "Transportation systems",
-              "Building automation",
-              "Smart cities",
-              "Industrial infrastructure"
-            ]
-          }
-        ]
+            features: ["Cutting-edge products and technologies", "Robust design", "Long service life", "Reliable performance", "Scalable solutions", "Easy maintenance", "Standards compliance"],
+            applications: ["Enhancing efficiency across multiple sectors", "Power distribution", "Transportation systems", "Building automation", "Smart cities", "Industrial infrastructure"],
+          },
+        ],
       },
       {
         id: 3,
@@ -1293,18 +900,11 @@ const BrandsWithProductsData = [
               "Advanced protection",
               "Monitoring capabilities",
               "Flexible configuration",
-              "Energy management"
+              "Energy management",
             ],
-            applications: [
-              "Enhancing efficiency across multiple sectors",
-              "Power generation",
-              "Power distribution",
-              "Renewable energy",
-              "Industrial power systems",
-              "Grid infrastructure"
-            ]
-          }
-        ]
+            applications: ["Enhancing efficiency across multiple sectors", "Power generation", "Power distribution", "Renewable energy", "Industrial power systems", "Grid infrastructure"],
+          },
+        ],
       },
       {
         id: 4,
@@ -1316,26 +916,10 @@ const BrandsWithProductsData = [
             name: "Process Industry products",
             slug: "process-industry-products",
             bannerImg: "/images/products/process_industry_products_banner.jpg",
-            features: [
-              "Cutting-edge products and technologies",
-              "Process optimization",
-              "Real-time monitoring",
-              "Advanced control",
-              "Safety integration",
-              "Reliable operation",
-              "Scalable systems"
-            ],
-            applications: [
-              "Enhancing efficiency across multiple sectors",
-              "Chemical processing",
-              "Oil and gas",
-              "Water treatment",
-              "Food and beverage",
-              "Pharmaceutical",
-              "Mining"
-            ]
-          }
-        ]
+            features: ["Cutting-edge products and technologies", "Process optimization", "Real-time monitoring", "Advanced control", "Safety integration", "Reliable operation", "Scalable systems"],
+            applications: ["Enhancing efficiency across multiple sectors", "Chemical processing", "Oil and gas", "Water treatment", "Food and beverage", "Pharmaceutical", "Mining"],
+          },
+        ],
       },
       {
         id: 5,
@@ -1354,7 +938,7 @@ const BrandsWithProductsData = [
               "Flexible production",
               "Automated systems",
               "Data integration",
-              "Predictive maintenance"
+              "Predictive maintenance",
             ],
             applications: [
               "Enhancing efficiency across multiple sectors",
@@ -1363,10 +947,10 @@ const BrandsWithProductsData = [
               "Quality assurance",
               "Production monitoring",
               "Factory automation",
-              "Industry 4.0"
-            ]
-          }
-        ]
+              "Industry 4.0",
+            ],
+          },
+        ],
       },
       {
         id: 6,
@@ -1378,25 +962,10 @@ const BrandsWithProductsData = [
             name: "Industrial Connectors",
             slug: "industrial-connectors",
             bannerImg: "/images/products/industrial_connectors_banner.jpg",
-            features: [
-              "Extensive product range",
-              "High reliability",
-              "Robust construction",
-              "Easy installation",
-              "Various configurations",
-              "Environmental protection",
-              "Long service life"
-            ],
-            applications: [
-              "Industrial automation",
-              "Connectivity solutions",
-              "Electronic interfaces",
-              "Equipment connections",
-              "System integration",
-              "Field installations"
-            ]
-          }
-        ]
+            features: ["Extensive product range", "High reliability", "Robust construction", "Easy installation", "Various configurations", "Environmental protection", "Long service life"],
+            applications: ["Industrial automation", "Connectivity solutions", "Electronic interfaces", "Equipment connections", "System integration", "Field installations"],
+          },
+        ],
       },
       {
         id: 7,
@@ -1415,18 +984,11 @@ const BrandsWithProductsData = [
               "User-friendly interfaces",
               "Scalable architecture",
               "Remote monitoring",
-              "Safety integration"
+              "Safety integration",
             ],
-            applications: [
-              "Industrial automation",
-              "Connectivity solutions",
-              "Electronic interfaces",
-              "Process control",
-              "System monitoring",
-              "Production optimization"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Connectivity solutions", "Electronic interfaces", "Process control", "System monitoring", "Production optimization"],
+          },
+        ],
       },
       {
         id: 8,
@@ -1438,25 +1000,10 @@ const BrandsWithProductsData = [
             name: "Remote I/O Modules",
             slug: "remote-io-modules",
             bannerImg: "/images/products/remote_io_modules_banner.jpg",
-            features: [
-              "Extensive product range",
-              "Distributed I/O",
-              "Flexible configuration",
-              "Easy installation",
-              "Diagnostic capabilities",
-              "Communication interfaces",
-              "Modular design"
-            ],
-            applications: [
-              "Industrial automation",
-              "Connectivity solutions",
-              "Electronic interfaces",
-              "Remote monitoring",
-              "Distributed control",
-              "Field devices"
-            ]
-          }
-        ]
+            features: ["Extensive product range", "Distributed I/O", "Flexible configuration", "Easy installation", "Diagnostic capabilities", "Communication interfaces", "Modular design"],
+            applications: ["Industrial automation", "Connectivity solutions", "Electronic interfaces", "Remote monitoring", "Distributed control", "Field devices"],
+          },
+        ],
       },
       {
         id: 9,
@@ -1468,32 +1015,20 @@ const BrandsWithProductsData = [
             name: "Surge Protection Devices",
             slug: "surge-protection-devices",
             bannerImg: "/images/products/surge_protection_devices_banner.jpg",
-            features: [
-              "Extensive product range",
-              "Overvoltage protection",
-              "Fast response time",
-              "High energy absorption",
-              "Reliable protection",
-              "Easy installation",
-              "Status indication"
-            ],
-            applications: [
-              "Industrial automation",
-              "Connectivity solutions",
-              "Electronic interfaces",
-              "Equipment protection",
-              "System reliability",
-              "Lightning protection"
-            ]
-          }
-        ]
-      }
-    ]
+            features: ["Extensive product range", "Overvoltage protection", "Fast response time", "High energy absorption", "Reliable protection", "Easy installation", "Status indication"],
+            applications: ["Industrial automation", "Connectivity solutions", "Electronic interfaces", "Equipment protection", "System reliability", "Lightning protection"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 5,
     brandName: "OMRON AUTOMATION",
-    description: "OMRON CORPORATION is a global leader in automation and electronics, headquartered in Kyoto, Japan. The company's core philosophy—'Sensing & Control + Think'—drives its mission to create solutions that address real-world challenges in manufacturing, healthcare, energy, and social infrastructure.",
+    slug: "omron-automation",
+    brandImg: BrandOMRON,
+    description:
+      "OMRON CORPORATION is a global leader in automation and electronics, headquartered in Kyoto, Japan. The company's core philosophy—'Sensing & Control + Think'—drives its mission to create solutions that address real-world challenges in manufacturing, healthcare, energy, and social infrastructure.",
     workedProducts: [
       {
         id: 1,
@@ -1512,18 +1047,11 @@ const BrandsWithProductsData = [
               "Reliable detection",
               "Various sensing methods",
               "Industrial grade",
-              "Long service life"
+              "Long service life",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Quality control"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Quality control"],
+          },
+        ],
       },
       {
         id: 2,
@@ -1535,25 +1063,10 @@ const BrandsWithProductsData = [
             name: "Switches",
             slug: "switches",
             bannerImg: "/images/products/switches_banner.jpg",
-            features: [
-              "Part of Omron's diverse product portfolio",
-              "Reliable switching",
-              "Long electrical life",
-              "Various actuator types",
-              "Compact design",
-              "High precision",
-              "Durable construction"
-            ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Control systems"
-            ]
-          }
-        ]
+            features: ["Part of Omron's diverse product portfolio", "Reliable switching", "Long electrical life", "Various actuator types", "Compact design", "High precision", "Durable construction"],
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Control systems"],
+          },
+        ],
       },
       {
         id: 3,
@@ -1572,18 +1085,11 @@ const BrandsWithProductsData = [
               "Reliable protection",
               "Easy integration",
               "Diagnostic functions",
-              "Standards compliance"
+              "Standards compliance",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Machine safety"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Machine safety"],
+          },
+        ],
       },
       {
         id: 4,
@@ -1602,18 +1108,11 @@ const BrandsWithProductsData = [
               "Compact design",
               "Various coil voltages",
               "Reliable operation",
-              "Low power consumption"
+              "Low power consumption",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Control circuits"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Control circuits"],
+          },
+        ],
       },
       {
         id: 5,
@@ -1632,18 +1131,11 @@ const BrandsWithProductsData = [
               "Flexible configuration",
               "High performance",
               "Reliable operation",
-              "Easy programming"
+              "Easy programming",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Process control"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Process control"],
+          },
+        ],
       },
       {
         id: 6,
@@ -1662,18 +1154,11 @@ const BrandsWithProductsData = [
               "Advanced algorithms",
               "Real-time processing",
               "Communication interfaces",
-              "Easy integration"
+              "Easy integration",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Factory automation"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Factory automation"],
+          },
+        ],
       },
       {
         id: 7,
@@ -1692,18 +1177,11 @@ const BrandsWithProductsData = [
               "Energy efficient",
               "Advanced algorithms",
               "Easy programming",
-              "Reliable operation"
+              "Reliable operation",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Motion control"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Motion control"],
+          },
+        ],
       },
       {
         id: 8,
@@ -1722,18 +1200,11 @@ const BrandsWithProductsData = [
               "Easy programming",
               "Safety integration",
               "High precision",
-              "Collaborative operation"
+              "Collaborative operation",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Assembly automation"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Assembly automation"],
+          },
+        ],
       },
       {
         id: 9,
@@ -1752,18 +1223,11 @@ const BrandsWithProductsData = [
               "Real-time analysis",
               "Cost reduction",
               "Environmental benefits",
-              "Easy implementation"
+              "Easy implementation",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Energy management"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Energy management"],
+          },
+        ],
       },
       {
         id: 10,
@@ -1782,25 +1246,21 @@ const BrandsWithProductsData = [
               "Compact design",
               "Various output voltages",
               "Protection features",
-              "Long service life"
+              "Long service life",
             ],
-            applications: [
-              "Industrial automation",
-              "Manufacturing",
-              "Healthcare",
-              "Energy systems",
-              "Social infrastructure",
-              "Control systems"
-            ]
-          }
-        ]
-      }
-    ]
+            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Control systems"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 6,
     brandName: "RITTAL - THE SYSTEM",
-    description: "RITTAL is a leading global provider of solutions for industrial enclosures, power distribution, climate control, and IT infrastructure. They offer a comprehensive range of products and systems for various industries.",
+    slug: "rittal-the-system",
+    brandImg: BrandRittal,
+    description:
+      "RITTAL is a leading global provider of solutions for industrial enclosures, power distribution, climate control, and IT infrastructure. They offer a comprehensive range of products and systems for various industries.",
     workedProducts: [
       {
         id: 1,
@@ -1819,18 +1279,11 @@ const BrandsWithProductsData = [
               "Environmental protection",
               "Easy installation",
               "Modular design",
-              "Standards compliance"
+              "Standards compliance",
             ],
-            applications: [
-              "Industrial enclosures",
-              "Power distribution",
-              "Climate control",
-              "IT infrastructure",
-              "Equipment protection",
-              "Control systems"
-            ]
-          }
-        ]
+            applications: ["Industrial enclosures", "Power distribution", "Climate control", "IT infrastructure", "Equipment protection", "Control systems"],
+          },
+        ],
       },
       {
         id: 2,
@@ -1849,18 +1302,11 @@ const BrandsWithProductsData = [
               "Safety features",
               "Easy installation",
               "Monitoring capabilities",
-              "Scalable solutions"
+              "Scalable solutions",
             ],
-            applications: [
-              "Industrial enclosures",
-              "Power distribution",
-              "Climate control",
-              "IT infrastructure",
-              "Electrical systems",
-              "Data centers"
-            ]
-          }
-        ]
+            applications: ["Industrial enclosures", "Power distribution", "Climate control", "IT infrastructure", "Electrical systems", "Data centers"],
+          },
+        ],
       },
       {
         id: 3,
@@ -1879,18 +1325,11 @@ const BrandsWithProductsData = [
               "Energy efficient",
               "Reliable operation",
               "Various cooling methods",
-              "Smart control systems"
+              "Smart control systems",
             ],
-            applications: [
-              "Industrial enclosures",
-              "Power distribution",
-              "Climate control",
-              "IT infrastructure",
-              "Equipment cooling",
-              "Environmental control"
-            ]
-          }
-        ]
+            applications: ["Industrial enclosures", "Power distribution", "Climate control", "IT infrastructure", "Equipment cooling", "Environmental control"],
+          },
+        ],
       },
       {
         id: 4,
@@ -1909,18 +1348,11 @@ const BrandsWithProductsData = [
               "Quality control",
               "Flexible systems",
               "Advanced technology",
-              "Productivity enhancement"
+              "Productivity enhancement",
             ],
-            applications: [
-              "Industrial enclosures",
-              "Power distribution",
-              "Climate control",
-              "IT infrastructure",
-              "Manufacturing automation",
-              "Assembly systems"
-            ]
-          }
-        ]
+            applications: ["Industrial enclosures", "Power distribution", "Climate control", "IT infrastructure", "Manufacturing automation", "Assembly systems"],
+          },
+        ],
       },
       {
         id: 5,
@@ -1939,18 +1371,11 @@ const BrandsWithProductsData = [
               "Power distribution",
               "Cooling solutions",
               "Security features",
-              "Scalable systems"
+              "Scalable systems",
             ],
-            applications: [
-              "Industrial enclosures",
-              "Power distribution",
-              "Climate control",
-              "IT infrastructure",
-              "Data centers",
-              "Server rooms"
-            ]
-          }
-        ]
+            applications: ["Industrial enclosures", "Power distribution", "Climate control", "IT infrastructure", "Data centers", "Server rooms"],
+          },
+        ],
       },
       {
         id: 6,
@@ -1969,25 +1394,21 @@ const BrandsWithProductsData = [
               "Various functions",
               "Quality construction",
               "System integration",
-              "Enhanced functionality"
+              "Enhanced functionality",
             ],
-            applications: [
-              "Industrial enclosures",
-              "Power distribution",
-              "Climate control",
-              "IT infrastructure",
-              "System enhancement",
-              "Installation support"
-            ]
-          }
-        ]
-      }
-    ]
+            applications: ["Industrial enclosures", "Power distribution", "Climate control", "IT infrastructure", "System enhancement", "Installation support"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 7,
     brandName: "SMC",
-    description: "SMC Corporation is a world leader in pneumatic technology, providing a wide range of products for industrial automation. They are known for their high-quality, innovative, and energy-efficient solutions.",
+    slug: "smc",
+    brandImg: BrandSMC,
+    description:
+      "SMC Corporation is a world leader in pneumatic technology, providing a wide range of products for industrial automation. They are known for their high-quality, innovative, and energy-efficient solutions.",
     workedProducts: [
       {
         id: 1,
@@ -2006,18 +1427,11 @@ const BrandsWithProductsData = [
               "System optimization",
               "Monitoring capabilities",
               "Leak detection",
-              "Cost reduction"
+              "Cost reduction",
             ],
-            applications: [
-              "Industrial automation",
-              "Pneumatic systems",
-              "Energy management",
-              "Cost optimization",
-              "System monitoring",
-              "Maintenance planning"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Pneumatic systems", "Energy management", "Cost optimization", "System monitoring", "Maintenance planning"],
+          },
+        ],
       },
       {
         id: 2,
@@ -2036,18 +1450,11 @@ const BrandsWithProductsData = [
               "High switching speed",
               "Reliable operation",
               "Long service life",
-              "Easy installation"
+              "Easy installation",
             ],
-            applications: [
-              "Industrial automation",
-              "Pneumatic control",
-              "Actuator control",
-              "Process automation",
-              "Machine control",
-              "System integration"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Pneumatic control", "Actuator control", "Process automation", "Machine control", "System integration"],
+          },
+        ],
       },
       {
         id: 3,
@@ -2066,18 +1473,11 @@ const BrandsWithProductsData = [
               "Different stroke lengths",
               "High force output",
               "Smooth operation",
-              "Durable construction"
+              "Durable construction",
             ],
-            applications: [
-              "Industrial automation",
-              "Linear actuation",
-              "Material handling",
-              "Assembly operations",
-              "Clamping applications",
-              "Positioning systems"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Linear actuation", "Material handling", "Assembly operations", "Clamping applications", "Positioning systems"],
+          },
+        ],
       },
       {
         id: 4,
@@ -2096,18 +1496,11 @@ const BrandsWithProductsData = [
               "Precise positioning",
               "High torque output",
               "Compact design",
-              "Reliable operation"
+              "Reliable operation",
             ],
-            applications: [
-              "Industrial automation",
-              "Rotary positioning",
-              "Material handling",
-              "Assembly operations",
-              "Pick and place",
-              "Robotic systems"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Rotary positioning", "Material handling", "Assembly operations", "Pick and place", "Robotic systems"],
+          },
+        ],
       },
       {
         id: 5,
@@ -2119,25 +1512,10 @@ const BrandsWithProductsData = [
             name: "Electric Actuators",
             slug: "electric-actuators",
             bannerImg: "/images/products/electric_actuators_banner.jpg",
-            features: [
-              "Part of SMC's wide range of pneumatic products",
-              "Electric operation",
-              "Precise positioning",
-              "High repeatability",
-              "Energy efficient",
-              "Quiet operation",
-              "Easy programming"
-            ],
-            applications: [
-              "Industrial automation",
-              "Precision positioning",
-              "Clean environments",
-              "Energy-conscious applications",
-              "Quiet operation requirements",
-              "High precision tasks"
-            ]
-          }
-        ]
+            features: ["Part of SMC's wide range of pneumatic products", "Electric operation", "Precise positioning", "High repeatability", "Energy efficient", "Quiet operation", "Easy programming"],
+            applications: ["Industrial automation", "Precision positioning", "Clean environments", "Energy-conscious applications", "Quiet operation requirements", "High precision tasks"],
+          },
+        ],
       },
       {
         id: 6,
@@ -2149,25 +1527,10 @@ const BrandsWithProductsData = [
             name: "Vacuum Equipment",
             slug: "vacuum-equipment",
             bannerImg: "/images/products/vacuum_equipment_banner.jpg",
-            features: [
-              "Part of SMC's wide range of pneumatic products",
-              "Vacuum generation",
-              "Various vacuum levels",
-              "Energy efficient",
-              "Compact design",
-              "Reliable operation",
-              "Easy maintenance"
-            ],
-            applications: [
-              "Industrial automation",
-              "Material handling",
-              "Pick and place operations",
-              "Packaging applications",
-              "Assembly processes",
-              "Vacuum forming"
-            ]
-          }
-        ]
+            features: ["Part of SMC's wide range of pneumatic products", "Vacuum generation", "Various vacuum levels", "Energy efficient", "Compact design", "Reliable operation", "Easy maintenance"],
+            applications: ["Industrial automation", "Material handling", "Pick and place operations", "Packaging applications", "Assembly processes", "Vacuum forming"],
+          },
+        ],
       },
       {
         id: 7,
@@ -2179,25 +1542,10 @@ const BrandsWithProductsData = [
             name: "Air Preparation Equipment",
             slug: "air-preparation-equipment",
             bannerImg: "/images/products/air_preparation_equipment_banner.jpg",
-            features: [
-              "Part of SMC's wide range of pneumatic products",
-              "Air filtration",
-              "Pressure regulation",
-              "Air lubrication",
-              "Moisture removal",
-              "System protection",
-              "Improved performance"
-            ],
-            applications: [
-              "Industrial automation",
-              "Pneumatic system preparation",
-              "Air quality improvement",
-              "Equipment protection",
-              "System reliability",
-              "Maintenance reduction"
-            ]
-          }
-        ]
+            features: ["Part of SMC's wide range of pneumatic products", "Air filtration", "Pressure regulation", "Air lubrication", "Moisture removal", "System protection", "Improved performance"],
+            applications: ["Industrial automation", "Pneumatic system preparation", "Air quality improvement", "Equipment protection", "System reliability", "Maintenance reduction"],
+          },
+        ],
       },
       {
         id: 8,
@@ -2216,18 +1564,11 @@ const BrandsWithProductsData = [
               "Pressure control",
               "Easy assembly",
               "Space saving",
-              "Flexible configuration"
+              "Flexible configuration",
             ],
-            applications: [
-              "Industrial automation",
-              "Pneumatic system preparation",
-              "Modular installations",
-              "Space-constrained applications",
-              "Custom configurations",
-              "System optimization"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Pneumatic system preparation", "Modular installations", "Space-constrained applications", "Custom configurations", "System optimization"],
+          },
+        ],
       },
       {
         id: 9,
@@ -2246,18 +1587,11 @@ const BrandsWithProductsData = [
               "Easy installation",
               "Leak-proof design",
               "Durable materials",
-              "Quick connect/disconnect"
+              "Quick connect/disconnect",
             ],
-            applications: [
-              "Industrial automation",
-              "Pneumatic connections",
-              "Air distribution",
-              "System assembly",
-              "Maintenance operations",
-              "Field installations"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Pneumatic connections", "Air distribution", "System assembly", "Maintenance operations", "Field installations"],
+          },
+        ],
       },
       {
         id: 10,
@@ -2276,18 +1610,11 @@ const BrandsWithProductsData = [
               "Various flow ranges",
               "Stable operation",
               "Easy adjustment",
-              "Reliable performance"
+              "Reliable performance",
             ],
-            applications: [
-              "Industrial automation",
-              "Speed control",
-              "Process optimization",
-              "System tuning",
-              "Performance adjustment",
-              "Energy optimization"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Speed control", "Process optimization", "System tuning", "Performance adjustment", "Energy optimization"],
+          },
+        ],
       },
       {
         id: 11,
@@ -2306,25 +1633,21 @@ const BrandsWithProductsData = [
               "Flow monitoring",
               "Reliable switching",
               "Various sensing methods",
-              "Easy integration"
+              "Easy integration",
             ],
-            applications: [
-              "Industrial automation",
-              "Position feedback",
-              "System monitoring",
-              "Process control",
-              "Safety systems",
-              "Diagnostic functions"
-            ]
-          }
-        ]
-      }
-    ]
+            applications: ["Industrial automation", "Position feedback", "System monitoring", "Process control", "Safety systems", "Diagnostic functions"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 8,
     brandName: "TRINITY TOUCH",
-    description: "TRINITY TOUCH is a leading manufacturer and supplier of electrical and electronic components, specializing in industrial connectivity solutions. They offer a comprehensive range of products for various industrial applications.",
+    slug: "trinity-touch",
+    brandImg: BrandTrinity,
+    description:
+      "TRINITY TOUCH is a leading manufacturer and supplier of electrical and electronic components, specializing in industrial connectivity solutions. They offer a comprehensive range of products for various industrial applications.",
     workedProducts: [
       {
         id: 1,
@@ -2343,18 +1666,11 @@ const BrandsWithProductsData = [
               "Various configurations",
               "Easy installation",
               "Standards compliance",
-              "Durable construction"
+              "Durable construction",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Control panels",
-              "Power distribution",
-              "Equipment connections",
-              "System integration",
-              "Field installations"
-            ]
-          }
-        ]
+            applications: ["Industrial electrical systems", "Control panels", "Power distribution", "Equipment connections", "System integration", "Field installations"],
+          },
+        ],
       },
       {
         id: 2,
@@ -2373,18 +1689,11 @@ const BrandsWithProductsData = [
               "Strain relief",
               "Various materials",
               "Different thread types",
-              "Easy installation"
+              "Easy installation",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Equipment enclosures",
-              "Cable management",
-              "Environmental protection",
-              "Hazardous areas",
-              "Outdoor installations"
-            ]
-          }
-        ]
+            applications: ["Industrial electrical systems", "Equipment enclosures", "Cable management", "Environmental protection", "Hazardous areas", "Outdoor installations"],
+          },
+        ],
       },
       {
         id: 3,
@@ -2403,18 +1712,11 @@ const BrandsWithProductsData = [
               "Environmental sealing",
               "Easy access",
               "Mounting options",
-              "Standards compliance"
+              "Standards compliance",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Equipment housing",
-              "Control systems",
-              "Electrical distribution",
-              "Outdoor installations",
-              "Harsh environments"
-            ]
-          }
-        ]
+            applications: ["Industrial electrical systems", "Equipment housing", "Control systems", "Electrical distribution", "Outdoor installations", "Harsh environments"],
+          },
+        ],
       },
       {
         id: 4,
@@ -2433,18 +1735,11 @@ const BrandsWithProductsData = [
               "Environmental protection",
               "Secure connections",
               "Various configurations",
-              "Safety features"
+              "Safety features",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Power connections",
-              "Equipment supply",
-              "Temporary installations",
-              "Mobile equipment",
-              "Construction sites"
-            ]
-          }
-        ]
+            applications: ["Industrial electrical systems", "Power connections", "Equipment supply", "Temporary installations", "Mobile equipment", "Construction sites"],
+          },
+        ],
       },
       {
         id: 5,
@@ -2463,18 +1758,11 @@ const BrandsWithProductsData = [
               "Easy installation",
               "Secure mounting",
               "Accessories available",
-              "Space efficient"
+              "Space efficient",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Control panels",
-              "Component mounting",
-              "Electrical distribution",
-              "System organization",
-              "Panel building"
-            ]
-          }
-        ]
+            applications: ["Industrial electrical systems", "Control panels", "Component mounting", "Electrical distribution", "System organization", "Panel building"],
+          },
+        ],
       },
       {
         id: 6,
@@ -2493,18 +1781,11 @@ const BrandsWithProductsData = [
               "Various sizes",
               "Easy installation",
               "Accessories available",
-              "Professional appearance"
+              "Professional appearance",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Cable management",
-              "Wire protection",
-              "Panel organization",
-              "System installation",
-              "Maintenance access"
-            ]
-          }
-        ]
+            applications: ["Industrial electrical systems", "Cable management", "Wire protection", "Panel organization", "System installation", "Maintenance access"],
+          },
+        ],
       },
       {
         id: 7,
@@ -2523,25 +1804,21 @@ const BrandsWithProductsData = [
               "Low smoke emission",
               "Environmental friendly",
               "Fire retardant",
-              "Various sizes"
+              "Various sizes",
             ],
-            applications: [
-              "Industrial electrical systems",
-              "Safety-critical applications",
-              "Public buildings",
-              "Transportation systems",
-              "Clean environments",
-              "Enclosed spaces"
-            ]
-          }
-        ]
-      }
-    ]
+            applications: ["Industrial electrical systems", "Safety-critical applications", "Public buildings", "Transportation systems", "Clean environments", "Enclosed spaces"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 9,
     brandName: "SMISEN CONTROLS",
-    description: "SMISEN CONTROLS specializes in the manufacturing of high-quality transformers, reactors, and power quality solutions. They are known for their reliable and efficient products for various industrial applications.",
+    slug: "smisen-controls",
+    brandImg: BrandSMISEN,
+    description:
+      "SMISEN CONTROLS specializes in the manufacturing of high-quality transformers, reactors, and power quality solutions. They are known for their reliable and efficient products for various industrial applications.",
     workedProducts: [
       {
         id: 1,
@@ -2553,25 +1830,10 @@ const BrandsWithProductsData = [
             name: "Transformers",
             slug: "transformers",
             bannerImg: "/images/products/transformers_banner.jpg",
-            features: [
-              "Part of Smisen Controls' product range",
-              "Energy transfer",
-              "Voltage transformation",
-              "High efficiency",
-              "Reliable operation",
-              "Various power ratings",
-              "Standards compliance"
-            ],
-            applications: [
-              "Industrial power systems",
-              "Power distribution",
-              "Voltage conversion",
-              "Isolation applications",
-              "Equipment supply",
-              "System integration"
-            ]
-          }
-        ]
+            features: ["Part of Smisen Controls' product range", "Energy transfer", "Voltage transformation", "High efficiency", "Reliable operation", "Various power ratings", "Standards compliance"],
+            applications: ["Industrial power systems", "Power distribution", "Voltage conversion", "Isolation applications", "Equipment supply", "System integration"],
+          },
+        ],
       },
       {
         id: 2,
@@ -2583,25 +1845,10 @@ const BrandsWithProductsData = [
             name: "Current Transformers",
             slug: "current-transformers",
             bannerImg: "/images/products/current_transformers_banner.jpg",
-            features: [
-              "Part of Smisen Controls' product range",
-              "Current measurement",
-              "High accuracy",
-              "Safety isolation",
-              "Various ratios",
-              "Reliable operation",
-              "Standards compliance"
-            ],
-            applications: [
-              "Industrial power systems",
-              "Current measurement",
-              "Protection systems",
-              "Metering applications",
-              "Power monitoring",
-              "System control"
-            ]
-          }
-        ]
+            features: ["Part of Smisen Controls' product range", "Current measurement", "High accuracy", "Safety isolation", "Various ratios", "Reliable operation", "Standards compliance"],
+            applications: ["Industrial power systems", "Current measurement", "Protection systems", "Metering applications", "Power monitoring", "System control"],
+          },
+        ],
       },
       {
         id: 3,
@@ -2613,25 +1860,10 @@ const BrandsWithProductsData = [
             name: "Line Chokes",
             slug: "line-chokes",
             bannerImg: "/images/products/line_chokes_banner.jpg",
-            features: [
-              "Part of Smisen Controls' product range",
-              "Noise suppression",
-              "Harmonic filtering",
-              "EMC compliance",
-              "High inductance",
-              "Reliable operation",
-              "Compact design"
-            ],
-            applications: [
-              "Industrial power systems",
-              "EMC compliance",
-              "Harmonic mitigation",
-              "Power quality improvement",
-              "Drive applications",
-              "System protection"
-            ]
-          }
-        ]
+            features: ["Part of Smisen Controls' product range", "Noise suppression", "Harmonic filtering", "EMC compliance", "High inductance", "Reliable operation", "Compact design"],
+            applications: ["Industrial power systems", "EMC compliance", "Harmonic mitigation", "Power quality improvement", "Drive applications", "System protection"],
+          },
+        ],
       },
       {
         id: 4,
@@ -2650,18 +1882,11 @@ const BrandsWithProductsData = [
               "Thermal management",
               "Reliable operation",
               "Various resistance values",
-              "Robust construction"
+              "Robust construction",
             ],
-            applications: [
-              "Industrial power systems",
-              "Motor control",
-              "Drive systems",
-              "Energy recovery",
-              "Braking applications",
-              "System protection"
-            ]
-          }
-        ]
+            applications: ["Industrial power systems", "Motor control", "Drive systems", "Energy recovery", "Braking applications", "System protection"],
+          },
+        ],
       },
       {
         id: 5,
@@ -2673,25 +1898,10 @@ const BrandsWithProductsData = [
             name: "Reactors",
             slug: "reactors",
             bannerImg: "/images/products/reactors_banner.jpg",
-            features: [
-              "Part of Smisen Controls' product range",
-              "Current limiting",
-              "Voltage drop",
-              "Power factor correction",
-              "High inductance",
-              "Reliable operation",
-              "Various configurations"
-            ],
-            applications: [
-              "Industrial power systems",
-              "Current limiting",
-              "Power factor correction",
-              "System protection",
-              "Power quality",
-              "Grid applications"
-            ]
-          }
-        ]
+            features: ["Part of Smisen Controls' product range", "Current limiting", "Voltage drop", "Power factor correction", "High inductance", "Reliable operation", "Various configurations"],
+            applications: ["Industrial power systems", "Current limiting", "Power factor correction", "System protection", "Power quality", "Grid applications"],
+          },
+        ],
       },
       {
         id: 6,
@@ -2703,32 +1913,20 @@ const BrandsWithProductsData = [
             name: "Filter",
             slug: "filter",
             bannerImg: "/images/products/filter_banner.jpg",
-            features: [
-              "Part of Smisen Controls' product range",
-              "Signal filtering",
-              "Noise reduction",
-              "Harmonic suppression",
-              "High attenuation",
-              "Reliable operation",
-              "Various filter types"
-            ],
-            applications: [
-              "Industrial power systems",
-              "Signal conditioning",
-              "EMC compliance",
-              "Power quality",
-              "System protection",
-              "Noise reduction"
-            ]
-          }
-        ]
-      }
-    ]
+            features: ["Part of Smisen Controls' product range", "Signal filtering", "Noise reduction", "Harmonic suppression", "High attenuation", "Reliable operation", "Various filter types"],
+            applications: ["Industrial power systems", "Signal conditioning", "EMC compliance", "Power quality", "System protection", "Noise reduction"],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 10,
     brandName: "BAUMER",
-    description: "Baumer is a leading international manufacturer of sensors, encoders, measuring instruments, and components for automated image processing. They provide innovative solutions for a wide range of industries.",
+    slug: "baumer",
+    brandImg: BrandBaumer,
+    description:
+      "Baumer is a leading international manufacturer of sensors, encoders, measuring instruments, and components for automated image processing. They provide innovative solutions for a wide range of industries.",
     workedProducts: [
       {
         id: 1,
@@ -2747,18 +1945,11 @@ const BrandsWithProductsData = [
               "Various sensing technologies",
               "High reliability",
               "Fast response time",
-              "Easy installation"
+              "Easy installation",
             ],
-            applications: [
-              "Industrial automation",
-              "Quality control",
-              "Material handling",
-              "Assembly lines",
-              "Packaging systems",
-              "Safety applications"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Quality control", "Material handling", "Assembly lines", "Packaging systems", "Safety applications"],
+          },
+        ],
       },
       {
         id: 2,
@@ -2777,18 +1968,11 @@ const BrandsWithProductsData = [
               "High accuracy",
               "Fast measurement",
               "Reliable operation",
-              "Easy integration"
+              "Easy integration",
             ],
-            applications: [
-              "Industrial automation",
-              "Quality control",
-              "Position monitoring",
-              "Level measurement",
-              "Thickness measurement",
-              "Process control"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Quality control", "Position monitoring", "Level measurement", "Thickness measurement", "Process control"],
+          },
+        ],
       },
       {
         id: 3,
@@ -2807,18 +1991,11 @@ const BrandsWithProductsData = [
               "Identification functions",
               "Easy setup",
               "High-speed processing",
-              "Reliable detection"
+              "Reliable detection",
             ],
-            applications: [
-              "Industrial automation",
-              "Quality control",
-              "Product inspection",
-              "Code reading",
-              "Assembly verification",
-              "Sorting applications"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Quality control", "Product inspection", "Code reading", "Assembly verification", "Sorting applications"],
+          },
+        ],
       },
       {
         id: 4,
@@ -2837,18 +2014,11 @@ const BrandsWithProductsData = [
               "Various interfaces",
               "Robust construction",
               "Easy integration",
-              "Professional software"
+              "Professional software",
             ],
-            applications: [
-              "Industrial automation",
-              "Quality control",
-              "Machine vision",
-              "Inspection systems",
-              "Measurement applications",
-              "Process monitoring"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Quality control", "Machine vision", "Inspection systems", "Measurement applications", "Process monitoring"],
+          },
+        ],
       },
       {
         id: 5,
@@ -2867,18 +2037,11 @@ const BrandsWithProductsData = [
               "High reliability",
               "Fast processing",
               "Easy integration",
-              "Flexible configuration"
+              "Flexible configuration",
             ],
-            applications: [
-              "Industrial automation",
-              "Quality control",
-              "Traceability systems",
-              "Sorting applications",
-              "Inventory management",
-              "Process control"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Quality control", "Traceability systems", "Sorting applications", "Inventory management", "Process control"],
+          },
+        ],
       },
       {
         id: 6,
@@ -2897,18 +2060,11 @@ const BrandsWithProductsData = [
               "High resolution",
               "High accuracy",
               "Various output types",
-              "Robust construction"
+              "Robust construction",
             ],
-            applications: [
-              "Industrial automation",
-              "Motion control",
-              "Position feedback",
-              "Speed measurement",
-              "Angular positioning",
-              "Machine control"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Motion control", "Position feedback", "Speed measurement", "Angular positioning", "Machine control"],
+          },
+        ],
       },
       {
         id: 7,
@@ -2927,18 +2083,11 @@ const BrandsWithProductsData = [
               "High accuracy",
               "Dynamic response",
               "Various output formats",
-              "Robust design"
+              "Robust design",
             ],
-            applications: [
-              "Industrial automation",
-              "Motion control",
-              "Tilt monitoring",
-              "Vibration analysis",
-              "Safety systems",
-              "Mobile equipment"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Motion control", "Tilt monitoring", "Vibration analysis", "Safety systems", "Mobile equipment"],
+          },
+        ],
       },
       {
         id: 8,
@@ -2957,18 +2106,11 @@ const BrandsWithProductsData = [
               "High accuracy",
               "Reliable operation",
               "Easy integration",
-              "Process optimization"
+              "Process optimization",
             ],
-            applications: [
-              "Industrial automation",
-              "Process control",
-              "Quality monitoring",
-              "Production optimization",
-              "System control",
-              "Data acquisition"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Process control", "Quality monitoring", "Production optimization", "System control", "Data acquisition"],
+          },
+        ],
       },
       {
         id: 9,
@@ -2987,18 +2129,11 @@ const BrandsWithProductsData = [
               "High precision",
               "Wide measurement range",
               "Reliable operation",
-              "Easy calibration"
+              "Easy calibration",
             ],
-            applications: [
-              "Industrial automation",
-              "Material testing",
-              "Quality control",
-              "Load monitoring",
-              "Process control",
-              "Safety applications"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Material testing", "Quality control", "Load monitoring", "Process control", "Safety applications"],
+          },
+        ],
       },
       {
         id: 10,
@@ -3017,18 +2152,11 @@ const BrandsWithProductsData = [
               "Various display types",
               "Easy operation",
               "Reliable counting",
-              "Flexible configuration"
+              "Flexible configuration",
             ],
-            applications: [
-              "Industrial automation",
-              "Data monitoring",
-              "Production counting",
-              "Process monitoring",
-              "Quality control",
-              "System feedback"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "Data monitoring", "Production counting", "Process monitoring", "Quality control", "System feedback"],
+          },
+        ],
       },
       {
         id: 11,
@@ -3047,18 +2175,11 @@ const BrandsWithProductsData = [
               "Easy installation",
               "Quality construction",
               "Various functions",
-              "System integration"
+              "System integration",
             ],
-            applications: [
-              "Industrial automation",
-              "System enhancement",
-              "Installation support",
-              "Maintenance operations",
-              "System optimization",
-              "Performance improvement"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "System enhancement", "Installation support", "Maintenance operations", "System optimization", "Performance improvement"],
+          },
+        ],
       },
       {
         id: 12,
@@ -3077,18 +2198,11 @@ const BrandsWithProductsData = [
               "Easy installation",
               "Durable construction",
               "Signal integrity",
-              "System integration"
+              "System integration",
             ],
-            applications: [
-              "Industrial automation",
-              "System connections",
-              "Signal transmission",
-              "Data communication",
-              "Power supply",
-              "Field installations"
-            ]
-          }
-        ]
+            applications: ["Industrial automation", "System connections", "Signal transmission", "Data communication", "Power supply", "Field installations"],
+          },
+        ],
       },
       {
         id: 13,
@@ -3107,21 +2221,14 @@ const BrandsWithProductsData = [
               "Interface conversion",
               "Easy configuration",
               "Flexible adjustment",
-              "System compatibility"
+              "System compatibility",
             ],
-            applications: [
-              "Industrial automation",
-              "Data processing",
-              "System integration",
-              "Signal conditioning",
-              "Interface adaptation",
-              "Communication optimization"
-            ]
-          }
-        ]
-      }
-    ]
-  }
+            applications: ["Industrial automation", "Data processing", "System integration", "Signal conditioning", "Interface adaptation", "Communication optimization"],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default BrandsWithProductsData;

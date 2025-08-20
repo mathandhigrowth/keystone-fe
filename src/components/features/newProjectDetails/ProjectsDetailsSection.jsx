@@ -1,55 +1,57 @@
 import { Check } from "lucide-react";
-import { Link } from "react-router-dom";
-import BrandsWithProductsData from "@/data/BrandsWithProductsData";
-
-function getAllCategories() {
-    const categories = [];
-
-    BrandsWithProductsData.forEach((brand) => {
-        brand.workedProducts.forEach((wp) => {
-            categories.push({
-                ...wp,
-                brand: brand.brandName,
-                brandImg: brand.brandImg,
-                brandDescription: brand.description,
-            });
-        });
-    });
-
-    return categories;
-}
-
-const allCategories = getAllCategories();
 
 export default function ProjectsDetailsSection({ project }) {
-    // project can be a category (with multiple detailedProducts)
-    const category = Array.isArray(project) ? project[0].category : project.category;
-    const currentIndex = allCategories.findIndex((c) => c.slug === project.slug || c.name === category);
+    const brand = project;
+    if (!brand) {
+        return (
+            <div className="text-center py-20">
+                <h2 className="text-2xl font-semibold text-gray-700">
+                    Brand not found
+                </h2>
+                <p className="text-gray-500 mt-2">
+                    We couldn’t find products for this brand.
+                </p>
+            </div>
+        );
+    }
 
-    const prevCategory = currentIndex > 0 ? allCategories[currentIndex - 1] : null;
-    const nextCategory = currentIndex < allCategories.length - 1 ? allCategories[currentIndex + 1] : null;
+    // 🔹 Flatten all products from all categories
+    const allProducts = brand.workedProducts.flatMap((category) =>
+        category.detailedProducts.map((prod) => ({
+            ...prod,
+            categoryName: category.name, // keep track of category
+        }))
+    );
 
-    // If project is multiple (all detailed products of a category)
-    const projectsArray = Array.isArray(project) ? project : [project];
+    // 🔹 Sort all products by total features + applications length
+    const sortedProducts = allProducts.sort((a, b) => {
+        const aLength = (a.features?.length || 0) + (a.applications?.length || 0);
+        const bLength = (b.features?.length || 0) + (b.applications?.length || 0);
+        return bLength - aLength; // high → low
+    });
 
     return (
         <div className="bg-[var(--color-background)] pb-16">
             <div className="container mx-auto px-8 py-16">
-                {/* Category Title */}
-                <h2 className="text-4xl font-bold text-[var(--color-dark)] mb-12">
-                    {projectsArray[0].category} – {projectsArray[0].brand}
+                {/* Brand Title */}
+                <h2 className="text-4xl font-bold text-[var(--color-dark)] mb-4">
+                    {brand.brandName}
                 </h2>
+                <p className="text-gray-600 max-w-3xl mb-12">{brand.description}</p>
 
                 {/* Products Grid */}
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {projectsArray.map((proj) => (
-                        <div key={proj.slug} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    {sortedProducts.map((prod) => (
+                        <div
+                            key={prod.slug}
+                            className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
+                        >
                             {/* Banner */}
-                            {proj.bannerImg && (
+                            {prod.bannerImg && (
                                 <div className="h-48 w-full overflow-hidden">
                                     <img
-                                        src={proj.bannerImg}
-                                        alt={proj.name}
+                                        src={prod.bannerImg}
+                                        alt={prod.name}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -57,18 +59,21 @@ export default function ProjectsDetailsSection({ project }) {
 
                             {/* Details */}
                             <div className="p-6 flex-1 flex flex-col">
-                                <h3 className="text-xl font-bold text-[var(--color-dark)] mb-3">
-                                    {proj.name}
-                                </h3>
+                                {/* Category Name */}
+                                <p className="text-sm text-gray-500 mb-1">{prod.categoryName}</p>
+
+                                <h4 className="text-xl font-bold text-[var(--color-dark)] mb-3">
+                                    {prod.name}
+                                </h4>
 
                                 {/* Features */}
-                                {proj.features?.length > 0 && (
+                                {prod.features?.length > 0 && (
                                     <div className="mb-4">
                                         <p className="text-sm font-semibold text-[var(--color-accent)] mb-2">
                                             Features:
                                         </p>
                                         <ul className="space-y-2 text-sm text-gray-700">
-                                            {proj.features.map((feature, idx) => (
+                                            {prod.features.map((feature, idx) => (
                                                 <li key={idx} className="flex items-start">
                                                     <Check className="w-4 h-4 text-[var(--color-accent)] mr-2 mt-0.5 flex-shrink-0" />
                                                     <span>{feature}</span>
@@ -79,13 +84,13 @@ export default function ProjectsDetailsSection({ project }) {
                                 )}
 
                                 {/* Applications */}
-                                {proj.applications?.length > 0 && (
+                                {prod.applications?.length > 0 && (
                                     <div>
                                         <p className="text-sm font-semibold text-[var(--color-accent)] mb-2">
                                             Applications:
                                         </p>
                                         <ul className="space-y-2 text-sm text-gray-700">
-                                            {proj.applications.map((app, idx) => (
+                                            {prod.applications.map((app, idx) => (
                                                 <li key={idx} className="flex items-start">
                                                     <Check className="w-4 h-4 text-[var(--color-accent)] mr-2 mt-0.5 flex-shrink-0" />
                                                     <span>{app}</span>
@@ -97,53 +102,6 @@ export default function ProjectsDetailsSection({ project }) {
                             </div>
                         </div>
                     ))}
-                </div>
-
-                {/* Prev / Next navigation only at category level */}
-                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {prevCategory && (
-                        <div className="flex items-center gap-4 bg-[var(--color-surface)] p-4 rounded-lg shadow-sm">
-                            <div className="size-24 rounded overflow-hidden flex-shrink-0">
-                                <img
-                                    src={prevCategory.bannerImg || "/placeholder.svg"}
-                                    alt={prevCategory.name}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div>
-                                <h4 className="text-lg font-semibold text-[var(--color-dark)]">{prevCategory.name}</h4>
-                                <p className="text-gray-600 text-sm">{prevCategory.brand}</p>
-                                <Link
-                                    to={`/products/${prevCategory.slug}`}
-                                    className="bg-primary text-white py-1 px-2 text-sm my-1 inline-block rounded"
-                                >
-                                    ← Previous Category
-                                </Link>
-                            </div>
-                        </div>
-                    )}
-
-                    {nextCategory && (
-                        <div className="flex items-center gap-4 bg-[var(--color-surface)] p-4 rounded-lg shadow-sm">
-                            <div className="size-24 rounded overflow-hidden flex-shrink-0">
-                                <img
-                                    src={nextCategory.bannerImg || "/placeholder.svg"}
-                                    alt={nextCategory.name}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div>
-                                <h4 className="text-lg font-semibold text-[var(--color-dark)]">{nextCategory.name}</h4>
-                                <p className="text-gray-600 text-sm">{nextCategory.brand}</p>
-                                <Link
-                                    to={`/products/${nextCategory.slug}`}
-                                    className="bg-primary text-white py-1 px-2 text-sm my-1 inline-block rounded"
-                                >
-                                    Next Category →
-                                </Link>
-                            </div>
-                        </div>
-                    )}
                 </div>
             </div>
         </div>

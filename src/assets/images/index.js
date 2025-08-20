@@ -135,6 +135,15 @@ import productPluggableConnector from "./pluggable-connector.webp"
 import productDinTerminal from "./din-terminal.jpg"
 
 
+import productISP from "./product-isp.jpg"
+import productEbike from "./product-ebike.jpg"
+import productConnector from "./product-connector.webp"
+import productSwitch from "./product-switch.jpg"
+import productHvConnector from "./product-hv-connector.jpg"
+import productRelay from "./product-relay.webp"
+
+
+
 
 export {
     keyStoneLogo, homeHeroImage, DigitalSolutionsSectionImage,
@@ -172,6 +181,9 @@ export {
     productDinTerminal,
 
 
-    connectorsTerminal
+    connectorsTerminal,
+    productISP,
+    productEbike,
+    productConnector, productSwitch, productHvConnector, productRelay
 
 }       
