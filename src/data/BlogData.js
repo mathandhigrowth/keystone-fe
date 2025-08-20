@@ -1,5 +1,5 @@
 import {
-    blogImg1, blogImg2, blogThumb1, blogThumb2, blog2Img1, blog2Img2, blogThumb3, blog3Img1, blog3Img2, blogThumb4, blog4Img1, blog4Img2
+    blogImg1, blogImg2, blogThumb1, blogThumb2, blog2Img1, blog2Img2, blogThumb3, blog3Img1, blog3Img2, blogThumb4, blog4Img1, blog4Img2,manufacturingVideo
 
 } from "@/assets/images";
 
@@ -74,7 +74,10 @@ const BlogData = [
             blog4Img1,
             blog4Img2
         ]
+    },{
+        video: manufacturingVideo
     }
+
 ];
 
 export default BlogData;

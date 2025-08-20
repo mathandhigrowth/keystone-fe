@@ -136,6 +136,34 @@ import productBarrierTerminal from "./product-barrier-terminal.webp"
 import productPluggableConnector from "./pluggable-connector.webp"
 import productDinTerminal from "./din-terminal.jpg"
 
+// Video
+import manufacturingVideo from "./About1.mp4"
+
+
+import productISP from "./product-isp.jpg"
+import productEbike from "./product-ebike.jpg"
+import productConnector from "./product-connector.webp"
+import productSwitch from "./product-switch.jpg"
+import productHvConnector from "./product-hv-connector.jpg"
+import productRelay from "./product-relay.webp"
+import productDT from "./productDT.jpg"
+import productM8 from "./product-M8.jpg"
+import productChargingSockets from "./product-ChargingSockets.jpg"
+import productHighVoltageConnector from "./productHighVoltageConnector.webp"
+import productFieldbusModules from "./product-Fieldbusmodules.jpg"
+import productPhotovoltaicConnectors from "./product-Photovoltaicconnectors.jpg"
+import productHighVoltageWiring from "./product-High-voltagewiring.jpg"
+import productGreenPowerSupply from "./product-Green Power Supply.jpg"
+import productDegsonMarkingSystem from "./product-Degson marking system.jpg"
+import productDSPTSeriesSPD from "./product-DSPT Series SPD.jpg"
+import productDFULSeriesFilter from "./product-DFUL Series Filter.jpg"
+import productM23Series from "./product-M23 Series.jpg"
+import productIndustrialEthernetCommunicationSolutions from "./product-Industrial Ethernet communication solutions.webp"
+import productSignalProcessing from "./product-Signal processing.jpg"
+import productACEVChargers from "./product-AC EV chargers.jpg"
+import productDCEVChargers from "./product-DC EV chargers.jpg"
+
+
 
 
 export {
@@ -174,6 +202,15 @@ export {
     productDinTerminal,
 
 
-    connectorsTerminal
+    connectorsTerminal,
+
+    manufacturingVideo,
+
+    productISP,
+    productEbike,
+    productConnector, productSwitch, productHvConnector, productRelay, productDT, productM8, productChargingSockets, productHighVoltageConnector, 
+    productFieldbusModules, productPhotovoltaicConnectors, productHighVoltageWiring,
+    productGreenPowerSupply, productDegsonMarkingSystem, productDSPTSeriesSPD, productDFULSeriesFilter, productM23Series,
+    productIndustrialEthernetCommunicationSolutions, productSignalProcessing, productACEVChargers, productDCEVChargers,
 
 }       

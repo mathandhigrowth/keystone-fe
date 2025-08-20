@@ -60,8 +60,7 @@ const ServiceDetailsSection = ({ service }) => {
                 <>
                     <h2 className="heading-2 text-[var(--color-dark)] mb-4">Our work benefits</h2>
                     <p className="text-[var(--color-dark)] text-base leading-relaxed mb-6">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form...
+                    Delivering innovative, reliable, and customized automation solutions that drive efficiency, connectivity, and long-term performance.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 mb-6">
@@ -77,7 +76,7 @@ const ServiceDetailsSection = ({ service }) => {
 
             {/* Final paragraph (optional) */}
             <p className="text-[var(--color-dark)] text-base leading-relaxed">
-                Lorem Ipsum passages can be altered or injected with humour and still remain readable and somewhat believable.
+            Empowering industries with smart automation that enhances productivity, reduces downtime, and ensures future-ready performance.
             </p>
         </div>
     )

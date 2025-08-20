@@ -1,5 +1,8 @@
 import { BrandBaumer, BrandDEGSON, BrandLAPP, BrandOMRON, BrandPhoenix, BrandRittal, BrandSIEMENS, BrandSMC, BrandSMISEN, BrandTrinity } from "@/assets/brands";
-import { DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal, productISP, productEbike, productConnector, productSwitch, productHvConnector, productRelay } from "@/assets/images";
+import { DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal, productISP, productEbike, productConnector, productSwitch, productHvConnector, productRelay,
+   productDT, productM8, productChargingSockets, productHighVoltageConnector, productFieldbusModules, productPhotovoltaicConnectors, productHighVoltageWiring,
+    productGreenPowerSupply, productDegsonMarkingSystem, productDSPTSeriesSPD, productDFULSeriesFilter, productM23Series,
+     productIndustrialEthernetCommunicationSolutions, productSignalProcessing, productACEVChargers, productDCEVChargers } from "@/assets/images";
 
 const BrandsWithProductsData = [
   {
@@ -119,7 +122,7 @@ const BrandsWithProductsData = [
             id: 2,
             name: "M8/M12 series",
             slug: "m8m12-series",
-            bannerImg: "/images/products/m8m12_series_banner.jpg",
+            bannerImg: productM8,
             features: [
               "Suitable for many protocols",
               "ProfiNet compatible",
@@ -136,7 +139,7 @@ const BrandsWithProductsData = [
             id: 3,
             name: "M23 series",
             slug: "m23-series",
-            bannerImg: "/images/products/m23_series_banner.jpg",
+            bannerImg: productM23Series,
             features: [
               "Used for both signal and power supply",
               "Three specifications (8, 12, 24 pin)",
@@ -191,7 +194,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Industrial Ethernet communication solutions",
             slug: "industrial-ethernet-communication-solutions",
-            bannerImg: "/images/products/industrial_ethernet_communication_solutions_banner.jpg",
+            bannerImg: productIndustrialEthernetCommunicationSolutions,
             features: ["Complete information network communication", "Data acquisition solutions", "High-speed communication", "Reliable data transfer", "Network integration", "Protocol support"],
             applications: ["Industrial automation control systems", "Factory networks", "Process control", "Data monitoring", "Remote control", "System integration"],
           },
@@ -199,7 +202,7 @@ const BrandsWithProductsData = [
             id: 2,
             name: "Fieldbus modules",
             slug: "fieldbus-modules",
-            bannerImg: "/images/products/fieldbus_modules_banner.jpg",
+            bannerImg: productFieldbusModules,
             features: [
               "Supports PROFINET protocol",
               "Supports PROFIBUS-DP protocol",
@@ -215,7 +218,7 @@ const BrandsWithProductsData = [
             id: 3,
             name: "Signal processing, conversion and protection products",
             slug: "signal-processing-conversion-and-protection-products",
-            bannerImg: "/images/products/signal_processing_conversion_and_protection_products_banner.jpg",
+            bannerImg: productSignalProcessing,
             features: ["Variety of interface products", "Signal conditioning", "Signal conversion", "Signal protection", "Isolation capabilities", "High accuracy"],
             applications: ["Signal processing", "Signal conversion", "Signal protection", "Industrial instrumentation", "Process control", "Data acquisition"],
           },
@@ -231,7 +234,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "AC EV chargers",
             slug: "ac-ev-chargers",
-            bannerImg: "/images/products/ac_ev_chargers_banner.jpg",
+            bannerImg: productACEVChargers,
             features: ["Convenient charging", "Safe home charging", "User-friendly interface", "Reliable operation", "Energy efficient", "Smart charging capabilities"],
             applications: ["Individual user home charging", "Residential charging", "Private parking", "Home garages", "Small commercial spaces", "Workplace charging"],
           },
@@ -239,7 +242,7 @@ const BrandsWithProductsData = [
             id: 2,
             name: "DC EV chargers",
             slug: "dc-ev-chargers",
-            bannerImg: "/images/products/dc_ev_chargers_banner.jpg",
+            bannerImg: productDCEVChargers,
             features: ["Fast charging capability", "Safe charging operation", "High power output", "Rapid charging technology", "Advanced safety features", "Efficient power conversion"],
             applications: ["Charging stations", "Public charging infrastructure", "Commercial charging", "Highway charging stations", "Fleet charging", "Fast charging networks"],
           },
@@ -247,7 +250,7 @@ const BrandsWithProductsData = [
             id: 3,
             name: "Charging Sockets",
             slug: "charging-sockets",
-            bannerImg: "/images/products/charging_sockets_banner.jpg",
+            bannerImg: productChargingSockets,
             features: [
               "Type2 standard support",
               "Type1 standard support",
@@ -340,7 +343,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Photovoltaic connectors",
             slug: "photovoltaic-connectors",
-            bannerImg: "/images/products/photovoltaic_connectors_banner.jpg",
+            bannerImg: productPhotovoltaicConnectors,
             features: ["Connect components of inverters", "Connect other components", "Weather resistant", "UV resistant", "High voltage capability", "Low contact resistance", "Long service life"],
             applications: ["Photovoltaic panels", "DC wiring system", "Inverter connections", "AC grid-connected system", "Solar installations", "Renewable energy systems"],
           },
@@ -408,7 +411,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "High voltage connector products",
             slug: "high-voltage-connector-products",
-            bannerImg: "/images/products/high_voltage_connector_products_banner.jpg",
+            bannerImg: productHighVoltageConnector,
             features: ["280 series", "630 series", "1800 series", "Hole series", "Single core wall terminal", "High voltage rating", "Safety features", "Reliable insulation"],
             applications: ["High voltage connections", "Power transmission", "High voltage equipment", "Electrical substations", "Power generation", "Industrial high voltage systems"],
           },
@@ -424,7 +427,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "High-voltage wiring harness solutions",
             slug: "highvoltage-wiring-harness-solutions",
-            bannerImg: "/images/products/highvoltage_wiring_harness_solutions_banner.jpg",
+            bannerImg: productHighVoltageWiring,
             features: ["For power battery system", "For electric drive system", "For charging system", "For thermal system", "High voltage capability", "Safety compliance", "Automotive grade"],
             applications: ["Plug-in hybrids", "Pure electric vehicles", "Superchargers", "Light hybrids", "Hydrogen-fueled electric vehicles", "Electric vehicle infrastructure"],
           },
@@ -440,7 +443,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Green power supply",
             slug: "green-power-supply",
-            bannerImg: "/images/products/green_power_supply_banner.jpg",
+            bannerImg: productGreenPowerSupply,
             features: ["Strong anti-interference ability", "Energy saving", "Compact structure", "Standard guide rail installation", "High efficiency", "Reliable operation", "Environmental friendly"],
             applications: ["Industrial power supply", "Factory automation", "Process control", "Industrial equipment", "Control systems", "Manufacturing facilities"],
           },
@@ -456,7 +459,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "DT series push button",
             slug: "dt-series-push-button",
-            bannerImg: "/images/products/dt_series_push_button_banner.jpg",
+            bannerImg: productDT,
             features: [
               "Advanced fastener-free self-locking connection",
               "Reliable contact",
@@ -481,7 +484,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Degson marking system",
             slug: "degson-marking-system",
-            bannerImg: "/images/products/degson_marking_system_banner.jpg",
+            bannerImg: productDegsonMarkingSystem,
             features: ["Complete solution", "Thermal transfer printers", "Laser printers", "High quality printing", "Durable markings", "Easy to use", "Professional results"],
             applications: ["Terminal blocks marker", "Cable marker", "Device marker", "Printing Service", "Industrial identification", "Component labeling"],
           },
@@ -497,7 +500,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "DSPT Series SPD",
             slug: "dspt-series-spd",
-            bannerImg: "/images/products/dspt_series_spd_banner.jpg",
+            bannerImg: productDSPTSeriesSPD,
             features: [
               "Effectively protects system from transient overvoltage",
               "Combines internal and external lightning protection",
@@ -528,7 +531,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "DFUL Series Filter",
             slug: "dful-series-filter",
-            bannerImg: "/images/products/dful_series_filter_banner.jpg",
+            bannerImg: productDFULSeriesFilter,
             features: [
               "Limits high-frequency interference voltage",
               "Limits high-frequency interference current",

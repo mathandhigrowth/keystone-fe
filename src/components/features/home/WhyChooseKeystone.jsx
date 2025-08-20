@@ -1,7 +1,59 @@
-import { User } from "lucide-react"
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import {DigitalSolutionsSectionImage2} from "@/assets/images"
+import {DigitalSolutionsSectionImage3} from "@/assets/images"
+import {DigitalSolutionsSectionImage4} from "@/assets/images"
+
+
+
+
 
 export default function WhyChooseKeystone() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const slides = [
+        {
+            title: "KeyStone",
+            image: DigitalSolutionsSectionImage2,
+            content: [
+                "Authorized distributor of leading automation brands",
+                "10+ years serving diverse industrial sectors",
+                "Skilled technical support from in-house engineers",
+                "Ready stock with fast nationwide delivery",
+                "Trusted by top manufacturers across India"
+            ]
+        },
+        {
+            title: "Our Solutions",
+            image: DigitalSolutionsSectionImage3,
+            content: [
+                "End-to-end automation solutions",
+                "Customized system integration",
+                "24/7 technical support",
+                "On-site maintenance and repair",
+                "Training and knowledge transfer"
+            ]
+        },
+        {
+            title: "",
+            image: DigitalSolutionsSectionImage4,
+            content: [
+                "Customer-centric approach",
+                "Commitment to quality",
+                "Innovation and technology leadership",
+                "Ethical business practices",
+                "Sustainable solutions"
+            ]
+        }
+    ];
+
+    const nextSlide = () => {
+        setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+    };
     return (
         <section className="relative w-full bg-[var(--color-primary)] text-white py-16 overflow-hidden">
             <div className="absolute top-10 left-10 w-4 h-4 bg-secondary rounded-full opacity-70"></div>
@@ -23,23 +75,7 @@ export default function WhyChooseKeystone() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-left">
                     <div className="relative flex items-center justify-center lg:justify-end">
-                        {/* <div className="relative w-64 h-64 bg-gray-400 rounded-full flex items-center justify-center shadow-lg">
-                            <div
-                                className="absolute w-72 h-72 bg-gray-300 rounded-full transform rotate-12 opacity-70"
-                                style={{
-                                    clipPath:
-                                        "polygon(50% 0%, 80% 10%, 100% 30%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 30%, 20% 10%)",
-                                    top: "-10px",
-                                    left: "-10px",
-                                }}
-                            >
-
-                            </div>
-                            <User className="w-24 h-24 text-gray-600 relative z-10" />
-                        </div> */}
-
                         <div className="relative w-64 h-64 bg-gray-400 rounded-full flex items-center justify-center shadow-lg">
-                            {/* Polygon Container */}
                             <div
                                 className="absolute w-72 h-72 transform rotate-12 opacity-70 overflow-hidden"
                                 style={{
@@ -49,53 +85,47 @@ export default function WhyChooseKeystone() {
                                     left: "-10px",
                                 }}
                             >
-                                {/* Image inside polygon */}
                                 <img
-                                    src={DigitalSolutionsSectionImage2} // <-- replace with your image path
-                                    alt="Polygon Portrait"
+                                    src={slides[currentSlide].image}
+                                    alt={slides[currentSlide].title}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-
                             <h6 className="text-2xl rotate-12 ml-6 font-semibold text-gray-600 relative z-10">
-                                KeyStone
+                                {slides[currentSlide].title}
                             </h6>
                         </div>
-
                     </div>
 
                     <div className="space-y-4 text-[var(--color-white)]">
                         <ul className="list-none p-0 m-0 space-y-4">
-                            <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
-
-                                Authorized distributor of leading automation brands
-
-                            </li>
-                            <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
-                                10+ years serving diverse industrial sectors
-                            </li>
-                            <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
-                                Skilled technical support from in-house engineers
-                            </li>
-                            <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> 
-                                Ready stock with fast nationwide delivery
-                            </li>
-                            <li className="flex items-center text-lg">
-                                <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span> 
-                                Trusted by top manufacturers across India
-                            </li>
+                            {slides[currentSlide].content.map((item, index) => (
+                                <li key={index} className="flex items-center text-lg">
+                                    <span className="mr-3 text-[var(--color-secondary)] text-xl">•</span>
+                                    {item}
+                                </li>
+                            ))}
                         </ul>
                     </div>
-                </div>
 
-                <div className="flex items-center justify-end mt-16 space-x-4">
-                    <span className="text-sm font-semibold text-gray-300 uppercase">PREV</span>
-                    <div className="w-12 h-px bg-gray-400"></div>
-                    <span className="text-sm font-semibold text-gray-300 uppercase">NEXT</span>
+                    {/* Navigation Buttons */}
+                    <div className="flex items-center justify-center lg:justify-end space-x-4 lg:col-span-2 mt-8">
+                        <button 
+                            onClick={prevSlide}
+                            className="text-sm font-semibold text-white uppercase transition-colors"
+                            aria-label="Previous slide"
+                        >
+                            PREV
+                        </button>
+                        <div className="w-12 h-px bg-gray-400"></div>
+                        <button 
+                            onClick={nextSlide}
+                            className="text-sm font-semibold text-white uppercase transition-colors"
+                            aria-label="Next slide"
+                        >
+                            NEXT
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
