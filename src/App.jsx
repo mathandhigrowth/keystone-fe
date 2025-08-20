@@ -15,7 +15,6 @@ import BlogDetailsPage from "./pages/BlogDetailsPage";
 import NewProjectsPage from "./pages/NewProjectsPage";
 import NewProjectsDetailsPage from "./pages/NewProjectsDetailsPage";
 
-
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -43,8 +42,8 @@ const App = () => {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:slug" element={<ServiceDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/projects" element={<NewProjectsPage />} />
-          <Route path="/products/:slug" element={<NewProjectsDetailsPage />} />
+          <Route path="/brands" element={<NewProjectsPage />} />
+          <Route path="/brands/:slug" element={<NewProjectsDetailsPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogDetailsPage />} />
           <Route path="*" element={<NotFoundPage />} />

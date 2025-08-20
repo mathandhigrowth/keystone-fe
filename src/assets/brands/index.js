@@ -20,6 +20,15 @@ import BrandRegrow from "./Regrow.png";
 import BrandTextro from "./TEXTRO_ELECTRONICS.png";
 import BrandDEGSON from "./DEGSON.png";
 import BrandSIEMENS from "./SIEMENS.png";
+import BrandLAPP from "./lapp.png";
+import BrandPhoenix from "./phoenix.png";
+import BrandOMRON from "./omron.png";
+import BrandRittal from "./rittal.png";
+import BrandSMC from "./smc.png";
+import BrandTrinity from "./trinitylogo.png";
+import BrandSMISEN from "./smisen.png";
+import BrandBaumer from "./baumer.png";
+
 
 export {
     BrandAachiMasalaImage,
@@ -44,5 +53,13 @@ export {
     BrandTextro,
 
     BrandDEGSON,
-    BrandSIEMENS
+    BrandSIEMENS,
+    BrandLAPP,
+    BrandPhoenix,
+    BrandOMRON,
+    BrandRittal,
+    BrandSMC,
+    BrandTrinity,
+    BrandSMISEN,
+    BrandBaumer
 }

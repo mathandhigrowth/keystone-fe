@@ -136,9 +136,6 @@ import productBarrierTerminal from "./product-barrier-terminal.webp"
 import productPluggableConnector from "./pluggable-connector.webp"
 import productDinTerminal from "./din-terminal.jpg"
 
-// Video
-import manufacturingVideo from "./About1.mp4"
-
 
 
 export {
@@ -177,8 +174,6 @@ export {
     productDinTerminal,
 
 
-    connectorsTerminal,
-
-    manufacturingVideo
+    connectorsTerminal
 
 }       
