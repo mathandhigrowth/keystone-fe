@@ -2,6 +2,8 @@ import keyStoneLogo from "./key-stone-logo.jpeg"
 import homeHeroImage from "./homeherobg.jpg"
 import DigitalSolutionsSectionImage from "./DigitalSolutionsSection1.jpg"
 import DigitalSolutionsSectionImage2 from "./DigitalSolutionsSection2.jpg"
+import DigitalSolutionsSectionImage3 from "./DigitalSolutionsSection3.jpg"
+import DigitalSolutionsSectionImage4 from "./DigitalSolutionsSection4.png"
 import SupportGridImage from "./SupportGrid1.jpeg"
 import OurExpertiseImage1 from "./OurExpertise1.jpeg"
 import OurExpertiseImage2 from "./OurExpertise2.jpeg"
@@ -134,11 +136,14 @@ import productBarrierTerminal from "./product-barrier-terminal.webp"
 import productPluggableConnector from "./pluggable-connector.webp"
 import productDinTerminal from "./din-terminal.jpg"
 
+// Video
+import manufacturingVideo from "./About1.mp4"
+
 
 
 export {
     keyStoneLogo, homeHeroImage, DigitalSolutionsSectionImage,
-    DigitalSolutionsSectionImage2, SupportGridImage, OurExpertiseImage1,
+    DigitalSolutionsSectionImage2, DigitalSolutionsSectionImage3,DigitalSolutionsSectionImage4, SupportGridImage, OurExpertiseImage1,
     OurExpertiseImage2, OurExpertiseImage3, OurExpertiseImage4, OurExpertiseImage5, BlogImage1,
     BlogImage2, BlogImage3, AboutUsBannerImage, AboutUsSectionImage1,
     AboutUsSectionImage2, AboutOurIndustrySectionImage1, AboutOurIndustrySectionImage2,
@@ -172,6 +177,8 @@ export {
     productDinTerminal,
 
 
-    connectorsTerminal
+    connectorsTerminal,
+
+    manufacturingVideo
 
 }       
