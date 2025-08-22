@@ -40,7 +40,7 @@ export default function NewsDetailPage() {
 
         <div className="max-w-4xl mx-auto px-8 md:px-16 lg:px-24 py-16">
           <div className="mb-12">
-            <h1 className="heading-2 text-secondary mb-8 leading-tight">{post.title}</h1>
+            <h1 className="heading-2 text-primary mb-8 leading-tight">{post.title}</h1>
 
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="flex items-center gap-6 text-gray-800 text-sm">
@@ -101,26 +101,26 @@ export default function NewsDetailPage() {
       {relatedArticles.length > 0 && (
         <section className="py-2 px-8 md:px-16 lg:px-24">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center text-black mb-16">
               <div className="mb-4">
-                <span className="text-accent text-sm font-medium tracking-wider uppercase">NEWS</span>
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">NEWS</span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-8 uppercase">RELATED News</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 uppercase">RELATED News</h2>
 
-              <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">Check out more reads from similar topics.</p>
+              <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">Check out more reads from similar topics.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-5">
               {relatedArticles.map((article) => (
                 <Link to={`/news/${article.slug}`} key={article.id}>
                   <article className="group cursor-pointer">
-                    <div className="relative overflow-hidden rounded-lg mb-6 aspect-[4/3]">
+                    <div className="relative overflow-hidden rounded-lg mb-3 aspect-[4/3]">
                       <img src={article.image || "/placeholder.svg"} alt={article.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
-                    <h3 className="text-xl md:text-2xl font-heading font-bold mb-4 leading-tight group-hover:text-accent transition-colors duration-300">{article.title.length > 33 ? `${article.title.substring(0, 33)}...` : article.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-heading font-bold mb-2 leading-tight text-gray-800 group-hover:text-primary transition-colors duration-300">{article.title.length > 33 ? `${article.title.substring(0, 33)}...` : article.title}</h3>
 
                     <div className="flex items-center gap-4 text-gray-400 text-sm">
                       <span>{article.date}</span>

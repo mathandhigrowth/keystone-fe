@@ -1,165 +1,188 @@
 import {
-    blogImg1, blogImg2, blogThumb1, blogThumb2, blog2Img1, blog2Img2, blogThumb3, blog3Img1, blog3Img2, blogThumb4, blog4Img1, blog4Img2,manufacturingVideo
-
+  blogImg1,
+  blogImg2,
+  blogThumb1,
+  blogThumb2,
+  blog2Img1,
+  blog2Img2,
+  blogThumb3,
+  blog3Img1,
+  blog3Img2,
+  blogThumb4,
+  blog4Img1,
+  blog4Img2,
+  manufacturingVideo,
+  blog5Img,
+  blog5Img1,
+  blog5Img2,
+  blog6Img,
+  blog6Img1,
+  blog6Img2,
+  blog7Img,
+  blog7Img1,
+  blog7Img2,
+  blog8Img,
+  blog8Img1,
+  blog8Img2,
+  blog9Img,
+  blog9Img1,
+  blog9Img2,
 } from "@/assets/images";
 
 const BlogData = [
-    {
-        title: "Empowering Industrial Growth with Keystone Projects",
-        slug: "empowering-industrial-growth-with-keystone-projects",
-        date: "August 6, 2025",
-        author: "By Keystone Team",
-        description:
-            "Explore how Keystone’s recent collaborations with industry leaders like Megawin Switchgears and Aachi Masala are driving innovation in industrial automation and energy efficiency.",
-        content: [
-            "Industrial automation is rapidly evolving, and Keystone is at the forefront, empowering businesses through innovative partnerships. Our recent projects with Megawin Switchgears, Aachi Masala, and ATS ELGI highlight how modern automation is shaping the future of manufacturing.",
-            "Through these collaborations, we’ve implemented advanced control panel systems and integrated smart sensors to enhance operational efficiency and scalability.",
-            "Our engineering approach is tailored to each client’s unique requirements—ensuring that every solution is not only functional but future-ready.",
-            "From cable management and electrical components to complete enclosure systems, Keystone is redefining how industries manage power, safety, and control.",
-            "With every project, we’re building smarter, more resilient systems that empower growth and innovation."
-        ],
-        thumbnailImage: blogThumb1,
-        images: [blogImg1, blogImg2]
-    },
-    {
-        title: "How OEM Engineering is Transforming Factory Floors",
-        slug: "how-oem-engineering-is-transforming-factory-floors",
-        date: "August 6, 2025",
-        author: "By Keystone Team",
-        description:
-            "As industries like Regrow and Applied Controls scale, Keystone is providing turnkey OEM and custom engineering solutions to streamline and digitize their operations.",
-        content: [
-            "Original Equipment Manufacturing (OEM) solutions are playing a critical role in reshaping the manufacturing landscape. At Keystone, we are helping clients like Regrow and Applied Controls evolve with scalable and intelligent systems.",
-            "Our work with Trinity Touch has set new benchmarks in control panel assembly, optimizing layout and function to deliver greater operational control.",
-            "We emphasize synergy between mechanical and electrical engineering to create systems that reduce downtime, improve throughput, and are easier to maintain.",
-            "By offering turnkey OEM solutions, we not only supply components—we become strategic collaborators in our client’s automation journey.",
-            "Smart factories require smart engineering. Keystone ensures both are built into every system we deliver."
-        ],
-        thumbnailImage: blogThumb2,
-        images: [blog2Img1, blog2Img2]
-    },
-    {
-        title: "Smart Integration of Field Devices Across Industries",
-        slug: "smart-integration-of-field-devices-across-industries",
-        date: "August 6, 2025",
-        author: "By Keystone Team",
-        description:
-            "With FASCO and LPT embracing digital transformation, Keystone enables seamless integration of sensors and field devices that optimize operations and reduce downtime.",
-        content: [
-            "Field device integration is a crucial aspect of achieving true industrial automation. At Keystone, we specialize in smart sensor configuration and field-level communication protocols to ensure seamless data flow across systems.",
-            "We have successfully implemented scalable sensor networks at FASCO and LPT, enabling real-time monitoring, predictive maintenance, and reduced system downtime.",
-            "Our modular enclosures and field-ready systems are built for industrial reliability—resistant to environmental stress, yet flexible for future upgrades.",
-            "Through smart integration, our clients are transitioning from reactive to proactive operations, unlocking new levels of productivity.",
-            "Automation success starts on the ground floor—with every sensor, every wire, and every field device working in harmony."
-        ],
-        thumbnailImage: blogThumb3,
-        images: [blog3Img1, blog3Img2]
-    },
-    {
-        title: "Control Panel Design: The Nerve Center of Modern Industry",
-        slug: "control-panel-design-the-nerve-center-of-modern-industry",
-        date: "August 6, 2025",
-        author: "By Keystone Team",
-        description:
-            "Textro Electronics and Applied Controls are leveraging Keystone’s expertise in advanced control panel design to enhance safety, efficiency, and scalability.",
-        content: [
-            "A well-designed control panel is more than a hub of switches—it's the nerve center of any modern industrial system. At Keystone, we engineer panels that ensure seamless control, safety, and communication across machinery.",
-            "Our recent deployments for clients like Textro Electronics have demonstrated up to 40% wiring reduction and measurable improvements in system uptime.",
-            "We focus on creating modular, space-saving designs that meet international safety and compliance standards, while remaining easy to maintain and expand.",
-            "Each panel integrates effortlessly with sensors, actuators, and communication networks to form a robust, centralized control architecture.",
-            "With our design philosophy rooted in performance and precision, Keystone is helping industries operate with confidence and clarity."
-        ],
-        thumbnailImage: blogThumb4,
-        images: [
-            blog4Img1,
-            blog4Img2
-        ]
-    },
-    {
-        title: "Driving the Future with Industrial Automation",
-        slug: "driving-the-future-with-industrial-automation",
-        date: "August 22, 2025",
-        author: "By Keystone Team",
-        description:
-            "Industrial automation is no longer optional—it’s essential. Keystone’s automation solutions are helping businesses transition into smarter, more efficient, and scalable operations.",
-        content: [
-            "Automation is transforming industries worldwide by enhancing productivity, reducing errors, and improving safety. At Keystone, we specialize in delivering automation systems tailored to the needs of diverse sectors.",
-            "From PLC programming to SCADA integration, our automation projects ensure seamless control and monitoring of industrial processes.",
-            "We’ve partnered with clients across manufacturing, energy, and process industries to implement automation that delivers measurable results in efficiency and cost savings.",
-            "Our approach ensures compatibility with future technologies, allowing businesses to scale without disruption.",
-            "Keystone’s industrial automation expertise empowers businesses to stay competitive in a rapidly evolving landscape."
-        ],
-        // thumbnailImage: blogThumb5,
-        // images: [blog5Img1, blog5Img2]
-    },
-    {
-        title: "Efficient Cable Management & Accessories for Modern Industries",
-        slug: "efficient-cable-management-and-accessories",
-        date: "August 22, 2025",
-        author: "By Keystone Team",
-        description:
-            "Cables are the backbone of industrial systems. Keystone provides robust cable management and accessories that ensure safety, reliability, and ease of maintenance.",
-        content: [
-            "Poor cable management can lead to downtime, safety hazards, and costly maintenance. Keystone’s cable management systems are designed to keep industrial operations organized and efficient.",
-            "We supply cable trays, ducts, ties, and accessories that meet international standards for durability and safety.",
-            "Our solutions simplify installation, reduce wiring clutter, and extend the lifecycle of electrical and communication systems.",
-            "By focusing on both functionality and scalability, Keystone ensures that your cable infrastructure remains efficient even as your operations grow.",
-            "With the right cable management, industries benefit from improved safety, streamlined operations, and reduced costs."
-        ],
-        // thumbnailImage: blogThumb6,
-        // images: [blog6Img1, blog6Img2]
-    },
-    {
-        title: "Seamless Sensors & Field Devices Integration",
-        slug: "seamless-sensors-and-field-devices-integration",
-        date: "August 22, 2025",
-        author: "By Keystone Team",
-        description:
-            "From smart sensors to advanced field devices, Keystone integrates reliable systems that drive data accuracy and operational intelligence.",
-        content: [
-            "Field devices are at the heart of data-driven industries. Keystone ensures seamless integration of sensors and devices into control systems for real-time insights.",
-            "Our engineering team configures pressure, temperature, proximity, and flow sensors with optimized communication protocols.",
-            "Through predictive maintenance and real-time monitoring, our clients minimize downtime and improve equipment reliability.",
-            "We emphasize modular integration that allows easy scalability and upgrades as technology evolves.",
-            "With Keystone, every sensor becomes part of a smarter, more connected ecosystem."
-        ],
-        // thumbnailImage: blogThumb7,
-        // images: [blog7Img1, blog7Img2]
-    },
-    {
-        title: "Enclosure & Cabinet Solutions for Every Industry",
-        slug: "enclosure-and-cabinet-solutions-for-every-industry",
-        date: "August 22, 2025",
-        author: "By Keystone Team",
-        description:
-            "Keystone delivers durable enclosures and cabinets that protect critical systems while ensuring safety, accessibility, and compliance.",
-        content: [
-            "Industrial enclosures and cabinets play a vital role in safeguarding equipment from environmental stress and operational hazards.",
-            "Keystone designs and supplies enclosures that meet IP and NEMA standards for dust, water, and corrosion resistance.",
-            "Our modular cabinet systems are space-efficient, easy to maintain, and customizable for specific client requirements.",
-            "We emphasize safety and compliance, ensuring our enclosures support both local and international industrial regulations.",
-            "By combining functionality with durability, Keystone ensures that critical systems remain protected and accessible."
-        ],
-        // thumbnailImage: blogThumb8,
-        // images: [blog8Img1, blog8Img2]
-    },
-    {
-        title: "Reliable Electrical Components Supply for Industrial Needs",
-        slug: "reliable-electrical-components-supply-for-industrial-needs",
-        date: "August 22, 2025",
-        author: "By Keystone Team",
-        description:
-            "Keystone ensures industries have access to high-quality electrical components that keep operations running smoothly and safely.",
-        content: [
-            "A strong supply chain of electrical components is essential for uninterrupted industrial operations. Keystone partners with leading manufacturers to supply reliable products.",
-            "We provide a wide range of components, including circuit breakers, contactors, relays, switches, and terminal blocks.",
-            "Our sourcing process ensures compliance with safety standards while maintaining cost-effectiveness for our clients.",
-            "By stocking critical components, we help industries minimize downtime and improve maintenance turnaround times.",
-            "Keystone’s commitment to quality ensures every component contributes to safer, smarter, and more efficient systems."
-        ],
-        // thumbnailImage: blogThumb9,
-        // images: [blog9Img1, blog9Img2]
-    }
+  {
+    title: "Empowering Industrial Growth with Keystone Projects",
+    slug: "empowering-industrial-growth-with-keystone-projects",
+    date: "August 6, 2025",
+    author: "By Keystone Team",
+    description:
+      "Explore how Keystone’s recent collaborations with industry leaders like Megawin Switchgears and Aachi Masala are driving innovation in industrial automation and energy efficiency.",
+    content: [
+      "Industrial automation is rapidly evolving, and Keystone is at the forefront, empowering businesses through innovative partnerships. Our recent projects with Megawin Switchgears, Aachi Masala, and ATS ELGI highlight how modern automation is shaping the future of manufacturing.",
+      "Through these collaborations, we’ve implemented advanced control panel systems and integrated smart sensors to enhance operational efficiency and scalability.",
+      "Our engineering approach is tailored to each client’s unique requirements—ensuring that every solution is not only functional but future-ready.",
+      "From cable management and electrical components to complete enclosure systems, Keystone is redefining how industries manage power, safety, and control.",
+      "With every project, we’re building smarter, more resilient systems that empower growth and innovation.",
+    ],
+    thumbnailImage: blogThumb1,
+    images: [blogImg1, blogImg2],
+  },
+  {
+    title: "How OEM Engineering is Transforming Factory Floors",
+    slug: "how-oem-engineering-is-transforming-factory-floors",
+    date: "August 6, 2025",
+    author: "By Keystone Team",
+    description:
+      "As industries like Regrow and Applied Controls scale, Keystone is providing turnkey OEM and custom engineering solutions to streamline and digitize their operations.",
+    content: [
+      "Original Equipment Manufacturing (OEM) solutions are playing a critical role in reshaping the manufacturing landscape. At Keystone, we are helping clients like Regrow and Applied Controls evolve with scalable and intelligent systems.",
+      "Our work with Trinity Touch has set new benchmarks in control panel assembly, optimizing layout and function to deliver greater operational control.",
+      "We emphasize synergy between mechanical and electrical engineering to create systems that reduce downtime, improve throughput, and are easier to maintain.",
+      "By offering turnkey OEM solutions, we not only supply components—we become strategic collaborators in our client’s automation journey.",
+      "Smart factories require smart engineering. Keystone ensures both are built into every system we deliver.",
+    ],
+    thumbnailImage: blogThumb2,
+    images: [blog2Img1, blog2Img2],
+  },
+  {
+    title: "Smart Integration of Field Devices Across Industries",
+    slug: "smart-integration-of-field-devices-across-industries",
+    date: "August 6, 2025",
+    author: "By Keystone Team",
+    description:
+      "With FASCO and LPT embracing digital transformation, Keystone enables seamless integration of sensors and field devices that optimize operations and reduce downtime.",
+    content: [
+      "Field device integration is a crucial aspect of achieving true industrial automation. At Keystone, we specialize in smart sensor configuration and field-level communication protocols to ensure seamless data flow across systems.",
+      "We have successfully implemented scalable sensor networks at FASCO and LPT, enabling real-time monitoring, predictive maintenance, and reduced system downtime.",
+      "Our modular enclosures and field-ready systems are built for industrial reliability—resistant to environmental stress, yet flexible for future upgrades.",
+      "Through smart integration, our clients are transitioning from reactive to proactive operations, unlocking new levels of productivity.",
+      "Automation success starts on the ground floor—with every sensor, every wire, and every field device working in harmony.",
+    ],
+    thumbnailImage: blogThumb3,
+    images: [blog3Img1, blog3Img2],
+  },
+  {
+    title: "Control Panel Design: The Nerve Center of Modern Industry",
+    slug: "control-panel-design-the-nerve-center-of-modern-industry",
+    date: "August 6, 2025",
+    author: "By Keystone Team",
+    description:
+      "Textro Electronics and Applied Controls are leveraging Keystone’s expertise in advanced control panel design to enhance safety, efficiency, and scalability.",
+    content: [
+      "A well-designed control panel is more than a hub of switches—it's the nerve center of any modern industrial system. At Keystone, we engineer panels that ensure seamless control, safety, and communication across machinery.",
+      "Our recent deployments for clients like Textro Electronics have demonstrated up to 40% wiring reduction and measurable improvements in system uptime.",
+      "We focus on creating modular, space-saving designs that meet international safety and compliance standards, while remaining easy to maintain and expand.",
+      "Each panel integrates effortlessly with sensors, actuators, and communication networks to form a robust, centralized control architecture.",
+      "With our design philosophy rooted in performance and precision, Keystone is helping industries operate with confidence and clarity.",
+    ],
+    thumbnailImage: blogThumb4,
+    images: [blog4Img1, blog4Img2],
+  },
+  {
+    title: "Driving the Future with Industrial Automation",
+    slug: "driving-the-future-with-industrial-automation",
+    date: "August 22, 2025",
+    author: "By Keystone Team",
+    description:
+      "Industrial automation is no longer optional—it’s essential. Keystone’s automation solutions are helping businesses transition into smarter, more efficient, and scalable operations.",
+    content: [
+      "Automation is transforming industries worldwide by enhancing productivity, reducing errors, and improving safety. At Keystone, we specialize in delivering automation systems tailored to the needs of diverse sectors.",
+      "From PLC programming to SCADA integration, our automation projects ensure seamless control and monitoring of industrial processes.",
+      "We’ve partnered with clients across manufacturing, energy, and process industries to implement automation that delivers measurable results in efficiency and cost savings.",
+      "Our approach ensures compatibility with future technologies, allowing businesses to scale without disruption.",
+      "Keystone’s industrial automation expertise empowers businesses to stay competitive in a rapidly evolving landscape.",
+    ],
+    thumbnailImage: blog5Img,
+    images: [blog5Img1, blog5Img2],
+  },
+  {
+    title: "Efficient Cable Management & Accessories for Modern Industries",
+    slug: "efficient-cable-management-and-accessories",
+    date: "August 22, 2025",
+    author: "By Keystone Team",
+    description:
+      "Cables are the backbone of industrial systems. Keystone provides robust cable management and accessories that ensure safety, reliability, and ease of maintenance.",
+    content: [
+      "Poor cable management can lead to downtime, safety hazards, and costly maintenance. Keystone’s cable management systems are designed to keep industrial operations organized and efficient.",
+      "We supply cable trays, ducts, ties, and accessories that meet international standards for durability and safety.",
+      "Our solutions simplify installation, reduce wiring clutter, and extend the lifecycle of electrical and communication systems.",
+      "By focusing on both functionality and scalability, Keystone ensures that your cable infrastructure remains efficient even as your operations grow.",
+      "With the right cable management, industries benefit from improved safety, streamlined operations, and reduced costs.",
+    ],
+    thumbnailImage: blog6Img,
+    images: [blog6Img1, blog6Img2],
+  },
+  {
+    title: "Seamless Sensors & Field Devices Integration",
+    slug: "seamless-sensors-and-field-devices-integration",
+    date: "August 22, 2025",
+    author: "By Keystone Team",
+    description:
+      "From smart sensors to advanced field devices, Keystone integrates reliable systems that drive data accuracy and operational intelligence.",
+    content: [
+      "Field devices are at the heart of data-driven industries. Keystone ensures seamless integration of sensors and devices into control systems for real-time insights.",
+      "Our engineering team configures pressure, temperature, proximity, and flow sensors with optimized communication protocols.",
+      "Through predictive maintenance and real-time monitoring, our clients minimize downtime and improve equipment reliability.",
+      "We emphasize modular integration that allows easy scalability and upgrades as technology evolves.",
+      "With Keystone, every sensor becomes part of a smarter, more connected ecosystem.",
+    ],
+    thumbnailImage: blog7Img,
+    images: [blog7Img1, blog7Img2],
+  },
+  {
+    title: "Enclosure & Cabinet Solutions for Every Industry",
+    slug: "enclosure-and-cabinet-solutions-for-every-industry",
+    date: "August 22, 2025",
+    author: "By Keystone Team",
+    description:
+      "Keystone delivers durable enclosures and cabinets that protect critical systems while ensuring safety, accessibility, and compliance.",
+    content: [
+      "Industrial enclosures and cabinets play a vital role in safeguarding equipment from environmental stress and operational hazards.",
+      "Keystone designs and supplies enclosures that meet IP and NEMA standards for dust, water, and corrosion resistance.",
+      "Our modular cabinet systems are space-efficient, easy to maintain, and customizable for specific client requirements.",
+      "We emphasize safety and compliance, ensuring our enclosures support both local and international industrial regulations.",
+      "By combining functionality with durability, Keystone ensures that critical systems remain protected and accessible.",
+    ],
+    thumbnailImage: blog8Img,
+    images: [blog8Img1, blog8Img2],
+  },
+  {
+    title: "Reliable Electrical Components Supply for Industrial Needs",
+    slug: "reliable-electrical-components-supply-for-industrial-needs",
+    date: "August 22, 2025",
+    author: "By Keystone Team",
+    description:
+      "Keystone ensures industries have access to high-quality electrical components that keep operations running smoothly and safely.",
+    content: [
+      "A strong supply chain of electrical components is essential for uninterrupted industrial operations. Keystone partners with leading manufacturers to supply reliable products.",
+      "We provide a wide range of components, including circuit breakers, contactors, relays, switches, and terminal blocks.",
+      "Our sourcing process ensures compliance with safety standards while maintaining cost-effectiveness for our clients.",
+      "By stocking critical components, we help industries minimize downtime and improve maintenance turnaround times.",
+      "Keystone’s commitment to quality ensures every component contributes to safer, smarter, and more efficient systems.",
+    ],
+    thumbnailImage: blog9Img,
+    images: [blog9Img1, blog9Img2],
+  },
 ];
 
 export default BlogData;

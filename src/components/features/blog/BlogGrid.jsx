@@ -25,7 +25,7 @@ export default function BlogGrid() {
                                     <span>{post.date}</span>
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-[var(--color-dark)] mb-3 leading-snug">
+                            <h3 className="text-xl font-bold text-[var(--color-dark)] mb-3 line-clamp-2 leading-snug">
                                 {post.title}
                             </h3>
                             <p className="text-gray-700 text-base line-clamp-2 leading-relaxed mb-6 flex-grow">

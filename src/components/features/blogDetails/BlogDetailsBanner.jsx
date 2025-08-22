@@ -15,7 +15,7 @@ const BlogDetailsBanner = ({ blog }) => {
             />
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 flex flex-col justify-center h-full container">
-                <h1 className="text-white text-4xl md:text-7xl font-bold mb-4">
+                <h1 className="text-white heading-1 mb-4">
                     {title.length > 50 ? `${title.slice(0, 50)}...` : title}
                 </h1>
                 <div className="flex items-center space-x-2 text-white text-base">
