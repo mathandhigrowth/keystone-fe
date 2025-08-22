@@ -48,7 +48,7 @@ export default function ProjectsDetailsSection({ project }) {
                         >
                             {/* Banner */}
                             {prod.bannerImg && (
-                                <div className="h-48 w-full overflow-hidden">
+                                <div className="h-64 w-full object-contain overflow-hidden">
                                     <img
                                         src={prod.bannerImg}
                                         alt={prod.name}

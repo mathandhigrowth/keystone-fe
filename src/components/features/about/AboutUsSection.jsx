@@ -1,4 +1,5 @@
 import { AboutUsSectionImage1, AboutUsSectionImage2 } from '@/assets/images'
+import { Link } from 'react-router-dom';
 export default function AboutUsSection() {
     return (
         <section className="bg-[var(--color-background)] pt-12 pb-2 md:pb-32">
@@ -45,13 +46,14 @@ export default function AboutUsSection() {
                         Since 2014, Keystone has been delivering intelligent engineering solutions that optimize operational performance, enhance reliability, and drive sustainable growth. Our expertise spans industrial automation, control systems, and infrastructure modernization.
                     </p>
                     <div className="mb-6 space-y-1 text-[var(--color-primary)] font-medium">
-                        <p className="uppercase text-sm">Mon–Fri: 9 AM – 22 PM</p>
-                        <p className="uppercase text-sm">Saturday: 9 AM – 20 PM</p>
+                        <p className="uppercase text-sm">Mon–Sat: 9:30 AM – 6:30 PM</p>
                     </div>
                     <div className="flex justify-center lg:justify-start">
-                        <button className="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors">
-                            Contact Us
-                        </button>
+                      <Link to="/contact" className='cursor-pointer'>
+                            <button className="bg-[var(--color-secondary)] text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors">
+                                Contact Us
+                            </button>
+                      </Link> 
                     </div>
                 </div>
             </div>

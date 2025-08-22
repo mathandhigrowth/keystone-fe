@@ -7,25 +7,25 @@ const demoData = {
         {
             id: "item-1",
             title: "Terminal Blocks & Industrial Connectors",
-            url: "#",
+            url: "/services",
             image: OurExpertiseImage1,
         },
         {
             id: "item-2",
             title: "PLCs, Relays & Automation Systems",
-            url: "#",
+            url: "/services",
             image: OurExpertiseImage2,
         },
         {
             id: "item-3",
             title: "Automation Software",
-            url: "#",
+            url: "/services",
             image: OurExpertiseImage3,
         },
         {
             id: "item-4",
             title: "Textile & Printing",
-            url: "#",
+            url: "/services",
             image: OurExpertiseImage4,
         },
         {
@@ -33,7 +33,7 @@ const demoData = {
             title: "Process & Chemical Industries",
             summary:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            url: "#",
+            url: "/services",
             image: OurExpertiseImage5,
         },
     ],

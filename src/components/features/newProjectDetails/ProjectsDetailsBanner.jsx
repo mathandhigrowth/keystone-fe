@@ -22,7 +22,7 @@ const ProjectsDetailsBanner = ({
                         <Link to="/">Home</Link>
                     </span>
                     <span className="text-[var(--color-secondary)] font-black">-</span>
-                    <Link to="/projects">Brands</Link>
+                    <Link to="/brands">Brands</Link>
                     <span className="text-[var(--color-secondary)] font-black">-</span>
                     <span className='line-clamp-1'>{name}</span>
                 </div>

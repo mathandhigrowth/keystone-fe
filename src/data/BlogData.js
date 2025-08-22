@@ -74,10 +74,7 @@ const BlogData = [
             blog4Img1,
             blog4Img2
         ]
-    },{
-        video: manufacturingVideo
     }
-
 ];
 
 export default BlogData;

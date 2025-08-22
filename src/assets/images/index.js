@@ -149,26 +149,40 @@ import productRelay from "./product-relay.webp"
 import productDT from "./productDT.jpg"
 import productM8 from "./product-M8.jpg"
 import productChargingSockets from "./product-ChargingSockets.jpg"
-import productHighVoltageConnector from "./productHighVoltageConnector.webp"
+import productHighVoltageConnector from "./product-ChargingSockets.jpg"
 import productFieldbusModules from "./product-Fieldbusmodules.jpg"
 import productPhotovoltaicConnectors from "./product-Photovoltaicconnectors.jpg"
 import productHighVoltageWiring from "./product-High-voltagewiring.jpg"
-import productGreenPowerSupply from "./product-Green Power Supply.jpg"
-import productDegsonMarkingSystem from "./product-Degson marking system.jpg"
-import productDSPTSeriesSPD from "./product-DSPT Series SPD.jpg"
-import productDFULSeriesFilter from "./product-DFUL Series Filter.jpg"
-import productM23Series from "./product-M23 Series.jpg"
-import productIndustrialEthernetCommunicationSolutions from "./product-Industrial Ethernet communication solutions.webp"
-import productSignalProcessing from "./product-Signal processing.jpg"
-import productACEVChargers from "./product-AC EV chargers.jpg"
-import productDCEVChargers from "./product-DC EV chargers.jpg"
+import productGreenPowerSupply from "./product-Green.jpg"
+import productDegsonMarkingSystem from "./product-Degson-marking-system.jpg"
+import productDSPTSeriesSPD from "./product-DSPT-Series-SPD.jpg"
+import productDFULSeriesFilter from "./product-DFUL-Series-Filter.jpg"
+import productM23Series from "./product-M23.jpg"
+import productIndustrialEthernetCommunicationSolutions from "./product-Industrial.webp"
+import productSignalProcessing from "./product-Signal-processing.jpg"
+import productACEVChargers from "./product-AC-EV-chargers.jpg"
+import productDCEVChargers from "./product-DC-EV-chargers.jpg"
+
+import productDEGSONBanner from "./terminal-blocks.jpg"
+import productDEGSONProduct1 from "./product-degson-1.jpg"
+import productDEGSONProduct2 from "./product-degson-2.jpg"
+import productDEGSONProduct3 from "./product-degson-3.jpg"
+import productDEGSONProduct4 from "./product-degson-4.jpg"
+import productDEGSONProduct6 from "./product-degson-6.jpg"
+
+import productSiemensBanner from "./product-siemens-banner.jpg"
+import productSiemensProduct1 from "./product-siemens-1.jpg"
+import productSiemensProduct2 from "./product-siemens-2.jpg"
+import productSiemensProduct3 from "./product-siemens-3.jpg"
+
+
 
 
 
 
 export {
     keyStoneLogo, homeHeroImage, DigitalSolutionsSectionImage,
-    DigitalSolutionsSectionImage2, DigitalSolutionsSectionImage3,DigitalSolutionsSectionImage4, SupportGridImage, OurExpertiseImage1,
+    DigitalSolutionsSectionImage2, DigitalSolutionsSectionImage3, DigitalSolutionsSectionImage4, SupportGridImage, OurExpertiseImage1,
     OurExpertiseImage2, OurExpertiseImage3, OurExpertiseImage4, OurExpertiseImage5, BlogImage1,
     BlogImage2, BlogImage3, AboutUsBannerImage, AboutUsSectionImage1,
     AboutUsSectionImage2, AboutOurIndustrySectionImage1, AboutOurIndustrySectionImage2,
@@ -208,9 +222,14 @@ export {
 
     productISP,
     productEbike,
-    productConnector, productSwitch, productHvConnector, productRelay, productDT, productM8, productChargingSockets, productHighVoltageConnector, 
+    productConnector, productSwitch, productHvConnector, productRelay, productDT, productM8, productChargingSockets, productHighVoltageConnector,
     productFieldbusModules, productPhotovoltaicConnectors, productHighVoltageWiring,
     productGreenPowerSupply, productDegsonMarkingSystem, productDSPTSeriesSPD, productDFULSeriesFilter, productM23Series,
     productIndustrialEthernetCommunicationSolutions, productSignalProcessing, productACEVChargers, productDCEVChargers,
+
+    productDEGSONBanner, productDEGSONProduct1, productDEGSONProduct2, productDEGSONProduct3,
+    productDEGSONProduct6, productDEGSONProduct4,
+
+    productSiemensBanner, productSiemensProduct1, productSiemensProduct2, productSiemensProduct3
 
 }       

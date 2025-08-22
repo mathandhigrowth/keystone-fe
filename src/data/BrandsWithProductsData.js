@@ -1,8 +1,19 @@
 import { BrandBaumer, BrandDEGSON, BrandLAPP, BrandOMRON, BrandPhoenix, BrandRittal, BrandSIEMENS, BrandSMC, BrandSMISEN, BrandTrinity } from "@/assets/brands";
-import { DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal, productISP, productEbike, productConnector, productSwitch, productHvConnector, productRelay,
-   productDT, productM8, productChargingSockets, productHighVoltageConnector, productFieldbusModules, productPhotovoltaicConnectors, productHighVoltageWiring,
-    productGreenPowerSupply, productDegsonMarkingSystem, productDSPTSeriesSPD, productDFULSeriesFilter, productM23Series,
-     productIndustrialEthernetCommunicationSolutions, productSignalProcessing, productACEVChargers, productDCEVChargers } from "@/assets/images";
+import {
+  DEGSONconnector, productPcbTerminal, productBarrierTerminal, productPluggableConnector, productDinTerminal, connectorsTerminal, productISP, productEbike, productConnector, productSwitch, productHvConnector, productRelay,
+  productDT, productM8, productChargingSockets, productHighVoltageConnector, productFieldbusModules, productPhotovoltaicConnectors, productHighVoltageWiring,
+  productGreenPowerSupply, productDegsonMarkingSystem, productDSPTSeriesSPD, productDFULSeriesFilter, productM23Series,
+  productIndustrialEthernetCommunicationSolutions, productSignalProcessing, productACEVChargers, productDCEVChargers,
+  productDEGSONBanner,
+  productDEGSONProduct1,
+  productDEGSONProduct3,
+  productDEGSONProduct4,
+  productDEGSONProduct6,
+  productSiemensProduct1,
+  productSiemensBanner,
+  productSiemensProduct2,
+  productSiemensProduct3
+} from "@/assets/images";
 
 const BrandsWithProductsData = [
   {
@@ -10,7 +21,7 @@ const BrandsWithProductsData = [
     brandName: "DEGSON",
     slug: "degson",
     brandImg: BrandDEGSON,
-    bannerImg: productPcbTerminal,
+    bannerImg: productDEGSONBanner,
     description:
       "DEGSON is a global manufacturer specializing in high-quality electronic components, including terminal blocks, connectors, and industrial wiring solutions. They provide customized solutions for industrial connectivity and new energy communication.",
     workedProducts: [
@@ -250,7 +261,7 @@ const BrandsWithProductsData = [
             id: 3,
             name: "Charging Sockets",
             slug: "charging-sockets",
-            bannerImg: productChargingSockets,
+            bannerImg: productDEGSONProduct4,
             features: [
               "Type2 standard support",
               "Type1 standard support",
@@ -282,7 +293,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "EBIKE connector series",
             slug: "ebike-connector-series",
-            bannerImg: productEbike,
+            bannerImg: productDEGSONProduct1,
             features: [
               "Circular power connector",
               "Rectangular power connector",
@@ -411,7 +422,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "High voltage connector products",
             slug: "high-voltage-connector-products",
-            bannerImg: productHighVoltageConnector,
+            bannerImg: productDEGSONProduct6,
             features: ["280 series", "630 series", "1800 series", "Hole series", "Single core wall terminal", "High voltage rating", "Safety features", "Reliable insulation"],
             applications: ["High voltage connections", "Power transmission", "High voltage equipment", "Electrical substations", "Power generation", "Industrial high voltage systems"],
           },
@@ -459,7 +470,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "DT series push button",
             slug: "dt-series-push-button",
-            bannerImg: productDT,
+            bannerImg: productDEGSONProduct3,
             features: [
               "Advanced fastener-free self-locking connection",
               "Reliable contact",
@@ -581,6 +592,7 @@ const BrandsWithProductsData = [
     brandName: "SIEMENS",
     slug: "siemens",
     brandImg: BrandSIEMENS,
+    bannerImg: productSiemensBanner,
     description:
       "SIEMENS is a worldwide technology leader recognized for its expertise in digital industries, intelligent infrastructure, mobility, and healthcare. Emphasizing innovation and sustainability, Siemens creates advanced solutions that enhance efficiency and advancement across multiple sectors.",
     workedProducts: [
@@ -593,7 +605,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Drive Technology products",
             slug: "drive-technology-products",
-            bannerImg: "/images/products/drive_technology_products_banner.jpg",
+            bannerImg: productSiemensProduct1,
             features: [
               "Enhance efficiency across multiple sectors",
               "Advanced motion control",
@@ -616,7 +628,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "PLCs (Programmable Logic Controllers)",
             slug: "plcs-programmable-logic-controllers",
-            bannerImg: "/images/products/plcs_programmable_logic_controllers_banner.jpg",
+            bannerImg: productSiemensProduct2,
             features: [
               "Improve manufacturing operations",
               "High performance processing",
@@ -632,7 +644,7 @@ const BrandsWithProductsData = [
             id: 2,
             name: "Control Systems",
             slug: "control-systems",
-            bannerImg: "/images/products/control_systems_banner.jpg",
+            bannerImg: productSiemensProduct3,
             features: [
               "Enhance efficiency across multiple sectors",
               "Advanced control algorithms",
@@ -862,7 +874,7 @@ const BrandsWithProductsData = [
             features: ["Cutting-edge products and technologies", "High power handling", "Safety compliance", "Reliable operation", "Future-ready solutions", "Scalable systems", "Smart connectivity"],
             applications: [
               "Enhancing efficiency across multiple sectors",
-              "Electric vehicle charging",
+              "Electric vehicle ",
               "Battery management",
               "Power distribution",
               "Grid integration",

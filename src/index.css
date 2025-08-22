@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
   --font-sans: 'Roboto', ui-sans-serif, system-ui;
+  --font-inter: 'Inter', ui-sans-serif, system-ui;
 
   --color-primary: #162e67;
   --color-secondary: #e09900;

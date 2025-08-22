@@ -10,40 +10,48 @@ import {
     CarouselItem,
 } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
+import {
+    OurExpertiseImage1,
+    OurExpertiseImage2,
+    OurExpertiseImage3,
+    OurExpertiseImage4,
+    OurExpertiseImage5,
+} from "@/assets/images";
 
 const Gallery6 = ({
     heading = "Our Expertise",
-    viewAllUrl = "https://www.shadcnblocks.com",
     items = [
         {
             id: "item-1",
-            title: "Build Modern UIs",
-            url: "#",
-            image: "/images/block/placeholder-dark-1.svg",
+            title: "Terminal Blocks & Industrial Connectors",
+            url: "/services",
+            image: OurExpertiseImage1,
         },
         {
             id: "item-2",
-            title: "Computer Vision Technology",
-            url: "#",
-            image: "/images/block/placeholder-dark-1.svg",
+            title: "PLCs, Relays & Automation Systems",
+            url: "/services",
+            image: OurExpertiseImage2,
         },
         {
             id: "item-3",
-            title: "Machine Learning Automation",
-            url: "#",
-            image: "/images/block/placeholder-dark-1.svg",
+            title: "Automation Software",
+            url: "/services",
+            image: OurExpertiseImage3,
         },
         {
             id: "item-4",
-            title: "Predictive Analytics",
-            url: "#",
-            image: "/images/block/placeholder-dark-1.svg",
+            title: "Textile & Printing",
+            url: "/services",
+            image: OurExpertiseImage4,
         },
         {
             id: "item-5",
-            title: "Neural Network Architecture",
-            url: "#",
-            image: "/images/block/placeholder-dark-1.svg",
+            title: "Process & Chemical Industries",
+            summary:
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            url: "/services",
+            image: OurExpertiseImage5,
         },
     ],
 }) => {
@@ -74,10 +82,6 @@ const Gallery6 = ({
                         <h2 className="mb-3 text-3xl uppercase font-semibold md:mb-4 md:text-4xl lg:mb-6">
                             {heading}
                         </h2>
-                        {/* <button className="px-6 flex-center gap-2 py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full  transition-colors duration-300 uppercase tracking-wide">
-                            VIEW ALL
-                            <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
-                        </button> */}
                         <p>
                             Comprehensive Electrical & Automation Solutions – Under One Roof
                         </p>
@@ -119,8 +123,8 @@ const Gallery6 = ({
                     <CarouselContent className="-mr-4 ml-8 2xl:ml-[max(8rem,calc(50vw-700px+1rem))] 2xl:mr-[max(0rem,calc(50vw-700px-1rem))]">
                         {items.map((item) => (
                             <CarouselItem key={item.id} className="pl-4 md:max-w-[492px]">
-                                <a
-                                    href={item.url}
+                                <Link
+                                    to={item.url}
                                     className="group relative flex aspect-[3/2] overflow-hidden rounded-xl"
                                 >
                                     <img
@@ -128,9 +132,7 @@ const Gallery6 = ({
                                         alt={item.title}
                                         className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                                     />
-
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-black/30" />
-
                                     <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
                                         <div className="text-base font-medium md:text-lg lg:text-xl mb-2">
                                             {item.title}
@@ -140,7 +142,7 @@ const Gallery6 = ({
                                             <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </CarouselItem>
                         ))}
                     </CarouselContent>

@@ -82,7 +82,6 @@ export default function WhatWeOfferSection() {
                         <div key={i} className="border-r border-white/10 pt-6">
                             <item.icon size={48} className="mx-auto mb-2 text-[var(--color-accent)]" />
                             <p className="font-semibold text-white mb-2">{item.label}</p>
-                            <ArrowRight className="mx-auto text-[var(--color-accent)]" />
                         </div>
                     ))}
                 </div>

@@ -4,7 +4,6 @@ import { SupportGridImage } from '@/assets/images'
 const SupportGrid = () => {
     return (
         <div className="section-dark relative">
-            {/* Curved top border */}
             <div className="absolute top-0 left-0 right-0 h-16 bg-[var(--color-primary)]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100px" viewBox="0 0 1280 160" preserveAspectRatio="none"><g fill="var(--color-background)"><path d="M640 140C286.54 140 0 0 0 0h1280S993.46 140 640 140z" /></g></svg>
             </div>
@@ -31,9 +30,9 @@ const SupportGrid = () => {
                                 <img src={industrialSVG} className="size-8" alt="Industrial" />
                             </button>
 
-                            <p class=" text-xl  text-[#252432] my-5"> Industrial & Manufacturing</p>
+                            <p class=" text-xl  text-[#252432]   font-inter font-semibold uppercase my-5"> Industrial & Manufacturing</p>
 
-                            <p class="font-mono text-sm text-[#8987A1] font-[400]">We deliver complete automation for factory operations — enhancing productivity, reducing downtime, and ensuring scalable manufacturing performance.</p>
+                            <p class=" text-sm text-gray-600 font-[400]">We deliver complete automation for factory operations — enhancing productivity, reducing downtime, and ensuring scalable manufacturing performance.</p>
 
                         </div>
 
@@ -43,9 +42,9 @@ const SupportGrid = () => {
                                 <img src={processSVG} className="size-8" alt="Process" />
                             </button>
 
-                            <p className="text-xl text-[#252432] my-5">Process & Chemical Industries</p>
+                            <p className="text-xl text-[#252432]   font-inter font-semibold uppercase my-5">Process & Chemical Industries</p>
 
-                            <p className="font-mono text-sm text-[#8987A1] font-[400]">Keystone supports chemical plants with intelligent control systems for pressure, flow, and safety — ensuring compliance and reliability at scale.
+                            <p className=" text-sm text-gray-600 font-[400]">Keystone supports chemical plants with intelligent control systems for pressure, flow, and safety — ensuring compliance and reliability at scale.
 
                             </p>
 
@@ -57,9 +56,9 @@ const SupportGrid = () => {
                                 <img src={automationSVG} className="size-8" alt="Automation" />
                             </button>
 
-                            <p className="text-xl text-[#252432] my-5">Automotive & E-Mobility</p>
+                            <p className="text-xl text-[#252432]   font-inter font-semibold uppercase my-5">Automotive & E-Mobility</p>
 
-                            <p className="font-mono text-sm text-[#8987A1] font-[400]">From assembly automation to battery line systems, we help mobility brands implement high-speed, error-free production technologies.</p>
+                            <p className="  text-sm text-gray-600 font-[400]">From assembly automation to battery line systems, we help mobility brands implement high-speed, error-free production technologies.</p>
 
                         </div>
 
@@ -70,9 +69,9 @@ const SupportGrid = () => {
                                 <img src={foodSVG} className="size-8" alt="Food" />
                             </button>
 
-                            <p className="text-xl text-[#252432] my-5">Food, Beverage & Packaging</p>
+                            <p className="text-xl text-[#252432]   font-inter font-semibold uppercase my-5">Food, Beverage & Packaging</p>
 
-                            <p className="font-mono text-sm text-[#8987A1] font-[400]">We deliver hygienic automation systems for F&B and packaging lines — with traceability, batching, and real-time control for consistent output.</p>
+                            <p className="  text-sm text-gray-600 font-[400]">We deliver hygienic automation systems for F&B and packaging lines — with traceability, batching, and real-time control for consistent output.</p>
 
                             <img className="hidden lg:block mt-5 rounded-[10px]" src={SupportGridImage} alt="Pictures" />
 
@@ -85,9 +84,9 @@ const SupportGrid = () => {
                                     <img src={pointSVG} className="size-8" alt="Infrastructure" />
                                 </button>
 
-                                <p className="text-xl text-[#252432] my-5">Infrastructure & Utilities</p>
+                                <p className="text-xl text-[#252432]   font-inter font-semibold uppercase my-5">Infrastructure & Utilities</p>
 
-                                <p className="font-mono text-sm text-[#8987A1] font-[400]">Our SCADA and energy automation systems support water, gas, and utility infrastructure — enabling smart city and infrastructure development.</p>
+                                <p className="  text-sm text-gray-600 font-[400]">Our SCADA and energy automation systems support water, gas, and utility infrastructure — enabling smart city and infrastructure development.</p>
 
                             </div>
                             <div>
@@ -103,9 +102,9 @@ const SupportGrid = () => {
                                 <img src={analyticsSVG} className="size-8" alt="Analytics" />
                             </button>
 
-                            <p class="text-xl text-[#252432] my-5">Textile & Printing</p>
+                            <p class="text-xl text-[#252432]   font-inter font-semibold uppercase my-5">Textile & Printing</p>
 
-                            <p class="font-[mono text-sm text-[#8987A1] font-[400]">Keystone integrates automation in dyeing, spinning, and printing processes — reducing manual dependency while ensuring quality control.</p>
+                            <p class=" text-sm text-gray-600 font-[400]">Keystone integrates automation in dyeing, spinning, and printing processes — reducing manual dependency while ensuring quality control.</p>
 
                         </div>
 

@@ -27,7 +27,7 @@ export default function BlogDetailsSection({ blog }) {
                         <span>{blog.date}</span>
                     </div>
 
-                    <h1 className="heading-1 text-[var(--color-primary)] mb-6">
+                    <h1 className="heading-2 text-[var(--color-primary)] mb-6">
                         {blog.title}
                     </h1>
 
@@ -55,15 +55,15 @@ export default function BlogDetailsSection({ blog }) {
                     )}
 
 
-                    <div className="relative bg-[var(--color-surface)] p-8 pl-12 mb-8 border-l-4 border-[var(--color-secondary)] rounded-r-lg overflow-hidden">
+                    {/* <div className="relative bg-[var(--color-surface)] p-8 pl-12 mb-8 border-l-4 border-[var(--color-secondary)] rounded-r-lg overflow-hidden">
                         <Quote className="absolute -bottom-4 -right-4 w-32 h-32 text-[var(--color-background)] opacity-50 z-0" />
                         <p className="text-lg italic leading-relaxed relative z-10 mb-4">
                             “We can easily manage if we will only take each day as it is given to us...”
                         </p>
                         <p className="text-base font-semibold relative z-10">- Keystone Insights</p>
-                    </div>
+                    </div> */}
 
-                    <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden mb-8">
+                    {/* <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden mb-8">
                         <img
                             src="/images/industrial-pipes.jpg"
                             alt="Industrial pipes"
@@ -74,7 +74,7 @@ export default function BlogDetailsSection({ blog }) {
                                 <PlayCircle className="w-8 md:w-10 h-8 md:h-10 text-white" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </main>
 

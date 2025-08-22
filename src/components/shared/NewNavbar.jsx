@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, Clock, Facebook, Linkedin, X as TwitterX, Instagram, ChevronDown, Menu } from "lucide-react";
+import { Mail, Phone, Clock, Facebook, Linkedin, X as TwitterX, Instagram, ChevronDown, Menu, Twitter } from "lucide-react";
 import { keyStoneLogo } from "@/assets/images";
 import services from "@/data/ServicesData";
-import { EMAIL, MOBILE_NUMBER } from "@/config/config";
+import { EMAIL, LINKEDIN, MOBILE_NUMBER } from "@/config/config";
 import BrandsWithProductsData from "@/data/BrandsWithProductsData";
 
 export default function NewNavbar() {
@@ -50,10 +50,12 @@ export default function NewNavbar() {
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <Facebook className="w-4 h-4 cursor-pointer" />
-          <Linkedin className="w-4 h-4 cursor-pointer" />
-          <TwitterX className="w-4 h-4 cursor-pointer" />
-          <Instagram className="w-4 h-4 cursor-pointer" />
+          {/* <Facebook className="w-4 h-4 cursor-pointer" /> */}
+          <Link to={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+            <Linkedin className="w-4 h-4 cursor-pointer" />
+          </Link>
+          <Twitter className="w-4 h-4 cursor-pointer" />
+          {/* <Instagram className="w-4 h-4 cursor-pointer" /> */}
         </div>
       </div>
 
@@ -75,7 +77,6 @@ export default function NewNavbar() {
             About
           </NavLink>
 
-          {/* Brands Dropdown */}
           {/* Brands Dropdown */}
           <div
             className="relative"
@@ -99,7 +100,7 @@ export default function NewNavbar() {
                     to="/brands"
                     className="block px-4 py-2 font-semibold text-[var(--color-dark)] hover:bg-gray-100 rounded"
                   >
-                    All Worked Brands
+                    All Brands
                   </NavLink>
 
                   {BrandsWithProductsData.map((brand) => (
@@ -153,6 +154,9 @@ export default function NewNavbar() {
 
           <NavLink to="/blog" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
             Blog
+          </NavLink>
+          <NavLink to="/news" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+            News
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
             Contact
@@ -264,6 +268,9 @@ export default function NewNavbar() {
 
               <NavLink to="/blog" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
                 Blog
+              </NavLink>
+              <NavLink to="/news" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
+                News
               </NavLink>
               <NavLink to="/contact" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
                 Contact

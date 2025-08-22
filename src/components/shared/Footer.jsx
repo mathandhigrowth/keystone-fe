@@ -1,5 +1,5 @@
 import { keyStoneLogo } from "@/assets/images"
-import { ADDRESS, MOBILE_NUMBER } from "@/config/config"
+import { ADDRESS, LINKEDIN, MOBILE_NUMBER } from "@/config/config"
 import services from "@/data/ServicesData"
 import { Phone, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react"
 import { Link } from "react-router-dom"
@@ -48,7 +48,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <h4 className="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h4>
+            {/* <h4 className="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h4>
             <div className="flex">
               <input
                 type="email"
@@ -58,7 +58,7 @@ export default function Footer() {
               <button className="bg-[var(--color-secondary)] px-6 py-2 rounded-r-md font-semibold transition-colors duration-300">
                 Subscribe
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Our Services */}
@@ -149,13 +149,13 @@ export default function Footer() {
 
           <div className="flex items-center space-x-4">
             <span className="text-lg font-semibold">Follow Us:</span>
-            <a
+            {/* <a
               href="#"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-200 transition-colors duration-300"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
-            </a>
+            </a> */}
             <a
               href="#"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-200 transition-colors duration-300"
@@ -163,15 +163,16 @@ export default function Footer() {
             >
               <Twitter className="w-5 h-5" />
             </a>
-            <a
+            {/* <a
               href="#"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-200 transition-colors duration-300"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
-            </a>
+            </a> */}
             <a
-              href="#"
+              href={LINKEDIN}
+              target="_blank"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-200 transition-colors duration-300"
               aria-label="LinkedIn"
             >
@@ -184,12 +185,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p className="mb-4 md:mb-0">Copyright © {new Date().getFullYear()} Reserved Passion by KeyStone</p>
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-white transition-colors duration-300">
+            <Link to="/terms" className="hover:text-white transition-colors duration-300">
               Terms of use
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-300">
+            </Link>
+            <Link to="/policy" className="hover:text-white transition-colors duration-300">
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
