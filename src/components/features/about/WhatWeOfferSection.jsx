@@ -10,20 +10,20 @@ export default function WhatWeOfferSection() {
             <div className="container mx-auto max-w-7xl">
                 {/* Hero Image with Play Button */}
                 <div className="relative -translate-y-36">
-      {/* {!isVideoPlaying ? ( */}
-        {/* <div className="relative cursor-pointer group" onClick={() => setIsVideoPlaying(true)}> */}
+      {!isVideoPlaying ? (
+        <div className="relative cursor-pointer group" onClick={() => setIsVideoPlaying(true)}>
           <img
             src={ManufacturingSectionImage}
             alt="Industrial robots in factory"
             className="w-full h-[530px] object-cover rounded-lg shadow-2xl"
           />
-          {/* <div className="absolute inset-0 flex justify-center items-center bg-black/30 rounded-lg group-hover:bg-black/40 transition-all duration-300">
-            <div className="w-20 h-20 bg-[var(--color-primary)] rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform">
+          <div className="absolute inset-0 flex justify-center items-center bg-black/30 rounded-lg group-hover:bg-black/40 transition-all duration-300">
+            {/* <div className="w-20 h-20 bg-[var(--color-primary)] rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform">
               <PlayCircle size={48} className="text-white" />
-            </div>
-          </div> */}
-        {/* </div> */}
-      {/* ) : ( */}
+            </div> */}
+          </div>
+        </div>
+      ) : (
         <div className="relative w-full h-[530px] rounded-lg shadow-2xl overflow-hidden">
           {/* <video
             className="absolute inset-0 w-full h-full object-cover"
@@ -35,7 +35,7 @@ export default function WhatWeOfferSection() {
             Your browser does not support the video tag.
           </video> */}
         </div>
-      {/* )} */}
+      )}
     </div>
 
                 {/* Text Block */}
