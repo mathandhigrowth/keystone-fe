@@ -174,6 +174,26 @@ import productSiemensBanner from "./product-siemens-banner.jpg"
 import productSiemensProduct1 from "./product-siemens-1.jpg"
 import productSiemensProduct2 from "./product-siemens-2.jpg"
 import productSiemensProduct3 from "./product-siemens-3.jpg"
+import productPowerCable from "./Powercable.jpg"
+import productDataCable from "./mobile-data-cables.jpg"
+import productcontrolCable from "./control-cables.jpg"
+import productCableAssemblies from "./Cable-Assemblies.jpg"
+import productNetworkDistribution from "./Network-Distribution.webp"
+import productSensors from "./Sensors.jpg"
+import productConnectors from "./Connectors.webp"
+import productCableGlands from "./Cable-Glands.jpg"
+import productCableProtection from "./Cable-Protection.jpg"
+import productMarkingSystems from "./Marking-Systems.webp"
+import productToolsAndAccessories from "./Tools-Accessories.jpg"
+import productProcessIndustryProducts from "./Process-industry-products.webp"
+import productSystemsManufacturing from "./Systems-Manufacturing.webp"
+import productEMobility from "./E-Mobility.jpg"
+
+
+
+
+
+
 
 
 
@@ -230,6 +250,16 @@ export {
     productDEGSONBanner, productDEGSONProduct1, productDEGSONProduct2, productDEGSONProduct3,
     productDEGSONProduct6, productDEGSONProduct4,
 
-    productSiemensBanner, productSiemensProduct1, productSiemensProduct2, productSiemensProduct3
-
+    productSiemensBanner, productSiemensProduct1, productSiemensProduct2, productSiemensProduct3, productPowerCable,
+    productDataCable, productcontrolCable, productCableAssemblies,
+    productNetworkDistribution,
+    productSensors,
+    productConnectors,
+    productCableGlands,
+    productCableProtection,
+    productMarkingSystems,
+    productToolsAndAccessories,
+    productProcessIndustryProducts,
+    productSystemsManufacturing,
+    productEMobility,
 }       

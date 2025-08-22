@@ -74,6 +74,91 @@ const BlogData = [
             blog4Img1,
             blog4Img2
         ]
+    },
+    {
+        title: "Driving the Future with Industrial Automation",
+        slug: "driving-the-future-with-industrial-automation",
+        date: "August 22, 2025",
+        author: "By Keystone Team",
+        description:
+            "Industrial automation is no longer optional—it’s essential. Keystone’s automation solutions are helping businesses transition into smarter, more efficient, and scalable operations.",
+        content: [
+            "Automation is transforming industries worldwide by enhancing productivity, reducing errors, and improving safety. At Keystone, we specialize in delivering automation systems tailored to the needs of diverse sectors.",
+            "From PLC programming to SCADA integration, our automation projects ensure seamless control and monitoring of industrial processes.",
+            "We’ve partnered with clients across manufacturing, energy, and process industries to implement automation that delivers measurable results in efficiency and cost savings.",
+            "Our approach ensures compatibility with future technologies, allowing businesses to scale without disruption.",
+            "Keystone’s industrial automation expertise empowers businesses to stay competitive in a rapidly evolving landscape."
+        ],
+        // thumbnailImage: blogThumb5,
+        // images: [blog5Img1, blog5Img2]
+    },
+    {
+        title: "Efficient Cable Management & Accessories for Modern Industries",
+        slug: "efficient-cable-management-and-accessories",
+        date: "August 22, 2025",
+        author: "By Keystone Team",
+        description:
+            "Cables are the backbone of industrial systems. Keystone provides robust cable management and accessories that ensure safety, reliability, and ease of maintenance.",
+        content: [
+            "Poor cable management can lead to downtime, safety hazards, and costly maintenance. Keystone’s cable management systems are designed to keep industrial operations organized and efficient.",
+            "We supply cable trays, ducts, ties, and accessories that meet international standards for durability and safety.",
+            "Our solutions simplify installation, reduce wiring clutter, and extend the lifecycle of electrical and communication systems.",
+            "By focusing on both functionality and scalability, Keystone ensures that your cable infrastructure remains efficient even as your operations grow.",
+            "With the right cable management, industries benefit from improved safety, streamlined operations, and reduced costs."
+        ],
+        // thumbnailImage: blogThumb6,
+        // images: [blog6Img1, blog6Img2]
+    },
+    {
+        title: "Seamless Sensors & Field Devices Integration",
+        slug: "seamless-sensors-and-field-devices-integration",
+        date: "August 22, 2025",
+        author: "By Keystone Team",
+        description:
+            "From smart sensors to advanced field devices, Keystone integrates reliable systems that drive data accuracy and operational intelligence.",
+        content: [
+            "Field devices are at the heart of data-driven industries. Keystone ensures seamless integration of sensors and devices into control systems for real-time insights.",
+            "Our engineering team configures pressure, temperature, proximity, and flow sensors with optimized communication protocols.",
+            "Through predictive maintenance and real-time monitoring, our clients minimize downtime and improve equipment reliability.",
+            "We emphasize modular integration that allows easy scalability and upgrades as technology evolves.",
+            "With Keystone, every sensor becomes part of a smarter, more connected ecosystem."
+        ],
+        // thumbnailImage: blogThumb7,
+        // images: [blog7Img1, blog7Img2]
+    },
+    {
+        title: "Enclosure & Cabinet Solutions for Every Industry",
+        slug: "enclosure-and-cabinet-solutions-for-every-industry",
+        date: "August 22, 2025",
+        author: "By Keystone Team",
+        description:
+            "Keystone delivers durable enclosures and cabinets that protect critical systems while ensuring safety, accessibility, and compliance.",
+        content: [
+            "Industrial enclosures and cabinets play a vital role in safeguarding equipment from environmental stress and operational hazards.",
+            "Keystone designs and supplies enclosures that meet IP and NEMA standards for dust, water, and corrosion resistance.",
+            "Our modular cabinet systems are space-efficient, easy to maintain, and customizable for specific client requirements.",
+            "We emphasize safety and compliance, ensuring our enclosures support both local and international industrial regulations.",
+            "By combining functionality with durability, Keystone ensures that critical systems remain protected and accessible."
+        ],
+        // thumbnailImage: blogThumb8,
+        // images: [blog8Img1, blog8Img2]
+    },
+    {
+        title: "Reliable Electrical Components Supply for Industrial Needs",
+        slug: "reliable-electrical-components-supply-for-industrial-needs",
+        date: "August 22, 2025",
+        author: "By Keystone Team",
+        description:
+            "Keystone ensures industries have access to high-quality electrical components that keep operations running smoothly and safely.",
+        content: [
+            "A strong supply chain of electrical components is essential for uninterrupted industrial operations. Keystone partners with leading manufacturers to supply reliable products.",
+            "We provide a wide range of components, including circuit breakers, contactors, relays, switches, and terminal blocks.",
+            "Our sourcing process ensures compliance with safety standards while maintaining cost-effectiveness for our clients.",
+            "By stocking critical components, we help industries minimize downtime and improve maintenance turnaround times.",
+            "Keystone’s commitment to quality ensures every component contributes to safer, smarter, and more efficient systems."
+        ],
+        // thumbnailImage: blogThumb9,
+        // images: [blog9Img1, blog9Img2]
     }
 ];
 
