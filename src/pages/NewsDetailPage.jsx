@@ -32,7 +32,11 @@ export default function NewsDetailPage() {
     .slice(0, 3);
 
   return (
-    <div className="bg-lite-dark text-white pt-32">
+    <div className="bg-lite-dark text-white pt-8">
+              <div className="max-w-4xl mx-auto px-8 md:px-16 lg:px-24">
+      <h1 className="heading-2 text-primary mb-8 leading-tight">{post.title}</h1>
+      </div>
+
       <section className="relative">
         <div className="w-[80%] mx-auto h-96 md:h-[400px] aspect-video lg:h-[600px] overflow-hidden">
           <img src={post.image} alt="Hero Background" className="w-full h-full object-cover" />
@@ -40,8 +44,6 @@ export default function NewsDetailPage() {
 
         <div className="max-w-4xl mx-auto px-8 md:px-16 lg:px-24 py-16">
           <div className="mb-12">
-            <h1 className="heading-2 text-primary mb-8 leading-tight">{post.title}</h1>
-
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="flex items-center gap-6 text-gray-800 text-sm">
                 <div className="flex items-center gap-2">
@@ -54,7 +56,6 @@ export default function NewsDetailPage() {
                     })}
                   </span>
                 </div>
-
               </div>
 
               {/* Social Share */}
@@ -93,7 +94,6 @@ export default function NewsDetailPage() {
           <div className="prose prose-invert max-w-none">
             <div className="prose prose-invert max-w-none text-gray-600 text-base leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content) }} />
           </div>
-
         </div>
       </section>
 
@@ -120,7 +120,9 @@ export default function NewsDetailPage() {
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
-                    <h3 className="text-xl md:text-2xl font-heading font-bold mb-2 leading-tight text-gray-800 group-hover:text-primary transition-colors duration-300">{article.title.length > 33 ? `${article.title.substring(0, 33)}...` : article.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-heading font-bold mb-2 leading-tight text-gray-800 group-hover:text-primary transition-colors duration-300">
+                      {article.title.length > 33 ? `${article.title.substring(0, 33)}...` : article.title}
+                    </h3>
 
                     <div className="flex items-center gap-4 text-gray-400 text-sm">
                       <span>{article.date}</span>

@@ -42,7 +42,7 @@
   }
 
   .btn-secondary {
-    @apply px-4 py-2 rounded bg-[var(--color-secondary)] text-[var(--color-white)] hover:bg-[var(--color-warning)] transition ease-snappy;
+    @apply px-4 py-2 rounded bg-[var(--color-secondary)] text-[var(--color-white)] hover:bg-[var(--color-secondary)] transition ease-snappy;
   }
 
   .container {

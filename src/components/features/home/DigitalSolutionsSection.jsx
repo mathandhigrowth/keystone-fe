@@ -27,7 +27,7 @@ export default function DigitalSolutionsSection() {
 
                                 {/* Black overlay with Trophy icon */}
                                 <div className="absolute inset-0 bg-black/40 hover:bg-black/50 duration-300 flex items-center justify-center">
-                                    <Trophy className="size-12 text-secondary font-bold bg-white p-2 rounded-full" />
+                                    <Trophy className="size-12 ml-4 text-secondary font-bold bg-white p-2 rounded-full" />
                                 </div>
                             </div>
                         </div>
@@ -72,9 +72,9 @@ export default function DigitalSolutionsSection() {
                             </div>
                         </div>
                         <div className="pt-4">
-                            <Link to="/about">
+                            <Link to="/about" className='cursor-pointer'>
 
-                                <button className="px-8 py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full hover:bg-[var(--color-warning)] transition-colors duration-300 uppercase tracking-wide">
+                                <button className="px-8 cursor-pointer py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full hover:bg-[var(--color-secondary)]/90 transition-colors duration-300 uppercase tracking-wide">
                                     Read More
                                 </button>
                             </Link>

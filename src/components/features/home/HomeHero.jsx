@@ -15,7 +15,7 @@ const HomeHero = () => {
 
                 {/* Blue Overlay Section */}
                 <div className="absolute inset-0 flex items-center justify-start">
-                    <div className="w-full max-w-5xl bg-[var(--color-primary)]/95 text-white py-12 rounded-r-2xl px-12 ml-0">
+                    <div className="w-full max-w-5xl bg-[var(--color-primary)]/95 text-white py-10 rounded-r-2xl px-12 ml-0">
                         <div className="space-y-6">
                             {/* Small heading */}
                             <p className="text-lg font-medium tracking-wide opacity-90">
@@ -31,7 +31,7 @@ const HomeHero = () => {
                             {/* CTA Button */}
                             <div className="pt-4">
                                 <Link to="/services">
-                                    <button className="bg-[var(--color-secondary)] text-white px-8 py-3 rounded-full font-semibold hover:bg-[var(--color-warning)] transition-colors duration-300">
+                                    <button className="bg-[var(--color-secondary)] cursor-pointer text-white px-8 py-3 rounded-full font-semibold hover:bg-[var(--color-secondary)]/90 transition-colors duration-300">
                                         Explore Our Solutions
                                     </button>
                                 </Link>

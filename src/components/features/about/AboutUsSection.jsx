@@ -28,7 +28,7 @@ export default function AboutUsSection() {
                             <img
                                 src={AboutUsSectionImage2}
                                 alt="Man working with grinder in factory"
-                                className="absolute -bottom-16 left-20 sm:left-28 w-[240px] rounded-2xl sm:w-[360px] h-[300px] sm:h-[360px] object-cover shadow-lg z-10"
+                                className="absolute -bottom-16 left-12 md:left-20 sm:left-28 w-[240px] rounded-2xl sm:w-[360px] h-[300px] sm:h-[360px] object-cover shadow-lg z-10"
                             />
                         </div>
                     </div>

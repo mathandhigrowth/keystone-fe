@@ -154,6 +154,7 @@ import {
   brand10Product11,
   brand10Product12,
   brand10Product13,
+  brand1Product19,
 } from "@/assets/images";
 
 const BrandsWithProductsData = [
@@ -383,54 +384,7 @@ const BrandsWithProductsData = [
           },
         ],
       },
-      {
-        id: 5,
-        name: "Electric Vehicle Charger",
-        slug: "electric-vehicle-charger",
-        description: "Charging solutions for electric vehicles.",
-        detailedProducts: [
-          {
-            id: 1,
-            name: "AC EV chargers",
-            slug: "ac-ev-chargers",
-            bannerImg: brand1Product3_3,
-            features: ["Convenient charging", "Safe home charging", "User-friendly interface", "Reliable operation", "Energy efficient", "Smart charging capabilities"],
-            applications: ["Individual user home charging", "Residential charging", "Private parking", "Home garages", "Small commercial spaces", "Workplace charging"],
-          },
-          {
-            id: 2,
-            name: "DC EV chargers",
-            slug: "dc-ev-chargers",
-            bannerImg: brand1Product3_2,
-            features: ["Fast charging capability", "Safe charging operation", "High power output", "Rapid charging technology", "Advanced safety features", "Efficient power conversion"],
-            applications: ["Charging stations", "Public charging infrastructure", "Commercial charging", "Highway charging stations", "Fleet charging", "Fast charging networks"],
-          },
-          {
-            id: 3,
-            name: "Charging Sockets",
-            slug: "charging-sockets",
-            bannerImg: brand1Product3_6,
-            features: [
-              "Type2 standard support",
-              "Type1 standard support",
-              "GB/T standard support",
-              "Compatible with different car models",
-              "Safe electricity transmission",
-              "Efficient electricity transmission",
-              "Weather resistant",
-              "Durable construction",
-            ],
-            applications: [
-              "Charging electric vehicle batteries",
-              "Different countries and regions",
-              "Universal charging compatibility",
-              "International markets",
-              "Multi-standard support",
-              "Global EV infrastructure",
-            ],
-          },
-        ],
-      },
+
       {
         id: 6,
         name: "EBIKE Connector",
@@ -596,13 +550,13 @@ const BrandsWithProductsData = [
         id: 13,
         name: "Industrial Power",
         slug: "industrial-power",
-        description: "Green power supply solutions.",
+        description: "Industrial power supply solutions.",
         detailedProducts: [
           {
             id: 1,
-            name: "Green power supply",
-            slug: "green-power-supply",
-            bannerImg: productGreenPowerSupply,
+            name: "Industrial power supply",
+            slug: "industrial-power-supply",
+            bannerImg: brand1Product19,
             features: ["Strong anti-interference ability", "Energy saving", "Compact structure", "Standard guide rail installation", "High efficiency", "Reliable operation", "Environmental friendly"],
             applications: ["Industrial power supply", "Factory automation", "Process control", "Industrial equipment", "Control systems", "Manufacturing facilities"],
           },
@@ -731,6 +685,55 @@ const BrandsWithProductsData = [
             ],
             applications: ["Industrial automation", "Fieldbus node needs", "Distributed I/O", "Process control", "Factory automation", "Remote monitoring"],
           },
+        ],
+      },
+       {
+        id: 5,
+        name: "Electric Vehicle Charger",
+        slug: "electric-vehicle-charger",
+        description: "Charging solutions for electric vehicles.",
+        detailedProducts: [
+            {
+            id: 3 ,
+            name: "Charging Sockets",
+            slug: "charging-sockets",
+            bannerImg: brand1Product3_6,
+            features: [
+              "Type2 standard support",
+              "Type1 standard support",
+              "GB/T standard support",
+              "Compatible with different car models",
+              "Safe electricity transmission",
+              "Efficient electricity transmission",
+              "Weather resistant",
+              "Durable construction",
+            ],
+            applications: [
+              "Charging electric vehicle batteries",
+              "Different countries and regions",
+              "Universal charging compatibility",
+              "International markets",
+              "Multi-standard support",
+              "Global EV infrastructure",
+            ],
+          },
+          {
+            id: 1,
+            name: "AC EV chargers",
+            slug: "ac-ev-chargers",
+            bannerImg: brand1Product3_3,
+            features: ["Convenient charging", "Safe home charging", "User-friendly interface", "Reliable operation", "Energy efficient", "Smart charging capabilities"],
+            applications: ["Individual user home charging", "Residential charging", "Private parking", "Home garages", "Small commercial spaces", "Workplace charging"],
+          },
+          {
+            id: 2,
+            name: "DC EV chargers",
+            slug: "dc-ev-chargers",
+            bannerImg: brand1Product3_2,
+            features: ["Fast charging capability", "Safe charging operation", "High power output", "Rapid charging technology", "Advanced safety features", "Efficient power conversion"],
+            applications: ["Charging stations", "Public charging infrastructure", "Commercial charging", "Highway charging stations", "Fleet charging", "Fast charging networks"],
+          },
+        
         ],
       },
     ],
@@ -919,7 +922,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Sensors",
             slug: "sensors",
-            bannerImg: productSensors,
+            bannerImg: brand5Product1,
             features: ["High quality", "Innovative solutions", "Accurate detection", "Reliable operation", "Long service life", "Various sensing technologies", "Industrial grade"],
             applications: ["Industrial automation", "Energy sector", "Telecommunications", "Process monitoring", "Quality control", "Safety systems"],
           },
@@ -1189,29 +1192,29 @@ const BrandsWithProductsData = [
     description:
       "OMRON CORPORATION is a global leader in automation and electronics, headquartered in Kyoto, Japan. The company's core philosophy—'Sensing & Control + Think'—drives its mission to create solutions that address real-world challenges in manufacturing, healthcare, energy, and social infrastructure.",
     workedProducts: [
-      {
-        id: 1,
-        name: "Sensors",
-        description: "Devices that detect and respond to physical input from the environment.",
-        detailedProducts: [
-          {
-            id: 1,
-            name: "Sensors",
-            slug: "sensors",
-            bannerImg: brand5Product1,
-            features: [
-              "Part of Omron's diverse product portfolio",
-              "Advanced sensing technology",
-              "High accuracy",
-              "Reliable detection",
-              "Various sensing methods",
-              "Industrial grade",
-              "Long service life",
-            ],
-            applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Quality control"],
-          },
-        ],
-      },
+      // {
+      //   id: 1,
+      //   name: "Sensors",
+      //   description: "Devices that detect and respond to physical input from the environment.",
+      //   detailedProducts: [
+      //     {
+      //       id: 1,
+      //       name: "Sensors",
+      //       slug: "sensors",
+      //       bannerImg: brand5Product1,
+      //       features: [
+      //         "Part of Omron's diverse product portfolio",
+      //         "Advanced sensing technology",
+      //         "High accuracy",
+      //         "Reliable detection",
+      //         "Various sensing methods",
+      //         "Industrial grade",
+      //         "Long service life",
+      //       ],
+      //       applications: ["Industrial automation", "Manufacturing", "Healthcare", "Energy systems", "Social infrastructure", "Quality control"],
+      //     },
+      //   ],
+      // },
       {
         id: 2,
         name: "Switches",
@@ -2147,7 +2150,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Smart Vision Sensors",
             slug: "smart-vision-sensors",
-            bannerImg:brand10Product3,
+            bannerImg: brand10Product3,
             features: [
               "Part of Baumer's comprehensive product portfolio",
               "Integrated vision system",
@@ -2216,7 +2219,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Rotary encoders / angle sensors",
             slug: "rotary-encoders-angle-sensors",
-            bannerImg:brand10Product6,
+            bannerImg: brand10Product6,
             features: [
               "Part of Baumer's comprehensive product portfolio",
               "Rotary motion measurement",
@@ -2262,7 +2265,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Process sensors",
             slug: "process-sensors",
-            bannerImg:brand10Product8,
+            bannerImg: brand10Product8,
             features: [
               "Part of Baumer's comprehensive product portfolio",
               "Process parameter monitoring",
@@ -2308,7 +2311,7 @@ const BrandsWithProductsData = [
             id: 1,
             name: "Counters / displays",
             slug: "counters-displays",
-            bannerImg:brand10Product10,
+            bannerImg: brand10Product10,
             features: [
               "Part of Baumer's comprehensive product portfolio",
               "Counting functions",

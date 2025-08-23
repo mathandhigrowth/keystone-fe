@@ -2,12 +2,6 @@ import BrandsWithProductsData from "@/data/BrandsWithProductsData";
 import React from "react";
 import { Link } from "react-router-dom";
 
-function slugify(str) {
-  return str
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
-}
 
 const BrandCard = ({ brand }) => {
   return (

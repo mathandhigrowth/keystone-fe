@@ -239,14 +239,14 @@ import brand2Product3 from "./brand2-product3.jpg";
 import brand3Banner from "./brand3-banner.png";
 import brand3Product1 from "./brand3-product1.png";
 import brand3Product2 from "./brand3-product2.png";
-import brand3Product3 from "./brand3-product3.png";
+import brand3Product3 from "./brand3-product3-new.png";
 import brand3Product4 from "./brand3-product4.png";
 import brand3Product5 from "./brand3-product5.png";
 import brand3Product7 from "./brand3-product7.png";
 import brand3Product8 from "./brand3-product8.png";
 import brand3Product9 from "./brand3-product9.png";
 import brand3Product10 from "./brand3-product10.png";
-import brand3Product11 from "./brand3-product11.png";
+import brand3Product11 from "./brand3-product11-new.png";
 
 import brand4Banner from "./brand4-banner.png";
 import brand4Product01 from "./brand4-product1.png";
@@ -261,7 +261,7 @@ import brand4Product9 from "./brand4-product9.png";
 import brand4Product10 from "./brand4-product10.png";
 
 import brand5Banner from "./brand5-banner.png";
-import brand5Product1 from "./brand5-product1.jpg";
+import brand5Product1 from "./brand5-product1-new.jpg";
 import brand5Product2 from "./brand5-product2.png";
 import brand5Product3 from "./brand5-product3.png";
 import brand5Product4 from "./brand5-product4.png";
@@ -324,6 +324,7 @@ import brand10Product10 from "./brand10-product10.png";
 import brand10Product11 from "./brand10-product11.png";
 import brand10Product12 from "./brand10-product12.png";
 import brand10Product13 from "./brand10-product13.png";
+import brand1Product19 from "./brand1-product19.png";
 
 export {
   brand10Banner,
@@ -624,5 +625,6 @@ export {
   brand1Product1,
   brand1Product3,
   brand1Product4,
+  brand1Product19,
   brand1Product1_3,
 };

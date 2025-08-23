@@ -1,34 +1,24 @@
-import { keyStoneLogo } from "@/assets/images"
-import { ADDRESS, LINKEDIN, MOBILE_NUMBER } from "@/config/config"
-import services from "@/data/ServicesData"
-import { Phone, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react"
-import { Link } from "react-router-dom"
-import footerImage1 from "@/assets/images/LatestBlog1.jpeg"
-import footerImage2 from "@/assets/images/LatestBlog2.jpeg"
-import footerImage3 from "@/assets/images/LatestBlog3.jpeg"
-import BlogData from "@/data/BlogData"
-import React from "react"
+import { keyStoneLogo } from "@/assets/images";
+import { ADDRESS, LINKEDIN, MOBILE_NUMBER, TWITTER } from "@/config/config";
+import services from "@/data/ServicesData";
+import { Phone, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import footerImage1 from "@/assets/images/LatestBlog1.jpeg";
+import footerImage2 from "@/assets/images/LatestBlog2.jpeg";
+import footerImage3 from "@/assets/images/LatestBlog3.jpeg";
+import BlogData from "@/data/BlogData";
+import React from "react";
 
 export default function Footer() {
-
   const servicesData = services;
 
-  const latestBlogs = [...BlogData]
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 4);
-
+  const latestBlogs = [...BlogData].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4);
 
   return (
     <footer className="relative w-full bg-[var(--color-footer-bg)] text-white overflow-hidden">
       {/* Background blueprint pattern */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <img
-          src="https://project.geniusocean.com/roof/assets/images/3689839211687251534.jpg"
-          alt="Background pattern"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-30"
-        />
+        <img src="https://project.geniusocean.com/roof/assets/images/3689839211687251534.jpg" alt="Background pattern" layout="fill" objectFit="cover" className="opacity-30" />
       </div>
 
       <div className="relative z-10 container pt-20 pb-8">
@@ -37,13 +27,12 @@ export default function Footer() {
           {/* About Us */}
           <div>
             <h3 className="text-xl font-semibold mb-6">About Us</h3>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              A KeyStone service company provides a range of professional services related to automation and technology.
-            </p>
+            <p className="text-gray-300 leading-relaxed mb-6">A KeyStone service company provides a range of professional services related to automation and technology.</p>
             <div className="mb-6" id="address" name="address">
               <h4 className="text-lg font-semibold mb-2">Our Address</h4>
-              <p className="text-gray-300" >
-                Door 4 – 6, First Floor, Katoor Road, Papanickenpalayam,<br />
+              <p className="text-gray-300">
+                Door 4 – 6, First Floor, Katoor Road, Papanickenpalayam,
+                <br />
                 Coimbatore – 641037, Tamil Nadu, India
               </p>
             </div>
@@ -67,10 +56,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {servicesData.slice(0, 3).map((service) => (
                 <li key={service.slug}>
-                  <Link
-                    to={`/services/${service.slug}`}
-                    className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
-                  >
+                  <Link to={`/services/${service.slug}`} className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                     <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" />
                     {service.title}
                   </Link>
@@ -84,7 +70,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link to='/' className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                <Link to="/" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Home
                 </Link>
               </li>
@@ -94,12 +80,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
-                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Projects
+                <Link to="/brands" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Brands
                 </Link>
               </li>
               <li>
-                <Link to='/services' className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                <Link to="/services" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Services
                 </Link>
               </li>
@@ -122,11 +108,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-4">
               {latestBlogs.map((blog, idx) => (
                 <Link to={`/blog/${blog.slug}`} key={idx}>
-                  <img
-                    src={blog.thumbnailImage}
-                    alt={`Blog post thumbnail ${idx + 1}`}
-                    className="rounded-md aspect-square object-cover"
-                  />
+                  <img src={blog.thumbnailImage} alt={`Blog post thumbnail ${idx + 1}`} className="rounded-md aspect-square object-cover" />
                 </Link>
               ))}
             </div>
@@ -157,7 +139,8 @@ export default function Footer() {
               <Facebook className="w-5 h-5" />
             </a> */}
             <a
-              href="#"
+              href={TWITTER}
+              target="_blank"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-200 transition-colors duration-300"
               aria-label="Twitter"
             >
@@ -195,5 +178,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

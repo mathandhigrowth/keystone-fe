@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, Clock, Facebook, Linkedin, X as TwitterX, Instagram, ChevronDown, Menu, Twitter } from "lucide-react";
 import { keyStoneLogo } from "@/assets/images";
 import services from "@/data/ServicesData";
-import { EMAIL, LINKEDIN, MOBILE_NUMBER } from "@/config/config";
+import { EMAIL, LINKEDIN, MOBILE_NUMBER, TWITTER } from "@/config/config";
 import BrandsWithProductsData from "@/data/BrandsWithProductsData";
 
 export default function NewNavbar() {
@@ -54,7 +54,9 @@ export default function NewNavbar() {
           <Link to={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
             <Linkedin className="w-4 h-4 cursor-pointer" />
           </Link>
-          <Twitter className="w-4 h-4 cursor-pointer" />
+          <Link to={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <Twitter  className="w-4 h-4 cursor-pointer" />
+          </Link>
           {/* <Instagram className="w-4 h-4 cursor-pointer" /> */}
         </div>
       </div>

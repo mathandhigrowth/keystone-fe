@@ -84,7 +84,7 @@ export default function NewsListing() {
             onClick={handleLoadMore}
             className="bg-primary hover:bg-accent text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 uppercase tracking-wide"
           >
-            VIEW MORE NEWS
+            VIEW MORE
           </button>
         </div>
       )}

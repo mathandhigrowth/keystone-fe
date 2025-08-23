@@ -15,19 +15,18 @@ export default function ProjectsDetailsSection({ project }) {
         );
     }
 
-    // 🔹 Flatten all products from all categories
-    const allProducts = brand.workedProducts.flatMap((category) =>
-        category.detailedProducts.map((prod) => ({
-            ...prod,
-            categoryName: category.name, // keep track of category
-        }))
-    );
+    // 🔹 Flatten, but keep category order
+    const allProducts = brand.workedProducts.flatMap((category) => {
+        const sortedProducts = category.detailedProducts.sort((a, b) => {
+            const aLength = (a.features?.length || 0) + (a.applications?.length || 0);
+            const bLength = (b.features?.length || 0) + (b.applications?.length || 0);
+            return bLength - aLength; // high → low
+        });
 
-    // 🔹 Sort all products by total features + applications length
-    const sortedProducts = allProducts.sort((a, b) => {
-        const aLength = (a.features?.length || 0) + (a.applications?.length || 0);
-        const bLength = (b.features?.length || 0) + (b.applications?.length || 0);
-        return bLength - aLength; // high → low
+        return sortedProducts.map((prod) => ({
+            ...prod,
+            categoryName: category.name, // still keep track if needed
+        }));
     });
 
     return (
@@ -39,9 +38,9 @@ export default function ProjectsDetailsSection({ project }) {
                 </h2>
                 <p className="text-gray-600 max-w-3xl mb-12">{brand.description}</p>
 
-                {/* Products Grid */}
+                {/* Unified Products Grid */}
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {sortedProducts.map((prod) => (
+                    {allProducts.map((prod) => (
                         <div
                             key={prod.slug}
                             className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
@@ -59,7 +58,6 @@ export default function ProjectsDetailsSection({ project }) {
 
                             {/* Details */}
                             <div className="p-6 flex-1 flex flex-col">
-                                {/* Category Name */}
                                 <p className="text-sm text-gray-500 mb-1">{prod.categoryName}</p>
 
                                 <h4 className="text-xl font-bold text-[var(--color-dark)] mb-3">
