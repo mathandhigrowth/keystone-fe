@@ -108,7 +108,7 @@ export default function NewNavbar() {
                       key={brand.id}
                       to={`/brands/${brand.slug}`}
                       onClick={handleNavClick}
-                      className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 rounded"
+                      className="flex items-center gap-2 px-4 py-1.5 hover:bg-gray-100 rounded"
                     >
                       <img
                         src={brand.brandImg}

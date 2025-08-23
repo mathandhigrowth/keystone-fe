@@ -93,7 +93,7 @@ function BlogCard({ image, date, author, title, description, slug }) {
                         <span>{author}</span>
                         <span>{date}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-3">
+                    <h3 className="text-xl font-semibold text-[var(--color-dark)] mb-3 line-clamp-2 ">
                         {title}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
