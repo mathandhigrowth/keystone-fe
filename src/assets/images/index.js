@@ -228,6 +228,8 @@ import brand1Product3_3 from "./brand1-3product3.png";
 import brand1Product3_5 from "./brand1-3product5.png";
 import brand1Product3_6 from "./brand1-3product6.png";
 import brand1Product3_7 from "./brand1-3product7.png";
+import brand1ProductRelay from "./brand1-product-relay.jpg";
+
 import brand4Product1 from "./brand1-4product1.png";
 import brand4Product15 from "./brand1-4product15.png";
 
@@ -341,9 +343,6 @@ export {
   brand10Product11,
   brand10Product12,
   brand10Product13,
-
-
-
   brand9Banner,
   brand9Product1,
   brand9Product2,
@@ -430,6 +429,7 @@ export {
   brand4Product1,
   brand4Product15,
   brand1Product8,
+  brand1ProductRelay,
   keyStoneLogo,
   homeHeroImage,
   DigitalSolutionsSectionImage,

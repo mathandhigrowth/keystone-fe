@@ -17,7 +17,8 @@ const HomePage = () => {
       <>
         <DigitalSolutionsSection />
         <SupportGrid />
-        <OurExpertise />
+        {/* <OurExpertise /> */}
+        
         <WhyChooseKeystone />
         <MarqueeLogos />
         <NewsletterSection />

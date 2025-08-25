@@ -12,7 +12,7 @@ const AboutPage = () => {
             <AboutUsSection />
             <AboutOurIndustrySection />
             <WhatWeOfferSection />
-            <OurExpertise />
+            {/* <OurExpertise /> */}
         </div>
     )
 }

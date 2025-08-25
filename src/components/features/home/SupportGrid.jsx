@@ -8,7 +8,7 @@ const SupportGrid = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100px" viewBox="0 0 1280 160" preserveAspectRatio="none"><g fill="var(--color-background)"><path d="M640 140C286.54 140 0 0 0 0h1280S993.46 140 640 140z" /></g></svg>
             </div>
 
-            <div className="container pb-16 pt-44">
+            <div className="container pb-1 pt-44">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <p className="text-sm uppercase font-medium text-white mb-4 tracking-wide">

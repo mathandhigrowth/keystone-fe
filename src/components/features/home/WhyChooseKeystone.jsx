@@ -39,7 +39,7 @@ export default function WhyChooseKeystone() {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
   return (
-    <section className="relative w-full bg-[var(--color-primary)] text-white pt-16 pb-20 overflow-hidden">
+    <section className="relative w-full bg-[var(--color-primary)] text-white pt-1 pb-20 overflow-hidden">
       <div className="absolute top-10 left-10 w-4 h-4 bg-secondary rounded-full opacity-70"></div>
       <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-secondary rounded-full opacity-70"></div>
       <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-secondary rounded-full opacity-70 transform -translate-x-1/2 -translate-y-1/2"></div>

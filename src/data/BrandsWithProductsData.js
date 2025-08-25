@@ -155,6 +155,7 @@ import {
   brand10Product12,
   brand10Product13,
   brand1Product19,
+  brand1ProductRelay,
 } from "@/assets/images";
 
 const BrandsWithProductsData = [
@@ -512,6 +513,15 @@ const BrandsWithProductsData = [
             ],
             applications: ["Automation systems", "Elevator control", "PLC control box", "Different PLC systems", "Control systems", "Industrial machinery", "Process control"],
           },
+
+          {
+            id: 1,
+            name: "Slim Relay",
+            slug: "degson-slim-relay",
+            bannerImg: brand1ProductRelay,
+            features: ["Compact and slim design", "High switching capacity", "Low power consumption", "Long electrical life", "Reliable performance", "Easy installation on DIN rail or PCB"],
+            applications: ["Automation systems", "Industrial control", "Building automation", "PLC systems", "Process control", "Elevator and escalator systems", "HVAC systems"],
+          },
         ],
       },
       {
@@ -687,14 +697,14 @@ const BrandsWithProductsData = [
           },
         ],
       },
-       {
+      {
         id: 5,
         name: "Electric Vehicle Charger",
         slug: "electric-vehicle-charger",
         description: "Charging solutions for electric vehicles.",
         detailedProducts: [
-            {
-            id: 3 ,
+          {
+            id: 3,
             name: "Charging Sockets",
             slug: "charging-sockets",
             bannerImg: brand1Product3_6,
@@ -733,7 +743,6 @@ const BrandsWithProductsData = [
             features: ["Fast charging capability", "Safe charging operation", "High power output", "Rapid charging technology", "Advanced safety features", "Efficient power conversion"],
             applications: ["Charging stations", "Public charging infrastructure", "Commercial charging", "Highway charging stations", "Fleet charging", "Fast charging networks"],
           },
-        
         ],
       },
     ],

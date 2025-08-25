@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, Clock, Facebook, Linkedin, X as TwitterX, Instagram, ChevronDown, Menu, Twitter } from "lucide-react";
 import { keyStoneLogo } from "@/assets/images";
+import { xLogo } from "@/assets/svg";
 import services from "@/data/ServicesData";
 import { EMAIL, LINKEDIN, MOBILE_NUMBER, TWITTER } from "@/config/config";
 import BrandsWithProductsData from "@/data/BrandsWithProductsData";
@@ -50,13 +51,14 @@ export default function NewNavbar() {
           </div>
         </div>
         <div className="flex items-center space-x-4">
+          <Link to={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <img src={xLogo} alt="X Logo" className="w-3 h-3  cursor-pointer" />
+          </Link>
           {/* <Facebook className="w-4 h-4 cursor-pointer" /> */}
           <Link to={LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
-            <Linkedin className="w-4 h-4 cursor-pointer" />
+            <Linkedin className="w-4 h-4 stroke-1 cursor-pointer" />
           </Link>
-          <Link to={TWITTER} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-          <Twitter  className="w-4 h-4 cursor-pointer" />
-          </Link>
+
           {/* <Instagram className="w-4 h-4 cursor-pointer" /> */}
         </div>
       </div>
@@ -80,11 +82,7 @@ export default function NewNavbar() {
           </NavLink>
 
           {/* Brands Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setOpenDropdown("brands")}
-            onMouseLeave={() => setOpenDropdown(null)}
-          >
+          <div className="relative" onMouseEnter={() => setOpenDropdown("brands")} onMouseLeave={() => setOpenDropdown(null)}>
             <button className="flex items-center gap-1 hover:text-[var(--color-accent)] transition-colors">
               Brands <ChevronDown className="w-4 h-4" />
             </button>
@@ -98,25 +96,13 @@ export default function NewNavbar() {
                   transition={{ duration: 0.2 }}
                   className="absolute top-full mt-2 left-0 bg-white shadow-lg ring ring-gray-600 rounded-lg w-64 z-40"
                 >
-                  <NavLink
-                    to="/brands"
-                    className="block px-4 py-2 font-semibold text-[var(--color-dark)] hover:bg-gray-100 rounded"
-                  >
+                  <NavLink to="/brands" className="block px-4 py-2 font-semibold text-[var(--color-dark)] hover:bg-gray-100 rounded">
                     All Brands
                   </NavLink>
 
                   {BrandsWithProductsData.map((brand) => (
-                    <NavLink
-                      key={brand.id}
-                      to={`/brands/${brand.slug}`}
-                      onClick={handleNavClick}
-                      className="flex items-center gap-2 px-4 py-1.5 hover:bg-gray-100 rounded"
-                    >
-                      <img
-                        src={brand.brandImg}
-                        alt={brand.brandName}
-                        className="w-6 h-6 object-contain"
-                      />
+                    <NavLink key={brand.id} to={`/brands/${brand.slug}`} onClick={handleNavClick} className="flex items-center gap-2 px-4 py-1.5 hover:bg-gray-100 rounded">
+                      <img src={brand.brandImg} alt={brand.brandName} className="w-6 h-6 object-contain" />
                       <span>{brand.brandName}</span>
                     </NavLink>
                   ))}
@@ -125,9 +111,8 @@ export default function NewNavbar() {
             </AnimatePresence>
           </div>
 
-
           {/* Services Dropdown */}
-          <div className="relative" onMouseEnter={() => setOpenDropdown("services")} onMouseLeave={() => setOpenDropdown(null)}>
+          {/* <div className="relative" onMouseEnter={() => setOpenDropdown("services")} onMouseLeave={() => setOpenDropdown(null)}>
             <button className="flex items-center gap-1 hover:text-[var(--color-accent)] transition-colors">
               Services <ChevronDown className="w-4 h-4" />
             </button>
@@ -152,7 +137,7 @@ export default function NewNavbar() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
 
           <NavLink to="/blog" className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
             Blog
@@ -198,17 +183,9 @@ export default function NewNavbar() {
 
               {/* Mobile Brands Dropdown */}
               <div>
-                <button
-                  onClick={() =>
-                    setMobileDropdown((prev) => ({ ...prev, brands: !prev.brands }))
-                  }
-                  className="flex items-center justify-between w-full"
-                >
+                <button onClick={() => setMobileDropdown((prev) => ({ ...prev, brands: !prev.brands }))} className="flex items-center justify-between w-full">
                   <span className="hover:text-[var(--color-accent)]">Brands</span>
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform ${mobileDropdown.brands ? "rotate-180" : ""
-                      }`}
-                  />
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdown.brands ? "rotate-180" : ""}`} />
                 </button>
                 <AnimatePresence>
                   {mobileDropdown.brands && (
@@ -220,17 +197,8 @@ export default function NewNavbar() {
                       className="ml-4 mt-2 flex flex-col gap-2"
                     >
                       {BrandsWithProductsData.map((brand) => (
-                        <NavLink
-                          key={brand.id}
-                          to={`/brands/${brand.slug}`}
-                          onClick={handleNavClick}
-                          className="flex items-center gap-2 px-2 py-1 hover:bg-gray-100 rounded"
-                        >
-                          <img
-                            src={brand.brandImg}
-                            alt={brand.brandName}
-                            className="w-6 h-6 object-contain"
-                          />
+                        <NavLink key={brand.id} to={`/brands/${brand.slug}`} onClick={handleNavClick} className="flex items-center gap-2 px-2 py-1 hover:bg-gray-100 rounded">
+                          <img src={brand.brandImg} alt={brand.brandName} className="w-6 h-6 object-contain" />
                           <span>{brand.brandName}</span>
                         </NavLink>
                       ))}
@@ -239,9 +207,8 @@ export default function NewNavbar() {
                 </AnimatePresence>
               </div>
 
-
               {/* Mobile Services Dropdown */}
-              <div>
+              {/* <div>
                 <button onClick={() => setMobileDropdown((prev) => ({ ...prev, services: !prev.services }))} className="flex items-center justify-between w-full">
                   <span className="hover:text-[var(--color-accent)]">Services</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdown.services ? "rotate-180" : ""}`} />
@@ -266,7 +233,7 @@ export default function NewNavbar() {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </div> */}
 
               <NavLink to="/blog" onClick={handleNavClick} className={({ isActive }) => (isActive ? activeClass : inactiveClass)}>
                 Blog

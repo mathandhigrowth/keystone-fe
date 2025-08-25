@@ -8,6 +8,8 @@ import footerImage2 from "@/assets/images/LatestBlog2.jpeg";
 import footerImage3 from "@/assets/images/LatestBlog3.jpeg";
 import BlogData from "@/data/BlogData";
 import React from "react";
+import { xLogo } from "@/assets/svg";
+import BrandsWithProductsData from "@/data/BrandsWithProductsData";
 
 export default function Footer() {
   const servicesData = services;
@@ -52,16 +54,22 @@ export default function Footer() {
 
           {/* Our Services */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Our Services</h3>
+            <h3 className="text-xl font-semibold mb-6">All Brands</h3>
             <ul className="space-y-3">
-              {servicesData.slice(0, 3).map((service) => (
-                <li key={service.slug}>
-                  <Link to={`/services/${service.slug}`} className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+              {BrandsWithProductsData.slice(0, 4).map((brands) => (
+                <li key={brands.slug}>
+                  <Link to={`/brands/${brands.slug}`} className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                     <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" />
-                    {service.title}
+                    {brands.brandName}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link to="/brands" className="flex uppercase items-center text-gray-300 hover:text-white transition-colors duration-300">
+                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" />
+                  View All Brands 
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -84,11 +92,11 @@ export default function Footer() {
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Brands
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/blog" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Blog
@@ -144,7 +152,8 @@ export default function Footer() {
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-800 hover:bg-gray-200 transition-colors duration-300"
               aria-label="Twitter"
             >
-              <Twitter className="w-5 h-5" />
+              {/* <Twitter className="w-5 h-5" /> */}
+              <img src={xLogo} alt="X Logo" className="w-5 h-5 cursor-pointer filter invert" />
             </a>
             {/* <a
               href="#"
