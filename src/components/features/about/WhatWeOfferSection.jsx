@@ -1,6 +1,5 @@
 import { PlayCircle, ArrowRight, Factory, RailSymbolIcon, Wind, CalendarRange } from "lucide-react";
 import ManufacturingSectionImage from "@/assets/images/ManufacturingSection1.jpg";
-// import manufacturingVideo from "@/assets/images/About1.mp4"
 import { useState } from "react";
 import { keyStoneLogo } from "@/assets/images";
 import { Link } from "react-router-dom";

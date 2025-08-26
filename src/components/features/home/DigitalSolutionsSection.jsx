@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { DigitalSolutionsSectionImage, DigitalSolutionsSectionImage2 } from "@/assets/images"
 export default function DigitalSolutionsSection() {
     return (
-        <div className="w-full bg-[var(--color-background)] py-16">
+        <div className="w-full bg-[var(--color-background)] pt-16 md:pb-16 pb-2">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left side - Image collage */}
@@ -71,10 +71,9 @@ export default function DigitalSolutionsSection() {
                                 <span className="text-[var(--color-dark)] font-medium">Trusted Industrial Partner Since 2014</span>
                             </div>
                         </div>
-                        <div className="pt-4">
-                            <Link to="/about" className='cursor-pointer'>
-
-                                <button className="px-8 cursor-pointer py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full hover:bg-[var(--color-secondary)]/90 transition-colors duration-300 uppercase tracking-wide">
+                        <div className="pt-4 sm:text-left text-center">
+                            <Link to="/about" className='cursor-pointer '>
+                                <button className="px-8  cursor-pointer py-3 bg-[var(--color-secondary)] text-[var(--color-white)] font-bold rounded-full hover:bg-[var(--color-secondary)]/90 transition-colors duration-300 uppercase tracking-wide">
                                     Read More
                                 </button>
                             </Link>

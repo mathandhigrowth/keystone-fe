@@ -129,9 +129,6 @@ import productBarrierTerminal from "./product-barrier-terminal.webp";
 import productPluggableConnector from "./pluggable-connector.webp";
 import productDinTerminal from "./din-terminal.jpg";
 
-// Video
-import manufacturingVideo from "./About1.mp4";
-
 import productISP from "./product-isp.jpg";
 import productEbike from "./product-ebike.jpg";
 import productConnector from "./product-connector.webp";
@@ -552,7 +549,6 @@ export {
   productPluggableConnector,
   productDinTerminal,
   connectorsTerminal,
-  manufacturingVideo,
   productISP,
   productEbike,
   productConnector,

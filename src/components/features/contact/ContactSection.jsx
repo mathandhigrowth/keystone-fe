@@ -1,9 +1,99 @@
-import React from "react";
-import { MapPin, Plus, Minus, Maximize, UserRoundIcon as UserRoundMessage, Handshake, RotateCw } from "lucide-react";
+import React, { useState } from "react";
+import { MapPin } from "lucide-react";
+import { API_URL } from "@/config/config";
+import { toast } from "react-toastify";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validateForm = () => {
+    const { name, phone, email, message } = formData;
+
+    if (!name.trim()) {
+      toast.error("Name is required.");
+      return false;
+    }
+
+    if (name.trim().length < 3) {
+      toast.error("Name must be at least 3 characters.");
+      return false;
+    }
+
+    if (!phone.trim()) {
+      toast.error("Phone number is required.");
+      return false;
+    }
+
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      toast.error("Phone number must be 10 digits.");
+      return false;
+    }
+
+    if (email && !/^\S+@\S+\.\S+$/.test(email)) {
+      toast.error("Invalid email address.");
+      return false;
+    }
+
+    if (!message.trim()) {
+      toast.error("Message cannot be empty.");
+      return false;
+    }
+
+    if (message.trim().length < 3) {
+      toast.error("Message must be at least 3 characters.");
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    setLoading(true);
+
+    try {
+      const response = await fetch(`${API_URL}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success("Message sent successfully!");
+        setFormData({ name: "", phone: "", email: "", message: "" });
+      } else {
+        toast.error(data.error || "Failed to send message.");
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error("Failed to send message.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className=" bg-[var(--color-background)]">
+    <div className="bg-[var(--color-background)]">
       <div className="container mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
@@ -15,31 +105,50 @@ const ContactSection = () => {
           </h1>
           <p className="text-lg text-gray-700">Have a question or feedback? Fill out the form below, and we&apos;ll get back to you.</p>
 
-          <form className="flex flex-col gap-4 mt-4">
+          <form className="flex flex-col gap-4 mt-4" onSubmit={handleSubmit}>
             <input
               type="text"
+              name="name"
               placeholder="Full name *"
+              value={formData.name}
+              onChange={handleChange}
               className="w-full ring p-3 rounded-md border border-gray-200 bg-[var(--color-background)] text-[var(--color-dark)] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--color-highlight)]"
+              required
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="tel"
+                name="phone"
                 placeholder="Phone number *"
+                value={formData.phone}
+                onChange={handleChange}
                 className="w-full ring p-3 rounded-md border border-gray-200 bg-[var(--color-background)] text-[var(--color-dark)] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--color-highlight)]"
+                required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email address"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full ring p-3 rounded-md border border-gray-200 bg-[var(--color-background)] text-[var(--color-dark)] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--color-highlight)]"
               />
             </div>
             <textarea
+              name="message"
               placeholder="Anything else you would like to know?"
               rows={6}
+              value={formData.message}
+              onChange={handleChange}
               className="w-full p-3 ring rounded-md border border-gray-200 bg-[var(--color-background)] text-[var(--color-dark)] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--color-highlight)] resize-y"
+              required
             ></textarea>
-            <button type="submit" className="px-6 py-3  rounded-md flex font-semibold btn-secondary transition ease-snappy sm:self-end self-center">
-              SUBMIT REQUEST
+            <button
+              type="submit"
+              disabled={loading}
+              className={`px-6 py-3 rounded-md flex font-semibold btn-secondary transition ease-snappy sm:self-end self-center ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
+            >
+              {loading ? "Sending..." : "SUBMIT REQUEST"}
             </button>
           </form>
         </div>

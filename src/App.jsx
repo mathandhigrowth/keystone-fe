@@ -18,6 +18,7 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NewsPage from "./pages/NewsPage";
 import NewsDetailPage from "./pages/NewsDetailPage";
+import ComingSoonPage from "./pages/ComingSoonPage";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -34,6 +35,8 @@ const App = () => {
     <>
       <ScrollToTop />
       <Routes>
+        {/* <Route path="/" index element={<ComingSoonPage />} /> */}
+
         <Route
           element={
             <ErrorBoundary>
@@ -41,7 +44,7 @@ const App = () => {
             </ErrorBoundary>
           }
         >
-          <Route path="/" index element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:slug" element={<ServiceDetailsPage />} />

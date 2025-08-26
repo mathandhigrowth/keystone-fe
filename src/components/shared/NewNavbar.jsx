@@ -196,6 +196,9 @@ export default function NewNavbar() {
                       transition={{ duration: 0.2 }}
                       className="ml-4 mt-2 flex flex-col gap-2"
                     >
+                      <NavLink to="/brands" onClick={handleNavClick} className="block px-2 pt-1 font-semibold text-[var(--color-dark)] hover:bg-gray-100 rounded">
+                        All Brands
+                      </NavLink>  
                       {BrandsWithProductsData.map((brand) => (
                         <NavLink key={brand.id} to={`/brands/${brand.slug}`} onClick={handleNavClick} className="flex items-center gap-2 px-2 py-1 hover:bg-gray-100 rounded">
                           <img src={brand.brandImg} alt={brand.brandName} className="w-6 h-6 object-contain" />

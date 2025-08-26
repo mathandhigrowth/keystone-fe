@@ -11,7 +11,6 @@ import {
   blogThumb4,
   blog4Img1,
   blog4Img2,
-  manufacturingVideo,
   blog5Img,
   blog5Img1,
   blog5Img2,

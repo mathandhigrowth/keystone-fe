@@ -29,7 +29,7 @@ export default function Footer() {
           {/* About Us */}
           <div>
             <h3 className="text-xl font-semibold mb-6">About Us</h3>
-            <p className="text-gray-300 leading-relaxed mb-6">A KeyStone service company provides a range of professional services related to automation and technology.</p>
+            <p className="text-gray-300 leading-relaxed mb-6">Keystone provides a range of professional services related to automation and technology.</p>
             <div className="mb-6" id="address" name="address">
               <h4 className="text-lg font-semibold mb-2">Our Address</h4>
               <p className="text-gray-300">
@@ -56,7 +56,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6">All Brands</h3>
             <ul className="space-y-3">
-              {BrandsWithProductsData.slice(0, 4).map((brands) => (
+              {BrandsWithProductsData.slice(0, 5).map((brands) => (
                 <li key={brands.slug}>
                   <Link to={`/brands/${brands.slug}`} className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                     <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" />
@@ -100,6 +100,11 @@ export default function Footer() {
               <li>
                 <Link to="/blog" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/news" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
+                  <ChevronRight className="w-4 h-4 mr-2 text-[var(--color-secondary)]" /> News
                 </Link>
               </li>
               <li>
