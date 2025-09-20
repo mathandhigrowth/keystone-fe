@@ -1,6 +1,6 @@
 export const PHONE_NUMBER = "+04226794627";
 export const MOBILE_NUMBER = "+919786627272";
-export const API_URL = "https://keystone-be.onrender.com/api/contact";
+export const API_URL = "https://contact-forms.dhigrowth.com/api/v1/contact/keystone";
 export const EMAIL = "sales@kiipl.co.in";
 export const EMAIL2 = "mktg@kiipl.co.in";
 export const ADDRESS = "Door 4 – 6, First Floor, Katoor Road, Papanickenpalayam, Coimbatore – 641037, Tamil Nadu, India";
